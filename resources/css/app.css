@@ -9,3 +9,16 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+[x-cloak] {
+    display: none !important;
+}
+
+/* Rich text content rendered from the editor */
+.prose-content h2 { font-size: 1.5rem; font-weight: 700; margin: 1.5rem 0 0.75rem; }
+.prose-content h3 { font-size: 1.25rem; font-weight: 600; margin: 1.25rem 0 0.5rem; }
+.prose-content p { margin: 0.75rem 0; line-height: 1.75; }
+.prose-content ul { list-style: disc; margin: 0.75rem 0; padding-left: 1.5rem; }
+.prose-content ol { list-style: decimal; margin: 0.75rem 0; padding-left: 1.5rem; }
+.prose-content img { border-radius: 0.5rem; margin: 1rem 0; max-width: 100%; height: auto; }
+.prose-content a { color: #4338ca; text-decoration: underline; }
