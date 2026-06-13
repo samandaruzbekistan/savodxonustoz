@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             AdminUserSeeder::class,
             SettingSeeder::class,
             ContentStructureSeeder::class,
+            ContentSectionsSeeder::class,
             TestSeeder::class,
         ]);
     }

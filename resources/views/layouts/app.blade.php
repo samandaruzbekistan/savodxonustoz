@@ -11,7 +11,7 @@
 <body class="min-h-screen bg-slate-50 font-sans text-slate-800 antialiased">
     @include('partials.public-nav')
 
-    <main class="mx-auto max-w-6xl px-4 py-8">
+    <main class="mx-auto max-w-7xl px-4 py-8">
         @include('partials.flash')
         @yield('content')
     </main>

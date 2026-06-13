@@ -22,6 +22,15 @@
         'arrow-right' => '<path d="M5 12h14"/><path d="M13 6l6 6-6 6"/>',
         'check' => '<path d="M5 12.5 10 17.5 19 7"/>',
         'dot' => '<circle cx="12" cy="12" r="3.5" fill="currentColor" stroke="none"/>',
+        'home' => '<path d="M4 11 12 4l8 7"/><path d="M6 9.5V19a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9.5"/><path d="M10 20v-5h4v5"/>',
+        'star' => '<path d="M12 4l2.4 5 5.6.8-4 3.9 1 5.5-5-2.7-5 2.7 1-5.5-4-3.9 5.6-.8z"/>',
+        'heart' => '<path d="M12 19.5 4.8 12.4a4.2 4.2 0 0 1 6-6l1.2 1.2 1.2-1.2a4.2 4.2 0 0 1 6 6z"/>',
+        'layers' => '<path d="M12 4 21 9l-9 5-9-5z"/><path d="M3.5 13.5 12 18l8.5-4.5"/>',
+        'library' => '<path d="M5 5v14M9 5v14"/><rect x="3.5" y="5" width="7" height="14" rx="1"/><path d="M13.5 6.2 18 5l2 13.5-4.5 1.2z"/>',
+        'compass' => '<circle cx="12" cy="12" r="8.5"/><path d="M15.5 8.5 13.5 13.5 8.5 15.5 10.5 10.5z" fill="currentColor" stroke="none"/>',
+        'chevron-down' => '<path d="M6 9.5 12 15.5 18 9.5"/>',
+        'chevron-right' => '<path d="M9.5 6 15.5 12 9.5 18"/>',
+        'target' => '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor" stroke="none"/>',
     ];
     $inner = $icons[$name] ?? $icons['dot'];
 @endphp

@@ -22,3 +22,9 @@
 .prose-content ol { list-style: decimal; margin: 0.75rem 0; padding-left: 1.5rem; }
 .prose-content img { border-radius: 0.5rem; margin: 1rem 0; max-width: 100%; height: auto; }
 .prose-content a { color: #4338ca; text-decoration: underline; }
+.prose-content strong { font-weight: 600; color: #1e293b; }
+.prose-content li { margin: 0.25rem 0; line-height: 1.7; }
+.prose-content .lead { font-size: 1.075rem; font-weight: 500; color: #475569; line-height: 1.7; }
+
+/* Smooth scrolling for in-page anchors (e.g. #bolimlar) */
+html { scroll-behavior: smooth; }

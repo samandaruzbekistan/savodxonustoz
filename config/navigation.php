@@ -9,20 +9,23 @@
  */
 return [
 
-    // Static module links in the public top bar (after the dynamic
-    // content-category links such as Nazariya / Metodika).
+    // Primary module links shown directly in the top bar. Content
+    // categories live under the "Bo'limlar" mega-menu (driven by the
+    // navCategories view composer), not here.
     'public_modules' => [
-        ['label' => 'Resurslar', 'route' => 'resources.index', 'match' => 'resources.*'],
-        ['label' => 'Videolar', 'route' => 'videos.index', 'match' => 'videos.*'],
-        ['label' => 'Testlar', 'route' => 'tests.index', 'match' => 'tests.*'],
-        ['label' => 'AI yordamchi', 'route' => 'ai.index', 'match' => 'ai.*', 'accent' => true],
-        ['label' => 'Blog', 'route' => 'blog.index', 'match' => 'blog.*'],
+        ['label' => 'Resurslar', 'route' => 'resources.index', 'match' => 'resources.*', 'icon' => 'download'],
+        ['label' => 'Videolar', 'route' => 'videos.index', 'match' => 'videos.*', 'icon' => 'play'],
+        ['label' => 'Testlar', 'route' => 'tests.index', 'match' => 'tests.*', 'icon' => 'clipboard'],
+        ['label' => 'Blog', 'route' => 'blog.index', 'match' => 'blog.*', 'icon' => 'news'],
     ],
 
-    // Collapsed under a "Ko'proq" overflow menu.
+    // Accent action shown as a highlighted pill on the right.
+    'public_accent' => ['label' => 'AI yordamchi', 'route' => 'ai.index', 'match' => 'ai.*', 'icon' => 'sparkle'],
+
+    // Collapsed under a "Ko'proq" overflow menu and shown in the footer.
     'public_more' => [
-        ['label' => 'Savol-javob', 'route' => 'faq', 'match' => 'faq'],
-        ['label' => 'Aloqa', 'route' => 'contact', 'match' => 'contact'],
+        ['label' => 'Savol-javob', 'route' => 'faq', 'match' => 'faq', 'icon' => 'help'],
+        ['label' => 'Aloqa', 'route' => 'contact', 'match' => 'contact', 'icon' => 'mail'],
     ],
 
     // Admin sidebar groups.
