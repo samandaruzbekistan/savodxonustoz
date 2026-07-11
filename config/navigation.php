@@ -9,14 +9,26 @@
  */
 return [
 
-    // Primary module links shown directly in the top bar. Content
-    // categories live under the "Bo'limlar" mega-menu (driven by the
-    // navCategories view composer), not here.
-    'public_modules' => [
-        ['label' => 'Resurslar', 'route' => 'resources.index', 'match' => 'resources.*', 'icon' => 'download'],
-        ['label' => 'Videolar', 'route' => 'videos.index', 'match' => 'videos.*', 'icon' => 'play'],
-        ['label' => 'Testlar', 'route' => 'tests.index', 'match' => 'tests.*', 'icon' => 'clipboard'],
-        ['label' => 'Blog', 'route' => 'blog.index', 'match' => 'blog.*', 'icon' => 'news'],
+    // Grouped platform modules shown in the "Platforma" mega-menu.
+    'public_platform' => [
+        [
+            'heading' => "O'quv materiallar",
+            'items' => [
+                ['label' => 'Nazariya',        'route' => 'nazariya.index',          'match' => 'nazariya.*',          'icon' => 'book',      'desc' => "PIRLS, PISA va o'qish asoslari",   'color' => 'bg-indigo-100 text-indigo-600'],
+                ['label' => 'Metodik modul',   'route' => 'metodik.index',           'match' => 'metodik.*',           'icon' => 'cap',       'desc' => 'Amaliy metodika va dars rejalari', 'color' => 'bg-violet-100 text-violet-600'],
+                ['label' => 'Xalqaro tajriba', 'route' => 'xalqaro.index',           'match' => 'xalqaro.*',           'icon' => 'globe',     'desc' => 'Jahon yetakchi davlatlari tajribasi', 'color' => 'bg-teal-100 text-teal-600'],
+                ['label' => 'Dars ishlanmalar','route' => 'dars-ishlanmalar.index',  'match' => 'dars-ishlanmalar.*',  'icon' => 'clipboard', 'desc' => 'Tayyor dars ishlanmalari',         'color' => 'bg-amber-100 text-amber-600'],
+            ],
+        ],
+        [
+            'heading' => 'Amaliyot va baholash',
+            'items' => [
+                ['label' => 'Testlar',          'route' => 'tests.index',          'match' => 'tests.*',          'icon' => 'star',     'desc' => 'PIRLS tipidagi baholash savollari', 'color' => 'bg-emerald-100 text-emerald-600'],
+                ['label' => 'Amaliyot maydoni', 'route' => 'amaliyot-maydoni',    'match' => 'amaliyot-maydoni', 'icon' => 'layers',   'desc' => 'Talabalar uchun amaliy mashqlar',  'color' => 'bg-rose-100 text-rose-600'],
+                ['label' => 'Video darslar',    'route' => 'video-darslar.index', 'match' => 'video-darslar.*',  'icon' => 'play',     'desc' => "Ko'rgazmali dars tahlillari",      'color' => 'bg-sky-100 text-sky-600'],
+                ['label' => 'Resurslar',        'route' => 'resources.index',     'match' => 'resources.*',      'icon' => 'download', 'desc' => 'Yuklab olinadigan materiallar',    'color' => 'bg-orange-100 text-orange-600'],
+            ],
+        ],
     ],
 
     // Accent action shown as a highlighted pill on the right.
@@ -24,8 +36,9 @@ return [
 
     // Collapsed under a "Ko'proq" overflow menu and shown in the footer.
     'public_more' => [
-        ['label' => 'Savol-javob', 'route' => 'faq', 'match' => 'faq', 'icon' => 'help'],
-        ['label' => 'Aloqa', 'route' => 'contact', 'match' => 'contact', 'icon' => 'mail'],
+        ['label' => 'Blog',       'route' => 'blog.index', 'match' => 'blog.*', 'icon' => 'news'],
+        ['label' => 'Savol-javob','route' => 'faq',        'match' => 'faq',    'icon' => 'help'],
+        ['label' => 'Aloqa',      'route' => 'contact',    'match' => 'contact','icon' => 'mail'],
     ],
 
     // Admin sidebar groups.

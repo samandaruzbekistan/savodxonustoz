@@ -14,6 +14,29 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+// Static section pages
+Route::get('/bolim/nazariya', fn () => view('public.nazariya.index'))->name('nazariya.index');
+Route::get('/bolim/nazariya/{slug}', fn (string $slug) => view("public.nazariya.{$slug}"))->name('nazariya.show');
+
+Route::get('/bolim/metodik', fn () => view('public.metodik.index'))->name('metodik.index');
+Route::get('/bolim/metodik/{slug}', fn (string $slug) => view("public.metodik.{$slug}"))->name('metodik.show');
+
+Route::get('/bolim/xalqaro', fn () => view('public.xalqaro.index'))->name('xalqaro.index');
+Route::get('/bolim/xalqaro/{slug}', fn (string $slug) => view("public.xalqaro.{$slug}"))->name('xalqaro.show');
+
+Route::get('/bolim/video-darslar', fn () => view('public.video-darslar.index'))->name('video-darslar.index');
+
+Route::get('/bolim/dars-ishlanmalar', fn () => view('public.dars-ishlanmalar.index'))->name('dars-ishlanmalar.index');
+Route::get('/bolim/dars-ishlanmalar/{slug}', fn (string $slug) => view("public.dars-ishlanmalar.{$slug}"))->name('dars-ishlanmalar.show');
+
+Route::get('/bolim/diagnostika', fn () => view('public.diagnostika.index'))->name('diagnostika.index');
+Route::get('/bolim/diagnostika/{slug}', fn (string $slug) => view("public.diagnostika.{$slug}"))->name('diagnostika.show');
+
+Route::get('/bolim/sinf-strategiyalari', fn () => view('public.sinf-strategiyalari.index'))->name('sinf-strategiyalari.index');
+Route::get('/bolim/sinf-strategiyalari/{slug}', fn (string $slug) => view("public.sinf-strategiyalari.{$slug}"))->name('sinf-strategiyalari.show');
+
+Route::get('/amaliyot-maydoni', fn () => view('public.amaliyot-maydoni'))->name('amaliyot-maydoni');
+
 Route::get('/bolim/{category:slug}', [ContentController::class, 'section'])->name('sections.show');
 Route::get('/sahifa/{content:slug}', [ContentController::class, 'show'])->name('contents.show');
 
