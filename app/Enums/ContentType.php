@@ -20,6 +20,7 @@ enum ContentType: string
     case Blog = 'blog';
     case News = 'news';
     case Faq = 'faq';
+    case Ertak = 'ertak';
 
     public function label(): string
     {
@@ -35,6 +36,7 @@ enum ContentType: string
             self::Blog => 'Blog Article',
             self::News => 'News',
             self::Faq => 'FAQ',
+            self::Ertak => 'Fairy Tale',
         };
     }
 
@@ -55,6 +57,7 @@ enum ContentType: string
             self::Blog => 'news',
             self::News => 'news',
             self::Faq => 'help',
+            self::Ertak => 'book',
         };
     }
 }

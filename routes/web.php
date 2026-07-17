@@ -5,9 +5,12 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Public\BlogController;
 use App\Http\Controllers\Public\ContactController;
 use App\Http\Controllers\Public\ContentController;
+use App\Http\Controllers\Public\FairyTaleController;
 use App\Http\Controllers\Public\FaqController;
 use App\Http\Controllers\Public\HomeController;
+use App\Http\Controllers\Public\ReadingCourseController;
 use App\Http\Controllers\Public\ResourceController;
+use App\Http\Controllers\Public\ScientificArticleController;
 use App\Http\Controllers\Public\TestController;
 use App\Http\Controllers\Public\VideoController;
 use Illuminate\Support\Facades\Route;
@@ -20,6 +23,9 @@ Route::get('/bolim/nazariya/{slug}', fn (string $slug) => view("public.nazariya.
 
 Route::get('/bolim/metodik', fn () => view('public.metodik.index'))->name('metodik.index');
 Route::get('/bolim/metodik/{slug}', fn (string $slug) => view("public.metodik.{$slug}"))->name('metodik.show');
+
+Route::get('/bolim/pirls-konstruktor', fn () => view('public.pirls-konstruktor.index'))->name('pirls-konstruktor.index');
+Route::get('/bolim/pirls-konstruktor/{slug}', fn (string $slug) => view("public.pirls-konstruktor.{$slug}"))->name('pirls-konstruktor.show');
 
 Route::get('/bolim/xalqaro', fn () => view('public.xalqaro.index'))->name('xalqaro.index');
 Route::get('/bolim/xalqaro/{slug}', fn (string $slug) => view("public.xalqaro.{$slug}"))->name('xalqaro.show');
@@ -35,6 +41,9 @@ Route::get('/bolim/diagnostika/{slug}', fn (string $slug) => view("public.diagno
 Route::get('/bolim/sinf-strategiyalari', fn () => view('public.sinf-strategiyalari.index'))->name('sinf-strategiyalari.index');
 Route::get('/bolim/sinf-strategiyalari/{slug}', fn (string $slug) => view("public.sinf-strategiyalari.{$slug}"))->name('sinf-strategiyalari.show');
 
+Route::get('/bolim/barcha-oquvchilarga-yordam', fn () => view('public.barcha-oquvchilarga-yordam.index'))->name('barcha-oquvchilarga-yordam.index');
+Route::get('/bolim/barcha-oquvchilarga-yordam/{slug}', fn (string $slug) => view("public.barcha-oquvchilarga-yordam.{$slug}"))->name('barcha-oquvchilarga-yordam.show');
+
 Route::get('/amaliyot-maydoni', fn () => view('public.amaliyot-maydoni'))->name('amaliyot-maydoni');
 
 Route::get('/bolim/{category:slug}', [ContentController::class, 'section'])->name('sections.show');
@@ -42,6 +51,13 @@ Route::get('/sahifa/{content:slug}', [ContentController::class, 'show'])->name('
 
 Route::get('/resurslar', [ResourceController::class, 'index'])->name('resources.index');
 Route::get('/resurslar/{resource:slug}/yuklab-olish', [ResourceController::class, 'download'])->name('resources.download');
+
+Route::get('/ilmiy-maqolalar', [ScientificArticleController::class, 'index'])->name('articles.index');
+
+Route::get('/101-oqish-kursi', [ReadingCourseController::class, 'index'])->name('reading-course.index');
+
+Route::get('/101-oqish-kursi/ertaklar', [FairyTaleController::class, 'index'])->name('fairy-tales.index');
+Route::get('/101-oqish-kursi/ertaklar/{tale:slug}', [FairyTaleController::class, 'show'])->name('fairy-tales.show');
 
 Route::get('/videolar', [VideoController::class, 'index'])->name('videos.index');
 Route::get('/videolar/{video:slug}', [VideoController::class, 'show'])->name('videos.show');

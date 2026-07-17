@@ -19,6 +19,9 @@ class DatabaseSeeder extends Seeder
             SettingSeeder::class,
             ContentStructureSeeder::class,
             ContentSectionsSeeder::class,
+            ScientificArticleSeeder::class,
+            ReadingCourseSeeder::class,
+            ReadingCourseFairyTaleSeeder::class,
             TestSeeder::class,
         ]);
     }

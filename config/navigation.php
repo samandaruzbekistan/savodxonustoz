@@ -17,12 +17,18 @@ return [
                 ['label' => 'Nazariya',        'route' => 'nazariya.index',          'match' => 'nazariya.*',          'icon' => 'book',      'desc' => "PIRLS, PISA va o'qish asoslari",   'color' => 'bg-indigo-100 text-indigo-600'],
                 ['label' => 'Metodik modul',   'route' => 'metodik.index',           'match' => 'metodik.*',           'icon' => 'cap',       'desc' => 'Amaliy metodika va dars rejalari', 'color' => 'bg-violet-100 text-violet-600'],
                 ['label' => 'Xalqaro tajriba', 'route' => 'xalqaro.index',           'match' => 'xalqaro.*',           'icon' => 'globe',     'desc' => 'Jahon yetakchi davlatlari tajribasi', 'color' => 'bg-teal-100 text-teal-600'],
-                ['label' => 'Dars ishlanmalar','route' => 'dars-ishlanmalar.index',  'match' => 'dars-ishlanmalar.*',  'icon' => 'clipboard', 'desc' => 'Tayyor dars ishlanmalari',         'color' => 'bg-amber-100 text-amber-600'],
+                ['label' => 'Dars ishlanmalar', 'route' => 'dars-ishlanmalar.index',  'match' => 'dars-ishlanmalar.*',  'icon' => 'clipboard', 'desc' => 'Tayyor dars ishlanmalari',         'color' => 'bg-amber-100 text-amber-600'],
+                ['label' => 'Ilmiy maqolalar', 'route' => 'articles.index',          'match' => 'articles.*',          'icon' => 'library',   'desc' => 'Xalqaro va respublika konferensiya, jurnal maqolalari', 'color' => 'bg-rose-100 text-rose-600'],
+                ['label' => "101 o'qish kursi", 'route' => 'reading-course.index',   'match' => 'reading-course.*',    'icon' => 'book',      'desc' => "1-4-sinflar uchun ona tili va o'qish darsliklari", 'color' => 'bg-emerald-100 text-emerald-600'],
+                ['label' => 'Sinf strategiyalari', 'route' => 'sinf-strategiyalari.index', 'match' => 'sinf-strategiyalari.*', 'icon' => 'clipboard', 'desc' => "Sinfda matn bilan ishlash bo'yicha amaliy-metodik ko'rsatmalar", 'color' => 'bg-blue-100 text-blue-600'],
+                ['label' => 'Barcha o\'quvchilarga yordam', 'route' => 'barcha-oquvchilarga-yordam.index', 'match' => 'barcha-oquvchilarga-yordam.*', 'icon' => 'star', 'desc' => "Differensial va inklyuziv yondashuv bo'yicha amaliy tavsiyalar", 'color' => 'bg-rose-100 text-rose-600'],
             ],
         ],
         [
             'heading' => 'Amaliyot va baholash',
             'items' => [
+                ['label' => 'PIRLS konstruktori', 'route' => 'pirls-konstruktor.index', 'match' => 'pirls-konstruktor.*', 'icon' => 'target',   'desc' => 'Matndan PIRLS topshiriq yaratish',  'color' => 'bg-blue-100 text-blue-600'],
+                ['label' => 'Diagnostika va baholash', 'route' => 'diagnostika.index', 'match' => 'diagnostika.*', 'icon' => 'check',    'desc' => "O'qish savodxonligini aniqlash va baholash", 'color' => 'bg-sky-100 text-sky-600'],
                 ['label' => 'Testlar',          'route' => 'tests.index',          'match' => 'tests.*',          'icon' => 'star',     'desc' => 'PIRLS tipidagi baholash savollari', 'color' => 'bg-emerald-100 text-emerald-600'],
                 ['label' => 'Amaliyot maydoni', 'route' => 'amaliyot-maydoni',    'match' => 'amaliyot-maydoni', 'icon' => 'layers',   'desc' => 'Talabalar uchun amaliy mashqlar',  'color' => 'bg-rose-100 text-rose-600'],
                 ['label' => 'Video darslar',    'route' => 'video-darslar.index', 'match' => 'video-darslar.*',  'icon' => 'play',     'desc' => "Ko'rgazmali dars tahlillari",      'color' => 'bg-sky-100 text-sky-600'],
@@ -37,8 +43,8 @@ return [
     // Collapsed under a "Ko'proq" overflow menu and shown in the footer.
     'public_more' => [
         ['label' => 'Blog',       'route' => 'blog.index', 'match' => 'blog.*', 'icon' => 'news'],
-        ['label' => 'Savol-javob','route' => 'faq',        'match' => 'faq',    'icon' => 'help'],
-        ['label' => 'Aloqa',      'route' => 'contact',    'match' => 'contact','icon' => 'mail'],
+        ['label' => 'Savol-javob', 'route' => 'faq',        'match' => 'faq',    'icon' => 'help'],
+        ['label' => 'Aloqa',      'route' => 'contact',    'match' => 'contact', 'icon' => 'mail'],
     ],
 
     // Admin sidebar groups.
