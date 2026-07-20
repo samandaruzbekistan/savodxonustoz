@@ -64,17 +64,16 @@ class ReadingCourseSeeder extends Seeder
         foreach ($this->textbooks() as $index => $textbook) {
             $sourceFile = $sourcePath.'/'.$textbook['file'];
 
-            if (! File::exists($sourceFile)) {
-                continue;
-            }
-
             $slug = Str::slug(pathinfo($textbook['file'], PATHINFO_FILENAME));
             $relativePath = self::STORAGE_DIR.'/'.$slug.'.pdf';
             $absoluteTarget = storage_path('app/public/'.$relativePath);
 
-            File::ensureDirectoryExists(dirname($absoluteTarget));
-
             if (! File::exists($absoluteTarget)) {
+                if (! File::exists($sourceFile)) {
+                    continue;
+                }
+
+                File::ensureDirectoryExists(dirname($absoluteTarget));
                 File::copy($sourceFile, $absoluteTarget);
             }
 
@@ -90,7 +89,7 @@ class ReadingCourseSeeder extends Seeder
                     'file_name' => $textbook['file'],
                     'mime_type' => 'application/pdf',
                     'extension' => 'pdf',
-                    'file_size' => File::size($sourceFile),
+                    'file_size' => File::size($absoluteTarget),
                     'status' => ContentStatus::Published->value,
                     'published_at' => now()->subDays(count($this->textbooks()) - $index),
                 ],

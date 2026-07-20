@@ -65,17 +65,16 @@ class ScientificArticleSeeder extends Seeder
         foreach ($this->articles() as $index => $article) {
             $sourceFile = $sourcePath.'/'.$article['file'];
 
-            if (! File::exists($sourceFile)) {
-                continue;
-            }
-
             $slug = Str::slug(pathinfo($article['file'], PATHINFO_FILENAME));
             $relativePath = self::STORAGE_DIR.'/'.$slug.'.pdf';
             $absoluteTarget = storage_path('app/public/'.$relativePath);
 
-            File::ensureDirectoryExists(dirname($absoluteTarget));
-
             if (! File::exists($absoluteTarget)) {
+                if (! File::exists($sourceFile)) {
+                    continue;
+                }
+
+                File::ensureDirectoryExists(dirname($absoluteTarget));
                 File::copy($sourceFile, $absoluteTarget);
             }
 
@@ -91,7 +90,7 @@ class ScientificArticleSeeder extends Seeder
                     'file_name' => $article['file'],
                     'mime_type' => 'application/pdf',
                     'extension' => 'pdf',
-                    'file_size' => File::size($sourceFile),
+                    'file_size' => File::size($absoluteTarget),
                     'status' => ContentStatus::Published->value,
                     'published_at' => now()->subDays(count($this->articles()) - $index),
                 ],

@@ -8,19 +8,19 @@ use App\Enums\ContentType;
 use App\Models\Category;
 use App\Models\Content;
 use App\Models\User;
-use DOMDocument;
-use DOMXPath;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use ZipArchive;
 
 /**
- * Imports the "101 o'qish kursi" fairy tales shipped under
- * Sayt/9. 101 o'qish kursi/ertaklar va audiolar/extracted, one rar
- * per grade already extracted to a sibling folder. Each tale's docx
- * is converted to plain HTML for an in-browser preview and paired
- * with its narrated mp3.
+ * Imports the "101 o'qish kursi" fairy tales. The story text was
+ * extracted once from the source .docx files (shipped locally under
+ * Sayt/9. 101 o'qish kursi/ertaklar va audiolar) and is committed as
+ * JSON in data/fairy-tale-bodies.json, so seeding never depends on
+ * that local-only folder being present on the deploy target. Only the
+ * narrated .mp3 needs to already exist under storage/app/public — if
+ * it's missing, that tale is skipped with a warning instead of the
+ * seeder silently producing an empty catalogue.
  */
 class ReadingCourseFairyTaleSeeder extends Seeder
 {
@@ -28,9 +28,12 @@ class ReadingCourseFairyTaleSeeder extends Seeder
 
     private const STORAGE_DIR = 'ertaklar';
 
+    private const BODIES_FILE = __DIR__.'/data/fairy-tale-bodies.json';
+
     public function run(): void
     {
         $authorId = User::where('email', 'admin@savodxon.uz')->value('id');
+        $bodies = json_decode(File::get(self::BODIES_FILE), true);
 
         $parent = Category::updateOrCreate(
             ['type' => CategoryType::Content->value, 'slug' => 'ertaklar-va-audiolar'],
@@ -63,22 +66,25 @@ class ReadingCourseFairyTaleSeeder extends Seeder
         $sourcePath = base_path(self::SOURCE_DIR);
 
         foreach ($this->tales() as $index => $tale) {
-            $folder = "{$tale['grade']}-sinflar uchun";
-            $docxPath = "{$sourcePath}/{$folder}/{$tale['docx']}";
-            $mp3Path = "{$sourcePath}/{$folder}/{$tale['mp3']}";
-
-            if (! File::exists($docxPath) || ! File::exists($mp3Path)) {
-                continue;
-            }
-
             $slug = Str::slug($tale['title']).'-'.$tale['grade'].'-sinf';
             $audioRelativePath = self::STORAGE_DIR."/{$tale['grade']}-sinf/{$slug}.mp3";
             $audioAbsolutePath = storage_path('app/public/'.$audioRelativePath);
 
-            File::ensureDirectoryExists(dirname($audioAbsolutePath));
-
             if (! File::exists($audioAbsolutePath)) {
+                $mp3Path = "{$sourcePath}/{$tale['grade']}-sinflar uchun/{$tale['mp3']}";
+
+                if (! File::exists($mp3Path)) {
+                    $this->command?->warn("Audio topilmadi, o'tkazib yuborildi: {$tale['title']} ({$tale['grade']}-sinf)");
+
+                    continue;
+                }
+
+                File::ensureDirectoryExists(dirname($audioAbsolutePath));
                 File::copy($mp3Path, $audioAbsolutePath);
+            }
+
+            if (! array_key_exists($slug, $bodies)) {
+                continue;
             }
 
             Content::updateOrCreate(
@@ -89,7 +95,7 @@ class ReadingCourseFairyTaleSeeder extends Seeder
                     'type' => ContentType::Ertak->value,
                     'title' => $tale['title'],
                     'excerpt' => "{$tale['grade']}-sinf uchun audio ertak",
-                    'body' => $this->convertDocxToHtml($docxPath, $tale['title']),
+                    'body' => $bodies[$slug],
                     'meta' => [
                         'grade' => $tale['grade'],
                         'audio_path' => $audioRelativePath,
@@ -100,66 +106,6 @@ class ReadingCourseFairyTaleSeeder extends Seeder
                 ],
             );
         }
-    }
-
-    /**
-     * Extracts the readable body text from a .docx file (paragraph by
-     * paragraph, in document order) and renders it as simple, safe HTML.
-     * Images and drawing markup are skipped; numbered section headers
-     * (e.g. "1. Yangi so'zlar:") are rendered as subheadings.
-     */
-    private function convertDocxToHtml(string $docxPath, string $title): string
-    {
-        $zip = new ZipArchive;
-
-        if ($zip->open($docxPath) !== true) {
-            return '';
-        }
-
-        $xml = $zip->getFromName('word/document.xml');
-        $zip->close();
-
-        if ($xml === false) {
-            return '';
-        }
-
-        $dom = new DOMDocument;
-        $dom->loadXML($xml);
-
-        $xpath = new DOMXPath($dom);
-        $xpath->registerNamespace('w', 'http://schemas.openxmlformats.org/wordprocessingml/2006/main');
-
-        $paragraphs = $xpath->query('//w:p');
-        $lines = [];
-
-        foreach ($paragraphs as $paragraph) {
-            $text = '';
-
-            foreach ($xpath->query('.//w:t', $paragraph) as $node) {
-                $text .= $node->nodeValue;
-            }
-
-            $text = trim(preg_replace('/\s+/', ' ', $text));
-
-            if ($text === '' || str_starts_with($text, '!')) {
-                continue;
-            }
-
-            $lines[] = $text;
-        }
-
-        // The story title is stored separately, so drop it if it repeats as the first line.
-        if ($lines !== [] && Str::slug($lines[0]) === Str::slug($title)) {
-            array_shift($lines);
-        }
-
-        $html = '';
-
-        foreach ($lines as $line) {
-            $html .= '<p>'.e($line).'</p>';
-        }
-
-        return $html;
     }
 
     /**
