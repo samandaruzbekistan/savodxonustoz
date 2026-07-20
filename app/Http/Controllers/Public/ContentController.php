@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Public;
 
 use App\Enums\ContentStatus;
+use App\Enums\ContentType;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Content;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
 
 class ContentController extends Controller
@@ -23,13 +25,19 @@ class ContentController extends Controller
         return view('public.content.index', compact('category', 'contents', 'children', 'ancestors'));
     }
 
-    public function show(Content $content): View
+    public function show(Content $content): View|RedirectResponse
     {
         abort_unless(
             $content->status === ContentStatus::Published
                 && (! $content->published_at || $content->published_at <= now()),
             404
         );
+
+        // Fairy tales are rendered by FairyTaleController, which pairs the story
+        // with its audio player; this generic view would drop the audio.
+        if ($content->type === ContentType::Ertak) {
+            return redirect()->route('fairy-tales.show', $content->slug, 301);
+        }
 
         $content->load([
             'category',

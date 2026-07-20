@@ -16,9 +16,15 @@
         'page' => ['eyebrow' => 'text-slate-600', 'grad' => 'from-slate-50 to-slate-100', 'glyph' => 'text-slate-300'],
     ];
     $p = $palette[$item->type->value] ?? $palette['page'];
+
+    // Fairy tales have a dedicated page with an audio player, so they must not
+    // fall through to the generic /sahifa/{slug} content view.
+    $href = $item->type === \App\Enums\ContentType::Ertak
+        ? route('fairy-tales.show', $item->slug)
+        : route('contents.show', $item->slug);
 @endphp
 
-<a href="{{ route('contents.show', $item->slug) }}" {{ $attributes->merge(['class' => 'group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-md']) }}>
+<a href="{{ $href }}" {{ $attributes->merge(['class' => 'group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-md']) }}>
     @if ($item->cover_image)
         <div class="relative h-36 w-full overflow-hidden">
             <img src="{{ \Illuminate\Support\Facades\Storage::url($item->cover_image) }}" alt="" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-105">
