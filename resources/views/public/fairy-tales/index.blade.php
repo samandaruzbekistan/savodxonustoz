@@ -67,34 +67,9 @@
     @if ($tales->isEmpty())
         <x-ui.empty-state title="Ertaklar topilmadi" icon="book">Filtrlarni o'zgartiring yoki keyinroq qayting.</x-ui.empty-state>
     @else
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="su-stagger grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             @foreach ($tales as $tale)
-                <a href="{{ route('fairy-tales.show', $tale->slug) }}"
-                   class="flex flex-col rounded-2xl border border-emerald-200 bg-white p-5 transition hover:shadow-md">
-                    <div class="mb-3 flex items-center justify-between">
-                        <span class="grid h-11 w-11 place-items-center rounded-xl bg-emerald-100 text-emerald-700">
-                            <x-icon name="book" class="h-5 w-5" />
-                        </span>
-                        <span class="inline-flex items-center gap-1 rounded-md bg-sky-100 px-2 py-0.5 text-[11px] font-semibold text-sky-700">
-                            <x-icon name="play" class="h-3 w-3" /> Audio
-                        </span>
-                    </div>
-
-                    @if ($tale->category)
-                        <span class="mb-2 inline-block w-fit rounded-md bg-emerald-100 text-emerald-700 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide">
-                            {{ $tale->category->name }}
-                        </span>
-                    @endif
-
-                    <h3 class="font-semibold text-slate-800 leading-snug">{{ $tale->title }}</h3>
-                    @if ($tale->excerpt)
-                        <p class="mt-1 line-clamp-2 text-sm text-slate-500">{{ $tale->excerpt }}</p>
-                    @endif
-
-                    <span class="mt-4 inline-flex items-center justify-center gap-2 rounded-lg bg-slate-800 px-4 py-2 text-sm font-semibold text-white transition group-hover:bg-slate-900">
-                        <x-icon name="book" class="h-4 w-4" /> O'qish va tinglash
-                    </span>
-                </a>
+                <x-fairy-tale.card :tale="$tale" />
             @endforeach
         </div>
         <div class="mt-6">{{ $tales->links() }}</div>

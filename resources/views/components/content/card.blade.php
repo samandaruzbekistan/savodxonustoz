@@ -12,6 +12,7 @@
         'assessment' => ['eyebrow' => 'text-sky-600', 'grad' => 'from-sky-50 to-sky-100', 'glyph' => 'text-sky-200'],
         'blog' => ['eyebrow' => 'text-rose-600', 'grad' => 'from-rose-50 to-rose-100', 'glyph' => 'text-rose-200'],
         'news' => ['eyebrow' => 'text-rose-600', 'grad' => 'from-rose-50 to-rose-100', 'glyph' => 'text-rose-200'],
+        'ertak' => ['eyebrow' => 'text-emerald-600', 'grad' => 'from-emerald-50 to-teal-100', 'glyph' => 'text-emerald-300'],
         'faq' => ['eyebrow' => 'text-slate-600', 'grad' => 'from-slate-50 to-slate-100', 'glyph' => 'text-slate-300'],
         'page' => ['eyebrow' => 'text-slate-600', 'grad' => 'from-slate-50 to-slate-100', 'glyph' => 'text-slate-300'],
     ];

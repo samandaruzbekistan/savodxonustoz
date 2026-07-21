@@ -12,8 +12,19 @@ use Illuminate\View\View;
 
 class ContentController extends Controller
 {
-    public function section(Category $category): View
+    public function section(Category $category): View|RedirectResponse
     {
+        // Fairy tales live under grade sub-categories, so this generic view would
+        // render the parent as empty. Send visitors to the dedicated page, which
+        // lists every tale and filters by grade.
+        if ($category->slug === 'ertaklar-va-audiolar') {
+            return redirect()->route('fairy-tales.index', [], 301);
+        }
+
+        if (preg_match('/^([1-4])-sinf-ertaklari$/', $category->slug, $matches)) {
+            return redirect()->route('fairy-tales.index', ['sinf' => $matches[1]], 301);
+        }
+
         $contents = $category->contents()->published()
             ->orderBy('sort_order')
             ->orderBy('title')

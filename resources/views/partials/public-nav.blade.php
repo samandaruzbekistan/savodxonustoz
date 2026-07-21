@@ -23,7 +23,7 @@
      @keydown.escape.window="mega = false; platform = false; moreOpen = false; open = false"
      class="sticky top-0 z-40 border-b border-slate-100 bg-white/95 shadow-sm backdrop-blur">
 
-    <div class="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
+    <div class="mx-auto flex max-w-[88rem] items-center gap-3 px-4 py-3">
 
         {{-- ── Brand ─────────────────────────────── --}}
         <a href="{{ route('home') }}" class="flex shrink-0 items-center gap-2.5">
