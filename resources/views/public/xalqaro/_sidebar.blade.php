@@ -1,12 +1,12 @@
 @php
     $countries = [
-        ['slug' => 'finlandiya',       'label' => 'Finlandiya',       'flag' => '🇫🇮'],
-        ['slug' => 'singapur',         'label' => 'Singapur',         'flag' => '🇸🇬'],
-        ['slug' => 'buyuk-britaniya',  'label' => 'Buyuk Britaniya',  'flag' => '🇬🇧'],
-        ['slug' => 'aqsh',             'label' => 'AQSH',             'flag' => '🇺🇸'],
-        ['slug' => 'avstraliya',       'label' => 'Avstraliya',       'flag' => '🇦🇺'],
-        ['slug' => 'janubiy-koreya',   'label' => 'Janubiy Koreya',   'flag' => '🇰🇷'],
-        ['slug' => 'yaponiya',         'label' => 'Yaponiya',         'flag' => '🇯🇵'],
+        ['slug' => 'finlandiya',       'label' => 'Finlandiya',       'flag' => '🇫🇮', 'img' => 'finlandiya.jpeg'],
+        ['slug' => 'singapur',         'label' => 'Singapur',         'flag' => '🇸🇬', 'img' => 'singapur.webp'],
+        ['slug' => 'buyuk-britaniya',  'label' => 'Buyuk Britaniya',  'flag' => '🇬🇧', 'img' => 'buyukbritaniya.jpg'],
+        ['slug' => 'aqsh',             'label' => 'AQSH',             'flag' => '🇺🇸', 'img' => 'aqsh.jpeg'],
+        ['slug' => 'avstraliya',       'label' => 'Avstraliya',       'flag' => '🇦🇺', 'img' => 'avstraliya.jpg'],
+        ['slug' => 'janubiy-koreya',   'label' => 'Janubiy Koreya',   'flag' => '🇰🇷', 'img' => 'koreya.jpg'],
+        ['slug' => 'yaponiya',         'label' => 'Yaponiya',         'flag' => '🇯🇵', 'img' => 'yaponiya.jpg'],
     ];
     $current = $activeSlug ?? null;
 @endphp
@@ -29,7 +29,10 @@
                        {{ $current === $item['slug']
                            ? 'bg-blue-50 text-blue-700 border-l-2 border-blue-500'
                            : 'text-slate-700 hover:bg-blue-50 hover:text-blue-700' }}">
-                    <span class="text-lg leading-none">{{ $item['flag'] }}</span>
+                    <span class="relative h-8 w-8 shrink-0 overflow-hidden rounded-lg ring-1 ring-slate-200">
+                        <img src="{{ asset('images/'.$item['img']) }}" alt="{{ $item['label'] }}" loading="lazy" class="h-full w-full object-cover">
+                        <span class="absolute -bottom-1 -right-1 text-xs leading-none drop-shadow">{{ $item['flag'] }}</span>
+                    </span>
                     <span class="leading-snug">{{ $item['label'] }}</span>
                     <svg class="ml-auto h-3.5 w-3.5 shrink-0 text-slate-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>

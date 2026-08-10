@@ -22,6 +22,15 @@
         'uyda-savodxonlik' => ['icon' => 'home', 'wrap' => 'bg-emerald-100 text-emerald-600', 'title' => 'group-hover:text-emerald-700', 'border' => 'hover:border-emerald-300', 'ring' => 'group-hover:ring-emerald-200'],
     ];
     $m = $map[$category->slug] ?? ['icon' => 'folder', 'wrap' => 'bg-slate-100 text-slate-500', 'title' => 'group-hover:text-indigo-700', 'border' => 'hover:border-indigo-300', 'ring' => 'group-hover:ring-indigo-200'];
+
+    // Full-bleed card background, shipped by the client under public/images/sections,
+    // named after the category's exact display name (e.g. "Metodik modul.png").
+    // The filename itself is rawurlencode()-d for the URL since names like
+    // "O'qish savodxonligi nazariyasi" contain an apostrophe that would
+    // otherwise break the quoted url(...) once Blade HTML-escapes it.
+    $bgFile = $category->name.'.png';
+    $hasBg = file_exists(public_path('images/sections/'.$bgFile));
+    $bgUrl = $hasBg ? asset('images/sections/'.rawurlencode($bgFile)) : null;
 @endphp
 
 @if ($variant === 'menu')
@@ -37,14 +46,16 @@
         </span>
     </a>
 @else
-    <a href="{{ $categoryHref }}" class="group relative flex flex-col gap-3 overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg {{ $m['border'] }}">
-        <span class="grid h-14 w-14 place-items-center rounded-2xl ring-4 ring-transparent transition {{ $m['wrap'] }} {{ $m['ring'] }}">
+    <a href="{{ $categoryHref }}"
+       @if ($hasBg) style="background-image: url('{{ $bgUrl }}'); background-size: cover; background-position: center;" @endif
+       class="group relative flex h-[230px] flex-col gap-3 overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg {{ $m['border'] }}">
+        <span class="grid h-14 w-14 place-items-center rounded-2xl shadow-sm ring-4 ring-transparent transition {{ $m['wrap'] }} {{ $m['ring'] }}">
             <x-icon :name="$m['icon']" class="h-7 w-7" stroke="1.5" />
         </span>
         <div>
             <h3 class="font-bold text-slate-800 {{ $m['title'] }}">{{ $category->name }}</h3>
             @if ($category->description)
-                <p class="mt-1.5 line-clamp-2 text-sm leading-relaxed text-slate-500">{{ $category->description }}</p>
+                <p class="mt-1.5 line-clamp-2 max-w-[75%] text-sm leading-relaxed text-slate-500">{{ $category->description }}</p>
             @endif
         </div>
         <span class="mt-auto inline-flex items-center gap-1 text-sm font-medium text-slate-400 transition {{ $m['title'] }}">

@@ -1,0 +1,601 @@
+{
+    "aqlli-chumoli-1-sinf": {
+        "title": "Aqlli chumoli",
+        "questions": [
+            {
+                "prompt": "Chumolining ismi nima?",
+                "options": [
+                    "Ziyrakcha",
+                    "Kumushcha",
+                    "Momiqvoy"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Ziyrakcha nima tashirdi?",
+                "options": [
+                    "Koptok",
+                    "Don",
+                    "Gul"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Chigirtka chumoliga nima dedi?",
+                "options": [
+                    "Kel, o‘ynaymiz",
+                    "Uyga boramiz",
+                    "Suv ichamiz"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Ziyrakcha nimaga tayyorlandi?",
+                "options": [
+                    "Bayramga",
+                    "Qishga",
+                    "Sayrga"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Qishda chigirtka nima bo‘ldi?",
+                "options": [
+                    "To‘q bo‘ldi",
+                    "Och qoldi",
+                    "Uxlab qoldi"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Ertak nimaga o‘rgatadi?",
+                "options": [
+                    "Vaqtida mehnat qilishga",
+                    "Faqat o‘ynashga",
+                    "Dangasa bo‘lishga"
+                ],
+                "correct": 0
+            }
+        ]
+    },
+    "dangasa-ayiqcha-1-sinf": {
+        "title": "Dangasa ayiqcha",
+        "questions": [
+            {
+                "prompt": "Po‘latvoy kim?",
+                "options": [
+                    "Ayiqcha",
+                    "Quyoncha",
+                    "Mushukcha"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Olmaxon nima terdi?",
+                "options": [
+                    "Sabzi",
+                    "Yong‘oq",
+                    "Olma"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Quyon nima yig‘di?",
+                "options": [
+                    "Sabzi",
+                    "Non",
+                    "Gul"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Po‘latvoy nima qildi?",
+                "options": [
+                    "Mehnat qildi",
+                    "Uxlab yotdi",
+                    "Yong‘oq terdi"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Ertak nimaga o‘rgatadi?",
+                "options": [
+                    "Dangasa bo‘lishga",
+                    "Mehnat qilishga",
+                    "Uxlashga"
+                ],
+                "correct": 1
+            }
+        ]
+    },
+    "kamtar-gul-1-sinf": {
+        "title": "Kamtar gul",
+        "questions": [
+            {
+                "prompt": "Ertakdagi kichkina gul qaysi?",
+                "options": [
+                    "Atirgul",
+                    "Lola",
+                    "Binafsha"
+                ],
+                "correct": 2
+            },
+            {
+                "prompt": "Atirgul nima qildi?",
+                "options": [
+                    "Maqtandi",
+                    "Yig‘ladi",
+                    "Uxlab qoldi"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Lola nima debdi?",
+                "options": [
+                    "Men chiroyliroqman",
+                    "Men kichkinaman",
+                    "Men uxlayman"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Binafsha qanday gul edi?",
+                "options": [
+                    "Kamtar",
+                    "Qo‘pol",
+                    "Dangasa"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Bog‘ga kimlar kelibdi?",
+                "options": [
+                    "Bolalar",
+                    "Baliqlar",
+                    "Qushlar"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Ertak nimaga o‘rgatadi?",
+                "options": [
+                    "Maqtanishga",
+                    "Kamtar bo‘lishga",
+                    "Urishishga"
+                ],
+                "correct": 1
+            }
+        ]
+    },
+    "kichkina-baliqcha-1-sinf": {
+        "title": "Kichkina baliqcha",
+        "questions": [
+            {
+                "prompt": "Baliqchaning ismi nima?",
+                "options": [
+                    "Oltincha",
+                    "Kumushcha",
+                    "Toshbaqa"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Kumushcha qayerda yashar edi?",
+                "options": [
+                    "O‘rmonda",
+                    "Hovlida",
+                    "Moviy ko‘lda"
+                ],
+                "correct": 2
+            },
+            {
+                "prompt": "Onasi Kumushchaga nima dedi?",
+                "options": [
+                    "Uzoqqa yolg‘iz suzma",
+                    "Uxlama",
+                    "Tez yugur"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Kumushcha nimaning orasiga kirib qoldi?",
+                "options": [
+                    "Gullar orasiga",
+                    "Katta toshlar orasiga",
+                    "Daraxtlar orasiga"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Kumushchaga kim yordam berdi?",
+                "options": [
+                    "Quyon",
+                    "Toshbaqa",
+                    "Ayiqcha"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Ertak nimaga o‘rgatadi?",
+                "options": [
+                    "Kattalarning gapiga quloq solishga",
+                    "Uzoqqa yolg‘iz ketishga",
+                    "Yig‘lashga"
+                ],
+                "correct": 0
+            }
+        ]
+    },
+    "kulcha-bolishgan-bolalar-1-sinf": {
+        "title": "Kulcha bo'lishgan bolalar",
+        "questions": [
+            {
+                "prompt": "Oybek maktabga nima olib keldi?",
+                "options": [
+                    "Olma",
+                    "Issiq kulcha",
+                    "Qalam"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Anvar nima qilmagan edi?",
+                "options": [
+                    "Dars qilmagan edi",
+                    "Nonushta qilmagan edi",
+                    "O‘yin o‘ynamagan edi"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Anvar qanday o‘tirgan edi?",
+                "options": [
+                    "Xafa",
+                    "Quvnoq",
+                    "Uxlab"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Oybek kulchasini nima qildi?",
+                "options": [
+                    "Yashirdi",
+                    "Ikkiga bo‘ldi",
+                    "Tashlab yubordi"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Oybek kulchaning yarmini kimga berdi?",
+                "options": [
+                    "Anvarga",
+                    "O‘qituvchiga",
+                    "Nodiraga"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Ertak nimaga o‘rgatadi?",
+                "options": [
+                    "Saxiy va mehribon bo‘lishga",
+                    "Ovqatni yashirishga",
+                    "Do‘stga yordam bermaslikka"
+                ],
+                "correct": 0
+            }
+        ]
+    },
+    "mehribon-quyoncha-1-sinf": {
+        "title": "Mehribon quyoncha",
+        "questions": [
+            {
+                "prompt": "Quyonchaning ismi nima?",
+                "options": [
+                    "Momiqvoy",
+                    "Po‘latvoy",
+                    "Ziyrakcha"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Momiqvoy qanday quyoncha edi?",
+                "options": [
+                    "Mehribon",
+                    "Dangasa",
+                    "Qo‘pol"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Momiqvoy dalaga nima izlab bordi?",
+                "options": [
+                    "Olma",
+                    "Sabzi",
+                    "Yong‘oq"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Momiqvoy yo‘lda kimni ko‘rdi?",
+                "options": [
+                    "Chumchuqchani",
+                    "Ayiqchani",
+                    "Baliqchani"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Chumchuqchaning nimasi og‘ridi?",
+                "options": [
+                    "Oyog‘i",
+                    "Qanoti",
+                    "Ko‘zi"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Tipratikan kim edi?",
+                "options": [
+                    "Tabib",
+                    "O‘qituvchi",
+                    "Bog‘bon"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Ertak nimaga o‘rgatadi?",
+                "options": [
+                    "Mehribon bo‘lishga",
+                    "Do‘stga yordam bermaslikka",
+                    "Faqat o‘ynashga"
+                ],
+                "correct": 0
+            }
+        ]
+    },
+    "qaldirgoch-va-daraxt-1-sinf": {
+        "title": "Qaldirg'och va daraxt",
+        "questions": [
+            {
+                "prompt": "Qaldirg‘och qayerga in quribdi?",
+                "options": [
+                    "Uyning ichiga",
+                    "Daraxt shoxiga",
+                    "Suvga"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Qaldirg‘och bolalariga nima olib kelar ekan?",
+                "options": [
+                    "Olma",
+                    "Don",
+                    "Sut"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Bir kuni nima esibdi?",
+                "options": [
+                    "Yomg‘ir",
+                    "Qor",
+                    "Kuchli shamol"
+                ],
+                "correct": 2
+            },
+            {
+                "prompt": "Shamolda nima qimirlay boshlabdi?",
+                "options": [
+                    "Daraxt ildizi",
+                    "Qaldirg‘ochning ini",
+                    "Uy eshigi"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Daraxt qaldirg‘ochga nima dedi?",
+                "options": [
+                    "Ketib qol",
+                    "Qo‘rqma, men seni asrayman",
+                    "Men seni tanimayman"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Qaldirg‘och daraxtga qanday yordam berdi?",
+                "options": [
+                    "Don sepdi",
+                    "Barglarni sug‘ordi",
+                    "Zararli hasharotlarni yedi"
+                ],
+                "correct": 2
+            },
+            {
+                "prompt": "Ertak nimaga o‘rgatadi?",
+                "options": [
+                    "Urishishga",
+                    "Yordam va do‘stlikka",
+                    "Dangasalikka"
+                ],
+                "correct": 1
+            }
+        ]
+    },
+    "rostgoy-bola-1-sinf": {
+        "title": "Rostgo'y bola",
+        "questions": [
+            {
+                "prompt": "Ertakdagi bolaning ismi nima?",
+                "options": [
+                    "Vali",
+                    "Ali",
+                    "Olim"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Ali uyda nima o‘ynadi?",
+                "options": [
+                    "Koptok",
+                    "Mashina",
+                    "Kubik"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Koptok nimaga tegdi?",
+                "options": [
+                    "Kitobga",
+                    "Kosaga",
+                    "Eshikka"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Kosa nima bo‘ldi?",
+                "options": [
+                    "Yo‘qoldi",
+                    "Sindi",
+                    "Chizildi"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Ali onasiga nima dedi?",
+                "options": [
+                    "Men sindirmadim",
+                    "Kechiring, men sindirib qo‘ydim",
+                    "Bilmayman"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Ertak nimaga o‘rgatadi?",
+                "options": [
+                    "Yolg‘on gapirishga",
+                    "Rost gapirishga",
+                    "Uyda yugurishga"
+                ],
+                "correct": 1
+            }
+        ]
+    },
+    "sehrli-urug-1-sinf": {
+        "title": "Sehrli urug'",
+        "questions": [
+            {
+                "prompt": "Diyor urug‘ni kimdan oldi?",
+                "options": [
+                    "Bobosidan",
+                    "Do‘stidan",
+                    "Onasidan"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Bobosi Diyorga nima berdi?",
+                "options": [
+                    "Koptok",
+                    "Urug‘",
+                    "Kitob"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Diyor urug‘ni qayerga ekdi?",
+                "options": [
+                    "Dalaga",
+                    "Hovliga",
+                    "Ko‘chaga"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Diyor gulga har kuni nima quydi?",
+                "options": [
+                    "Suv",
+                    "Sut",
+                    "Sharbat"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Urug‘dan nima chiqdi?",
+                "options": [
+                    "Tosh",
+                    "Nihol",
+                    "Koptok"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Ertak nimaga o‘rgatadi?",
+                "options": [
+                    "Mehnat va mehrga",
+                    "Dangasalikka",
+                    "Urug‘ni tashlab yuborishga"
+                ],
+                "correct": 0
+            }
+        ]
+    },
+    "yoqolgan-qalam-1-sinf": {
+        "title": "Yo'qolgan qalam",
+        "questions": [
+            {
+                "prompt": "Ertakdagi qizning ismi nima?",
+                "options": [
+                    "Nodira",
+                    "Lola",
+                    "Malika"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Nodira qanday qiz edi?",
+                "options": [
+                    "Tartibli, ozoda",
+                    "Dangasa",
+                    "Qo‘pol"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Nodiraning nimasi yo‘qoldi?",
+                "options": [
+                    "Daftari",
+                    "Qizil qalami",
+                    "Kitobi"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Qalamni kim topdi?",
+                "options": [
+                    "Jasur",
+                    "O‘qituvchi",
+                    "Nodira"
+                ],
+                "correct": 0
+            },
+            {
+                "prompt": "Jasur qalamni qayerdan topdi?",
+                "options": [
+                    "Sumkadan",
+                    "Partaning tagidan",
+                    "Doska yonidan"
+                ],
+                "correct": 1
+            },
+            {
+                "prompt": "Jasur nima qildi?",
+                "options": [
+                    "Qalamni yashirdi",
+                    "Qalamni Nodiraga berdi",
+                    "Qalamni sindirdi"
+                ],
+                "correct": 1
+            }
+        ]
+    }
+}

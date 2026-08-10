@@ -1,0 +1,6968 @@
+{
+  "aqlli-chumoli-1-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Chumoli",
+      "Ziyrakcha",
+      "dala",
+      "jajji",
+      "don",
+      "uya",
+      "oziq",
+      "chigirtka",
+      "yoz",
+      "qish",
+      "qor",
+      "och",
+      "yordam",
+      "mehnatkash",
+      "va’da"
+    ],
+    "comprehension": [
+      {
+        "q": "Chumolining ismi nima?",
+        "a": "Ziyrakcha"
+      },
+      {
+        "q": "Ziyrakcha qayerda yashar edi?",
+        "a": "Keng dalada"
+      },
+      {
+        "q": "Ziyrakcha har kuni nima tashirdi?",
+        "a": "Don"
+      },
+      {
+        "q": "Ziyrakcha donni qayerga yig‘ar edi?",
+        "a": "Uyasiga"
+      },
+      {
+        "q": "Chigirtka chumoliga nima dedi?",
+        "a": "Kel, o‘ynaymiz"
+      },
+      {
+        "q": "Ziyrakcha nima uchun ishladi?",
+        "a": "Qishga tayyorlanish uchun"
+      },
+      {
+        "q": "Qishda dalani nima bosdi?",
+        "a": "Qor"
+      },
+      {
+        "q": "Chigirtka nima topolmay qoldi?",
+        "a": "Ovqat"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Chumolining ismi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ziyrakcha"
+          },
+          {
+            "letter": "B",
+            "text": "Kumushcha"
+          },
+          {
+            "letter": "C",
+            "text": "Momiqvoy"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Ziyrakcha nima tashirdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Koptok"
+          },
+          {
+            "letter": "B",
+            "text": "Don"
+          },
+          {
+            "letter": "C",
+            "text": "Gul"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Chigirtka chumoliga nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Kel, o‘ynaymiz"
+          },
+          {
+            "letter": "B",
+            "text": "Uyga boramiz"
+          },
+          {
+            "letter": "C",
+            "text": "Suv ichamiz"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Ziyrakcha nimaga tayyorlandi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Bayramga"
+          },
+          {
+            "letter": "B",
+            "text": "Qishga"
+          },
+          {
+            "letter": "C",
+            "text": "Sayrga"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Qishda chigirtka nima bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "To‘q bo‘ldi"
+          },
+          {
+            "letter": "B",
+            "text": "Och qoldi"
+          },
+          {
+            "letter": "C",
+            "text": "Uxlab qoldi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Vaqtida mehnat qilishga"
+          },
+          {
+            "letter": "B",
+            "text": "Faqat o‘ynashga"
+          },
+          {
+            "letter": "C",
+            "text": "Dangasa bo‘lishga"
+          }
+        ],
+        "correct": "A"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Ziyrakcha",
+        "don",
+        "qishga",
+        "qor",
+        "och",
+        "mehnatkash"
+      ],
+      "sentences": [
+        "Chumolining ismi __________ edi.",
+        "Ziyrakcha har kuni __________ tashirdi.",
+        "U __________ tayyorlandi.",
+        "Qishda dalani __________ bosdi.",
+        "Chigirtka juda __________ qoldi.",
+        "Chigirtka endi __________ bo‘lishga va’da berdi."
+      ],
+      "answers": [
+        "Ziyrakcha",
+        "don",
+        "qishga",
+        "qor",
+        "och",
+        "mehnatkash"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Chumolining ismi Ziyrakcha edi.",
+        "answer": true
+      },
+      {
+        "statement": "Ziyrakcha dalada yashar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Ziyrakcha har kuni don tashirdi.",
+        "answer": true
+      },
+      {
+        "statement": "Chigirtka ham mehnat qildi.",
+        "answer": false
+      },
+      {
+        "statement": "Ziyrakcha qishga tayyorlandi.",
+        "answer": true
+      },
+      {
+        "statement": "Qishda dalani qor bosdi.",
+        "answer": true
+      },
+      {
+        "statement": "Chigirtka ovqat topdi.",
+        "answer": false
+      }
+    ],
+    "oral": [
+      "Ziyrakcha yaxshi ish qildimi?",
+      "Nima uchun qishga tayyorlanish kerak?",
+      "Chigirtka nima uchun och qoldi?",
+      "Sen uyda qanday yordam berasan?",
+      "Mehnatkash bola qanday bo‘ladi?"
+    ],
+    "creative": {
+      "prompt": "Men mehnatkash bo‘laman, chunki ____________________________________",
+      "sample": "Men mehnatkash bo‘laman, chunki mehnat odamni qiyinchilikdan asraydi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "dangasa-ayiqcha-1-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Dangasa",
+      "Ayiqcha",
+      "Mehnat",
+      "Qish",
+      "Oziq-ovqat",
+      "Yordam",
+      "Uyaldi"
+    ],
+    "comprehension": [
+      {
+        "q": "Ayiqchaning ismi nima?",
+        "a": "Po‘latvoy"
+      },
+      {
+        "q": "Po‘latvoy nimani yaxshi ko‘rar edi?",
+        "a": "Shirinlikni"
+      },
+      {
+        "q": "Hayvonlar nimaga tayyorgarlik ko‘rdi?",
+        "a": "Qishga"
+      },
+      {
+        "q": "Olmaxon nima terdi?",
+        "a": "Yong‘oq"
+      },
+      {
+        "q": "Quyon nima yig‘di?",
+        "a": "Sabzi"
+      },
+      {
+        "q": "Tipratikan nima tashidi?",
+        "a": "Olma"
+      },
+      {
+        "q": "Po‘latvoy nima qildi?",
+        "a": "Uxlab yotdi"
+      },
+      {
+        "q": "Qishda Po‘latvoy nima bo‘ldi?",
+        "a": "Och qoldi"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Po‘latvoy kim?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ayiqcha"
+          },
+          {
+            "letter": "B",
+            "text": "Quyoncha"
+          },
+          {
+            "letter": "C",
+            "text": "Mushukcha"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Olmaxon nima terdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sabzi"
+          },
+          {
+            "letter": "B",
+            "text": "Yong‘oq"
+          },
+          {
+            "letter": "C",
+            "text": "Olma"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Quyon nima yig‘di?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sabzi"
+          },
+          {
+            "letter": "B",
+            "text": "Non"
+          },
+          {
+            "letter": "C",
+            "text": "Gul"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Po‘latvoy nima qildi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Mehnat qildi"
+          },
+          {
+            "letter": "B",
+            "text": "Uxlab yotdi"
+          },
+          {
+            "letter": "C",
+            "text": "Yong‘oq terdi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Dangasa bo‘lishga"
+          },
+          {
+            "letter": "B",
+            "text": "Mehnat qilishga"
+          },
+          {
+            "letter": "C",
+            "text": "Uxlashga"
+          }
+        ],
+        "correct": "B"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Po‘latvoy",
+        "qishga",
+        "yong‘oq",
+        "sabzi",
+        "och"
+      ],
+      "sentences": [
+        "Ayiqchaning ismi ___________________ edi.",
+        "Hayvonlar _______________ tayyorgarlik ko‘rdi.",
+        "Olmaxon ________________ terdi.",
+        "Quyon ________________ yig‘di.",
+        "Po‘latvoy qishda _______________ qoldi."
+      ],
+      "answers": [
+        "Po‘latvoy",
+        "qishga",
+        "yong‘oq",
+        "sabzi",
+        "och"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Po‘latvoy ayiqcha edi.",
+        "answer": true
+      },
+      {
+        "statement": "Sincap sabzi terdi.",
+        "answer": false
+      },
+      {
+        "statement": "Quyon sabzi yig‘di.",
+        "answer": true
+      },
+      {
+        "statement": "Tipratikan olma tashidi.",
+        "answer": true
+      },
+      {
+        "statement": "Po‘latvoy mehnat qildi.",
+        "answer": false
+      },
+      {
+        "statement": "Qishda Po‘latvoy och qoldi.",
+        "answer": true
+      },
+      {
+        "statement": "Do‘stlari unga yordam berdi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Po‘latvoy yaxshi ish qildimi?",
+      "Nima uchun mehnat qilish kerak?",
+      "Sen uyda qanday yordam berasan?",
+      "Do‘stlaringga yordam berasanmi?"
+    ],
+    "creative": {
+      "prompt": "Men mehnatsevar bo‘laman, chunki _______________________________",
+      "sample": "Men mehnatsevar bo‘laman, chunki mehnat qilgan bola qiynalmaydi."
+    },
+    "drawing_task": "Rasm chizish topshirig‘i"
+  },
+  "kamtar-gul-1-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Bog‘",
+      "gul",
+      "binafsha",
+      "atirgul",
+      "lola",
+      "chiroyli",
+      "xushbo‘y",
+      "maqtanmoq",
+      "sokin",
+      "yoqimli",
+      "kamtar",
+      "odob",
+      "hurmat"
+    ],
+    "comprehension": [
+      {
+        "q": "Ertak qayerda bo‘libdi?",
+        "a": "Bog‘da"
+      },
+      {
+        "q": "Bog‘da qanday gullar o‘sar ekan?",
+        "a": "Atirgul, lola, binafsha"
+      },
+      {
+        "q": "Atirgul nima deb maqtandi?",
+        "a": "Men eng chiroyli gulman"
+      },
+      {
+        "q": "Lola nima debdi?",
+        "a": "Men chiroyliroqman"
+      },
+      {
+        "q": "Binafsha nima qildi?",
+        "a": "Indamay, sokin o‘sdi"
+      },
+      {
+        "q": "Bog‘ga kimlar kelibdi?",
+        "a": "Bolalar"
+      },
+      {
+        "q": "Qizcha qaysi gulni ko‘rib qolibdi?",
+        "a": "Binafshani"
+      },
+      {
+        "q": "Qizcha binafshani qanday debdi?",
+        "a": "Yoqimli va kamtar gul"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Ertakdagi kichkina gul qaysi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Atirgul"
+          },
+          {
+            "letter": "B",
+            "text": "Lola"
+          },
+          {
+            "letter": "C",
+            "text": "Binafsha"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "q": "Atirgul nima qildi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Maqtandi"
+          },
+          {
+            "letter": "B",
+            "text": "Yig‘ladi"
+          },
+          {
+            "letter": "C",
+            "text": "Uxlab qoldi"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Lola nima debdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Men chiroyliroqman"
+          },
+          {
+            "letter": "B",
+            "text": "Men kichkinaman"
+          },
+          {
+            "letter": "C",
+            "text": "Men uxlayman"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Binafsha qanday gul edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Kamtar"
+          },
+          {
+            "letter": "B",
+            "text": "Qo‘pol"
+          },
+          {
+            "letter": "C",
+            "text": "Dangasa"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Bog‘ga kimlar kelibdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Bolalar"
+          },
+          {
+            "letter": "B",
+            "text": "Baliqlar"
+          },
+          {
+            "letter": "C",
+            "text": "Qushlar"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Maqtanishga"
+          },
+          {
+            "letter": "B",
+            "text": "Kamtar bo‘lishga"
+          },
+          {
+            "letter": "C",
+            "text": "Urishishga"
+          }
+        ],
+        "correct": "B"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "bog‘da",
+        "binafsha",
+        "atirgul",
+        "lola",
+        "bolalar",
+        "kamtar"
+      ],
+      "sentences": [
+        "Bir __________ chiroyli gullar o‘sar ekan.",
+        "Ularning orasida kichkina __________ bor ekan.",
+        "__________ har kuni maqtanarkan.",
+        "__________ ham maqtanibdi.",
+        "Bir kuni bog‘ga __________ kelibdi.",
+        "Qizcha binafshani __________ gul debdi."
+      ],
+      "answers": [
+        "bog‘da",
+        "binafsha",
+        "atirgul",
+        "lola",
+        "bolalar",
+        "kamtar"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Bog‘da gullar o‘sar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Kichkina binafsha ham bor edi.",
+        "answer": true
+      },
+      {
+        "statement": "Atirgul maqtanmadi.",
+        "answer": false
+      },
+      {
+        "statement": "Lola ham maqtandi.",
+        "answer": true
+      },
+      {
+        "statement": "Binafsha sokin o‘sdi.",
+        "answer": true
+      },
+      {
+        "statement": "Bolalar binafshani yaxshi ko‘rib qolishdi.",
+        "answer": true
+      },
+      {
+        "statement": "Chiroy faqat tashqi ko‘rinishda bo‘ladi.",
+        "answer": false
+      }
+    ],
+    "oral": [
+      "Binafsha senga yoqdimi?",
+      "Nima uchun maqtanish yaxshi emas?",
+      "Kamtar bola qanday bo‘ladi?",
+      "Sen do‘stlaring bilan qanday muomala qilasan?",
+      "Kamtarlik nima uchun yaxshi fazilat?"
+    ],
+    "creative": {
+      "prompt": "Men kamtar bo‘laman, chunki ____________________________________",
+      "sample": "Men kamtar bo‘laman, chunki kamtar insonni hamma hurmat qiladi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "kichkina-baliqcha-1-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Baliqcha",
+      "ko‘l",
+      "Kumushcha",
+      "qiziquvchan",
+      "suzdi",
+      "uzoq",
+      "yolg‘iz",
+      "ogohlantirdi",
+      "tosh",
+      "yo‘l",
+      "yig‘ladi",
+      "toshbaqa",
+      "xursand",
+      "nasihat"
+    ],
+    "comprehension": [
+      {
+        "q": "Baliqchaning ismi nima?",
+        "a": "Kumushcha"
+      },
+      {
+        "q": "Kumushcha qayerda yashar edi?",
+        "a": "Moviy ko‘lda"
+      },
+      {
+        "q": "Kumushcha qanday baliqcha edi?",
+        "a": "Qiziquvchan"
+      },
+      {
+        "q": "Onasi unga nima dedi?",
+        "a": "Uzoqqa yolg‘iz suzma"
+      },
+      {
+        "q": "Kumushcha qayerga suzib ketdi?",
+        "a": "Uzoqqa"
+      },
+      {
+        "q": "U nimaning orasiga kirib qoldi?",
+        "a": "Katta toshlar orasiga"
+      },
+      {
+        "q": "Kumushcha nima uchun yig‘ladi?",
+        "a": "Yo‘lini topolmay qoldi"
+      },
+      {
+        "q": "Unga kim yordam berdi?",
+        "a": "Keksa toshbaqa"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Baliqchaning ismi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Oltincha"
+          },
+          {
+            "letter": "B",
+            "text": "Kumushcha"
+          },
+          {
+            "letter": "C",
+            "text": "Toshbaqa"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Kumushcha qayerda yashar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "O‘rmonda"
+          },
+          {
+            "letter": "B",
+            "text": "Hovlida"
+          },
+          {
+            "letter": "C",
+            "text": "Moviy ko‘lda"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "q": "Onasi Kumushchaga nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Uzoqqa yolg‘iz suzma"
+          },
+          {
+            "letter": "B",
+            "text": "Uxlama"
+          },
+          {
+            "letter": "C",
+            "text": "Tez yugur"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Kumushcha nimaning orasiga kirib qoldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Gullar orasiga"
+          },
+          {
+            "letter": "B",
+            "text": "Katta toshlar orasiga"
+          },
+          {
+            "letter": "C",
+            "text": "Daraxtlar orasiga"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Kumushchaga kim yordam berdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Quyon"
+          },
+          {
+            "letter": "B",
+            "text": "Toshbaqa"
+          },
+          {
+            "letter": "C",
+            "text": "Ayiqcha"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Kattalarning gapiga quloq solishga"
+          },
+          {
+            "letter": "B",
+            "text": "Uzoqqa yolg‘iz ketishga"
+          },
+          {
+            "letter": "C",
+            "text": "Yig‘lashga"
+          }
+        ],
+        "correct": "A"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Kumushcha",
+        "ko‘lda",
+        "uzoqqa",
+        "toshlar",
+        "toshbaqa",
+        "quloq"
+      ],
+      "sentences": [
+        "Baliqchaning ismi __________ edi.",
+        "Kumushcha moviy __________ yashar edi.",
+        "U bir kuni __________ suzib ketdi.",
+        "Kumushcha katta __________ orasiga kirib qoldi.",
+        "Unga keksa __________ yordam berdi.",
+        "Kumushcha onasining gapiga __________ solishga va’da berdi."
+      ],
+      "answers": [
+        "Kumushcha",
+        "ko‘lda",
+        "uzoqqa",
+        "toshlar",
+        "toshbaqa",
+        "quloq"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Baliqchaning ismi Kumushcha edi.",
+        "answer": true
+      },
+      {
+        "statement": "Kumushcha o‘rmonda yashar edi.",
+        "answer": false
+      },
+      {
+        "statement": "Onasi unga uzoqqa yolg‘iz suzma dedi.",
+        "answer": true
+      },
+      {
+        "statement": "Kumushcha onasining gapini esladi.",
+        "answer": false
+      },
+      {
+        "statement": "Kumushcha katta toshlar orasiga kirib qoldi.",
+        "answer": true
+      },
+      {
+        "statement": "Kumushchaga toshbaqa yordam berdi.",
+        "answer": true
+      },
+      {
+        "statement": "Onasi Kumushchani ko‘rib xursand bo‘ldi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Kumushcha yaxshi ish qildimi?",
+      "Nima uchun uzoqqa yolg‘iz ketmaslik kerak?",
+      "Onaning gapiga quloq solish kerakmi?",
+      "Sen kattalarning gapiga quloq solasanmi?",
+      "Agar yo‘lingni topolmay qolsang, nima qilasan?"
+    ],
+    "creative": {
+      "prompt": "Men kattalarning gapiga quloq solaman, chunki _______________________________.",
+      "sample": "Men kattalarning gapiga quloq solaman, chunki ular menga yaxshilikni o‘rgatadi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "kulcha-bolishgan-bolalar-1-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Kulcha",
+      "Oybek",
+      "Anvar",
+      "maktab",
+      "tanaffus",
+      "nonushta",
+      "xafa",
+      "shoshildi",
+      "bo‘lishdi",
+      "yarim",
+      "xursand",
+      "do‘st",
+      "mehribon",
+      "saxiy",
+      "quvonchli"
+    ],
+    "comprehension": [
+      {
+        "q": "Oybek maktabga nima olib keldi?",
+        "a": "Issiq kulcha"
+      },
+      {
+        "q": "Oybek kulchasini qachon yemoqchi bo‘ldi?",
+        "a": "Tanaffusda"
+      },
+      {
+        "q": "Anvar nima qilmagan edi?",
+        "a": "Nonushta qilmagan edi"
+      },
+      {
+        "q": "Anvar qanday o‘tirgan edi?",
+        "a": "Xafa o‘tirgan edi"
+      },
+      {
+        "q": "Oybek Anvardan nima deb so‘radi?",
+        "a": "Nega ovqat yemayapsan?"
+      },
+      {
+        "q": "Anvar nima deb javob berdi?",
+        "a": "Nonushta qilolmadim"
+      },
+      {
+        "q": "Oybek kulchasini nima qildi?",
+        "a": "Ikkiga bo‘ldi"
+      },
+      {
+        "q": "Oybek kulchaning yarmini kimga berdi?",
+        "a": "Anvarga"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Oybek maktabga nima olib keldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Olma"
+          },
+          {
+            "letter": "B",
+            "text": "Issiq kulcha"
+          },
+          {
+            "letter": "C",
+            "text": "Qalam"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Anvar nima qilmagan edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Dars qilmagan edi"
+          },
+          {
+            "letter": "B",
+            "text": "Nonushta qilmagan edi"
+          },
+          {
+            "letter": "C",
+            "text": "O‘yin o‘ynamagan edi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Anvar qanday o‘tirgan edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Xafa"
+          },
+          {
+            "letter": "B",
+            "text": "Quvnoq"
+          },
+          {
+            "letter": "C",
+            "text": "Uxlab"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Oybek kulchasini nima qildi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yashirdi"
+          },
+          {
+            "letter": "B",
+            "text": "Ikkiga bo‘ldi"
+          },
+          {
+            "letter": "C",
+            "text": "Tashlab yubordi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Oybek kulchaning yarmini kimga berdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Anvarga"
+          },
+          {
+            "letter": "B",
+            "text": "O‘qituvchiga"
+          },
+          {
+            "letter": "C",
+            "text": "Nodiraga"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Saxiy va mehribon bo‘lishga"
+          },
+          {
+            "letter": "B",
+            "text": "Ovqatni yashirishga"
+          },
+          {
+            "letter": "C",
+            "text": "Do‘stga yordam bermaslikka"
+          }
+        ],
+        "correct": "A"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Oybek",
+        "kulcha",
+        "Anvar",
+        "nonushta",
+        "ikkiga",
+        "rahmat"
+      ],
+      "sentences": [
+        "__________ maktabga issiq kulcha olib keldi.",
+        "Oybek __________ yemoqchi bo‘ldi.",
+        "Yonida __________ xafa o‘tirgan edi.",
+        "Anvar __________ qilmagan edi.",
+        "Oybek kulchasini __________ bo‘ldi.",
+        "Anvar: “__________, do‘stim!” dedi."
+      ],
+      "answers": [
+        "Oybek",
+        "kulcha",
+        "Anvar",
+        "nonushta",
+        "ikkiga",
+        "rahmat"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Oybek maktabga kulcha olib keldi.",
+        "answer": true
+      },
+      {
+        "statement": "Anvar nonushta qilgan edi.",
+        "answer": false
+      },
+      {
+        "statement": "Anvar xafa o‘tirgan edi.",
+        "answer": true
+      },
+      {
+        "statement": "Oybek Anvarga yordam bermadi.",
+        "answer": false
+      },
+      {
+        "statement": "Oybek kulchasini ikkiga bo‘ldi.",
+        "answer": true
+      },
+      {
+        "statement": "Oybek kulchaning yarmini Anvarga berdi.",
+        "answer": true
+      },
+      {
+        "statement": "Anvar Oybekka rahmat dedi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Oybek yaxshi ish qildimi?",
+      "Nima uchun do‘stga yordam berish kerak?",
+      "Sen do‘sting bilan narsalaringni bo‘lishasanmi?",
+      "Saxiy bola qanday bo‘ladi?",
+      "Maktab qachon quvonchli bo‘ladi?"
+    ],
+    "creative": {
+      "prompt": "Men do‘stimga yordam beraman, chunki ____________________________________",
+      "sample": "Men do‘stimga yordam beraman, chunki mehribon bola do‘st orttiradi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "mehribon-quyoncha-1-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Quyoncha",
+      "Momiqvoy",
+      "o‘rmon",
+      "jajji",
+      "chaqqon",
+      "quvnoq",
+      "mehribon",
+      "sabzi",
+      "chumchuqcha",
+      "qanot",
+      "barg",
+      "suv",
+      "tipratikan",
+      "tabib",
+      "sog‘aydi",
+      "do‘st"
+    ],
+    "comprehension": [
+      {
+        "q": "Quyonchaning ismi nima?",
+        "a": "Momiqvoy"
+      },
+      {
+        "q": "Momiqvoy qanday quyoncha edi?",
+        "a": "Chaqqon, quvnoq, mehribon"
+      },
+      {
+        "q": "Momiqvoy qayerda yashar edi?",
+        "a": "Katta o‘rmonda"
+      },
+      {
+        "q": "Momiqvoy dalaga nima izlab bordi?",
+        "a": "Sabzi"
+      },
+      {
+        "q": "U yo‘lda kimni ko‘rdi?",
+        "a": "Chumchuqchani"
+      },
+      {
+        "q": "Chumchuqchaning nimasi og‘ridi?",
+        "a": "Qanoti"
+      },
+      {
+        "q": "Momiqvoy chumchuqchani qayerga o‘tqazdi?",
+        "a": "Yumshoq barg ustiga"
+      },
+      {
+        "q": "Momiqvoy chumchuqchaga nima olib keldi?",
+        "a": "Suv"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Quyonchaning ismi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Momiqvoy"
+          },
+          {
+            "letter": "B",
+            "text": "Po‘latvoy"
+          },
+          {
+            "letter": "C",
+            "text": "Ziyrakcha"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Momiqvoy qanday quyoncha edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Mehribon"
+          },
+          {
+            "letter": "B",
+            "text": "Dangasa"
+          },
+          {
+            "letter": "C",
+            "text": "Qo‘pol"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Momiqvoy dalaga nima izlab bordi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Olma"
+          },
+          {
+            "letter": "B",
+            "text": "Sabzi"
+          },
+          {
+            "letter": "C",
+            "text": "Yong‘oq"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Momiqvoy yo‘lda kimni ko‘rdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Chumchuqchani"
+          },
+          {
+            "letter": "B",
+            "text": "Ayiqchani"
+          },
+          {
+            "letter": "C",
+            "text": "Baliqchani"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Chumchuqchaning nimasi og‘ridi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Oyog‘i"
+          },
+          {
+            "letter": "B",
+            "text": "Qanoti"
+          },
+          {
+            "letter": "C",
+            "text": "Ko‘zi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Tipratikan kim edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Tabib"
+          },
+          {
+            "letter": "B",
+            "text": "O‘qituvchi"
+          },
+          {
+            "letter": "C",
+            "text": "Bog‘bon"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Mehribon bo‘lishga"
+          },
+          {
+            "letter": "B",
+            "text": "Do‘stga yordam bermaslikka"
+          },
+          {
+            "letter": "C",
+            "text": "Faqat o‘ynashga"
+          }
+        ],
+        "correct": "A"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Momiqvoy",
+        "sabzi",
+        "chumchuqcha",
+        "qanoti",
+        "suv",
+        "tipratikan",
+        "mehribon"
+      ],
+      "sentences": [
+        "Quyonchaning ismi __________ edi.",
+        "Momiqvoy dalaga __________ izlab bordi.",
+        "Yo‘lda kichkina __________ yig‘lab o‘tirgan edi.",
+        "Chumchuqchaning __________ og‘ridi.",
+        "Momiqvoy unga __________ olib keldi.",
+        "__________ chumchuqchaning qanotini bog‘ladi.",
+        "Chumchuqcha: “Sen juda __________ ekansan”, dedi."
+      ],
+      "answers": [
+        "Momiqvoy",
+        "sabzi",
+        "chumchuqcha",
+        "qanoti",
+        "suv",
+        "tipratikan",
+        "mehribon"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Quyonchaning ismi Momiqvoy edi.",
+        "answer": true
+      },
+      {
+        "statement": "Momiqvoy katta o‘rmonda yashar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Momiqvoy sabzi izlab dalaga bordi.",
+        "answer": true
+      },
+      {
+        "statement": "Chumchuqchaning oyog‘i og‘ridi.",
+        "answer": false
+      },
+      {
+        "statement": "Chumchuqchaning qanoti og‘ridi.",
+        "answer": true
+      },
+      {
+        "statement": "Momiqvoy chumchuqchaga yordam bermadi.",
+        "answer": false
+      },
+      {
+        "statement": "Tipratikan chumchuqchani davoladi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Momiqvoy senga yoqdimi?",
+      "Nima uchun do‘stga yordam berish kerak?",
+      "Sen do‘stingga yordam berasanmi?",
+      "Mehribon bola qanday bo‘ladi?"
+    ],
+    "creative": {
+      "prompt": "Men mehribon bo‘laman, chunki ____________________________________",
+      "sample": "Men mehribon bo‘laman, chunki mehribon bola doimo do‘st orttiradi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "qaldirgoch-va-daraxt-1-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Qaldirg‘och",
+      "daraxt",
+      "hovli",
+      "bahor",
+      "shox",
+      "in",
+      "don",
+      "shamol",
+      "qimirladi",
+      "asrayman",
+      "buzilmadi",
+      "barg",
+      "hasharot",
+      "yordam",
+      "do‘stlik"
+    ],
+    "comprehension": [
+      {
+        "q": "Katta daraxt qayerda o‘sar ekan?",
+        "a": "Hovlida"
+      },
+      {
+        "q": "Bahor kelganda qaldirg‘och qayerga in quribdi?",
+        "a": "Daraxt shoxlariga"
+      },
+      {
+        "q": "Qaldirg‘och bolalariga nima tashib kelar ekan?",
+        "a": "Don"
+      },
+      {
+        "q": "Bir kuni nima esibdi?",
+        "a": "Kuchli shamol"
+      },
+      {
+        "q": "Shamolda nima qimirlay boshlabdi?",
+        "a": "Qaldirg‘ochning ini"
+      },
+      {
+        "q": "Daraxt qaldirg‘ochga nima dedi?",
+        "a": "Qo‘rqma, men seni asrayman"
+      },
+      {
+        "q": "Shamol tinigach, in nima bo‘ldi?",
+        "a": "Buzilmadi"
+      },
+      {
+        "q": "Yoz kelganda qaldirg‘och daraxtga qanday yordam berdi?",
+        "a": "Zararli hasharotlarni yeb"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Qaldirg‘och qayerga in quribdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Uyning ichiga"
+          },
+          {
+            "letter": "B",
+            "text": "Daraxt shoxiga"
+          },
+          {
+            "letter": "C",
+            "text": "Suvga"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Qaldirg‘och bolalariga nima olib kelar ekan?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Olma"
+          },
+          {
+            "letter": "B",
+            "text": "Don"
+          },
+          {
+            "letter": "C",
+            "text": "Sut"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Bir kuni nima esibdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yomg‘ir"
+          },
+          {
+            "letter": "B",
+            "text": "Qor"
+          },
+          {
+            "letter": "C",
+            "text": "Kuchli shamol"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "q": "Shamolda nima qimirlay boshlabdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Daraxt ildizi"
+          },
+          {
+            "letter": "B",
+            "text": "Qaldirg‘ochning ini"
+          },
+          {
+            "letter": "C",
+            "text": "Uy eshigi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Daraxt qaldirg‘ochga nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ketib qol"
+          },
+          {
+            "letter": "B",
+            "text": "Qo‘rqma, men seni asrayman"
+          },
+          {
+            "letter": "C",
+            "text": "Men seni tanimayman"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Qaldirg‘och daraxtga qanday yordam berdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Don sepdi"
+          },
+          {
+            "letter": "B",
+            "text": "Barglarni sug‘ordi"
+          },
+          {
+            "letter": "C",
+            "text": "Zararli hasharotlarni yedi"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Urishishga"
+          },
+          {
+            "letter": "B",
+            "text": "Yordam va do‘stlikka"
+          },
+          {
+            "letter": "C",
+            "text": "Dangasalikka"
+          }
+        ],
+        "correct": "B"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "hovlida",
+        "qaldirg‘och",
+        "in",
+        "shamol",
+        "daraxt",
+        "hasharotlarni",
+        "do‘stlar"
+      ],
+      "sentences": [
+        "Bir __________ katta daraxt o‘sar ekan.",
+        "Bahor kelganda __________ daraxt shoxlariga in quribdi.",
+        "Qushning __________ qimirlay boshlabdi.",
+        "Bir kuni kuchli __________ esibdi.",
+        "“Qo‘rqma, men seni asrayman”, debdi __________.",
+        "Qaldirg‘och barglar orasidagi zararli __________ yebdi.",
+        "“__________ bir-biriga yordam bersa, hayot go‘zal bo‘ladi”, debdi daraxt."
+      ],
+      "answers": [
+        "hovlida",
+        "qaldirg‘och",
+        "in",
+        "shamol",
+        "daraxt",
+        "hasharotlarni",
+        "do‘stlar"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Katta daraxt hovlida o‘sar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Qaldirg‘och daraxtga in qurdi.",
+        "answer": true
+      },
+      {
+        "statement": "Qaldirg‘och bolalariga don olib kelar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Bir kuni kuchli shamol esdi.",
+        "answer": true
+      },
+      {
+        "statement": "Qaldirg‘ochning ini buzilib ketdi.",
+        "answer": false
+      },
+      {
+        "statement": "Daraxt qaldirg‘ochni asradi.",
+        "answer": true
+      },
+      {
+        "statement": "Qaldirg‘och daraxtga yordam bermadi.",
+        "answer": false
+      }
+    ],
+    "oral": [
+      "Daraxt yaxshi ish qildimi?",
+      "Qaldirg‘och daraxtga qanday yordam berdi?",
+      "Nima uchun do‘stlar bir-biriga yordam berishi kerak?",
+      "Sening do‘sting bormi?",
+      "Sen do‘stingga qanday yordam berasan?"
+    ],
+    "creative": {
+      "prompt": "Men do‘stlarimga yordam beraman, chunki ___________________________________",
+      "sample": "Men do‘stlarimga yordam beraman, chunki haqiqiy do‘stlik yordam bilan mustahkamlanadi.."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "rostgoy-bola-1-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Rostgo‘y",
+      "bola",
+      "qishloq",
+      "aqlli",
+      "koptok",
+      "kosa",
+      "sindi",
+      "qo‘rqdi",
+      "kechiring",
+      "rost",
+      "uy",
+      "fazilat"
+    ],
+    "comprehension": [
+      {
+        "q": "Bolaning ismi nima?",
+        "a": "Ali"
+      },
+      {
+        "q": "Ali qanday bola edi?",
+        "a": "Aqlli bola"
+      },
+      {
+        "q": "Ali uyda nima o‘ynadi?",
+        "a": "Koptok"
+      },
+      {
+        "q": "Koptok nimaga tegdi?",
+        "a": "Kosaga"
+      },
+      {
+        "q": "Kosa nima bo‘ldi?",
+        "a": "Sinib ketdi"
+      },
+      {
+        "q": "Ali avval nima qildi?",
+        "a": "Indamay turdi"
+      },
+      {
+        "q": "Keyin Ali nima dedi?",
+        "a": "Rostini aytdi"
+      },
+      {
+        "q": "Onasi Aliga nima dedi?",
+        "a": "Rost gapirganing yaxshi, dedi"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Ertakdagi bolaning ismi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Vali"
+          },
+          {
+            "letter": "B",
+            "text": "Ali"
+          },
+          {
+            "letter": "C",
+            "text": "Olim"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ali uyda nima o‘ynadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Koptok"
+          },
+          {
+            "letter": "B",
+            "text": "Mashina"
+          },
+          {
+            "letter": "C",
+            "text": "Kubik"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Koptok nimaga tegdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Kitobga"
+          },
+          {
+            "letter": "B",
+            "text": "Kosaga"
+          },
+          {
+            "letter": "C",
+            "text": "Eshikka"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Kosa nima bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yo‘qoldi"
+          },
+          {
+            "letter": "B",
+            "text": "Sindi"
+          },
+          {
+            "letter": "C",
+            "text": "Chizildi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ali onasiga nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Men sindirmadim"
+          },
+          {
+            "letter": "B",
+            "text": "Kechiring, men sindirib qo‘ydim"
+          },
+          {
+            "letter": "C",
+            "text": "Bilmayman"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yolg‘on gapirishga"
+          },
+          {
+            "letter": "B",
+            "text": "Rost gapirishga"
+          },
+          {
+            "letter": "C",
+            "text": "Uyda yugurishga"
+          }
+        ],
+        "correct": "B"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Ali",
+        "koptok",
+        "kosa",
+        "rostini",
+        "kechiring"
+      ],
+      "sentences": [
+        "Bolaning ismi __________ edi.",
+        "Ali uyda __________ o‘ynadi.",
+        "Koptok __________ ga tegdi.",
+        "Kosa sinib ketgach, Ali __________ aytdi.",
+        "Ali: “Oyijon, __________”, dedi."
+      ],
+      "answers": [
+        "Ali",
+        "koptok",
+        "kosa",
+        "rostini",
+        "kechiring"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Bolaning ismi Ali edi.",
+        "answer": true
+      },
+      {
+        "statement": "Ali uyda koptok o‘ynadi.",
+        "answer": true
+      },
+      {
+        "statement": "Koptok kosaga tegmadi.",
+        "answer": false
+      },
+      {
+        "statement": "Kosa sinib ketdi.",
+        "answer": true
+      },
+      {
+        "statement": "Ali yolg‘on gapirdi.",
+        "answer": false
+      },
+      {
+        "statement": "Ali rostini aytdi.",
+        "answer": true
+      },
+      {
+        "statement": "Onasi Alini rost gapirgani uchun maqtadi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Ali yaxshi ish qildimi?",
+      "Nima uchun rost gapirish kerak?",
+      "Sen biror narsani sindirib qo‘ysang, nima qilasan?",
+      "Onang yoki otangga rost gapirasanmi?",
+      "Rostgo‘y bola qanday bo‘ladi?"
+    ],
+    "creative": {
+      "prompt": "Men rostgo‘y bo‘laman, chunki _____________________________________",
+      "sample": "Men rostgo‘y bo‘laman, chunki rostgo‘ylik yaxshi fazilatdir.."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "sehrli-urug-1-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Urug‘",
+      "sehrli",
+      "bobo",
+      "hovli",
+      "ekdi",
+      "suv quydi",
+      "quyosh",
+      "nihol",
+      "gul",
+      "g‘amxo‘rlik",
+      "hayron",
+      "mehnat",
+      "mehr",
+      "natija"
+    ],
+    "comprehension": [
+      {
+        "q": "Bolaning ismi nima?",
+        "a": "Diyor"
+      },
+      {
+        "q": "Diyor urug‘ni kimdan oldi?",
+        "a": "Bobosidan"
+      },
+      {
+        "q": "Bobosi unga nima berdi?",
+        "a": "Kichkina urug‘"
+      },
+      {
+        "q": "Diyor urug‘ni qayerga ekdi?",
+        "a": "Hovliga"
+      },
+      {
+        "q": "Diyor har kuni nima qildi?",
+        "a": "Suv quydi"
+      },
+      {
+        "q": "Urug‘dan avval nima chiqdi?",
+        "a": "Nihol"
+      },
+      {
+        "q": "Keyin nima ochildi?",
+        "a": "Chiroyli gul"
+      },
+      {
+        "q": "Gulning hidi qayerga taraldi?",
+        "a": "Butun hovliga"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Diyor urug‘ni kimdan oldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Bobosidan"
+          },
+          {
+            "letter": "B",
+            "text": "Do‘stidan"
+          },
+          {
+            "letter": "C",
+            "text": "Onasidan"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Bobosi Diyorga nima berdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Koptok"
+          },
+          {
+            "letter": "B",
+            "text": "Urug‘"
+          },
+          {
+            "letter": "C",
+            "text": "Kitob"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Diyor urug‘ni qayerga ekdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Dalaga"
+          },
+          {
+            "letter": "B",
+            "text": "Hovliga"
+          },
+          {
+            "letter": "C",
+            "text": "Ko‘chaga"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Diyor gulga har kuni nima quydi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Suv"
+          },
+          {
+            "letter": "B",
+            "text": "Sut"
+          },
+          {
+            "letter": "C",
+            "text": "Sharbat"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Urug‘dan nima chiqdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Tosh"
+          },
+          {
+            "letter": "B",
+            "text": "Nihol"
+          },
+          {
+            "letter": "C",
+            "text": "Koptok"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Mehnat va mehrga"
+          },
+          {
+            "letter": "B",
+            "text": "Dangasalikka"
+          },
+          {
+            "letter": "C",
+            "text": "Urug‘ni tashlab yuborishga"
+          }
+        ],
+        "correct": "A"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Diyor",
+        "urug‘",
+        "hovliga",
+        "suv",
+        "nihol",
+        "gul"
+      ],
+      "sentences": [
+        "Bolaning ismi __________ edi.",
+        "Bobosi unga kichkina __________ berdi.",
+        "Diyor urug‘ni __________ ekdi.",
+        "U har kuni gulga __________ quydi.",
+        "Urug‘dan kichkina __________ chiqdi.",
+        "Keyin chiroyli __________ ochildi."
+      ],
+      "answers": [
+        "Diyor",
+        "urug‘",
+        "hovliga",
+        "suv",
+        "nihol",
+        "gul"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Bolaning ismi Diyor edi.",
+        "answer": true
+      },
+      {
+        "statement": "Diyor urug‘ni bobosidan oldi.",
+        "answer": true
+      },
+      {
+        "statement": "Diyor urug‘ni ko‘lga tashladi.",
+        "answer": false
+      },
+      {
+        "statement": "Diyor har kuni suv quydi.",
+        "answer": true
+      },
+      {
+        "statement": "Urug‘dan kichkina nihol chiqdi.",
+        "answer": true
+      },
+      {
+        "statement": "Gul ochilmadi.",
+        "answer": false
+      },
+      {
+        "statement": "Yonidagi bola hayron qoldi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Diyor yaxshi ish qildimi?",
+      "Nima uchun gulga suv quyish kerak?",
+      "Sen gul ekkanmisan?",
+      "O‘simliklarga qanday g‘amxo‘rlik qilasan?",
+      "Mehnat qilgan bola qanday natijaga erishadi?"
+    ],
+    "creative": {
+      "prompt": "Men gullarga g‘amxo‘rlik qilaman, chunki ____________________________________",
+      "sample": "Men gullarga g‘amxo‘rlik qilaman, chunki ular chiroyli bo‘lib o‘sadi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "yoqolgan-qalam-1-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Sinf",
+      "Nodira",
+      "tartibli",
+      "ozoda",
+      "qalam",
+      "yo‘qoldi",
+      "parta",
+      "topdi",
+      "Jasur",
+      "egasi",
+      "xafa",
+      "qaytardi",
+      "xursand",
+      "halol",
+      "maqtadi"
+    ],
+    "comprehension": [
+      {
+        "q": "Qizning ismi nima?",
+        "a": "Nodira"
+      },
+      {
+        "q": "Nodira qanday qiz edi?",
+        "a": "Tartibli, ozoda"
+      },
+      {
+        "q": "Nodiraning nimasi yo‘qoldi?",
+        "a": "Qizil qalami"
+      },
+      {
+        "q": "Nodira nima deb so‘radi?",
+        "a": "Qalamimni kim ko‘rdi?"
+      },
+      {
+        "q": "Qalamni kim topdi?",
+        "a": "Jasur"
+      },
+      {
+        "q": "Jasur qalamni qayerdan topdi?",
+        "a": "Partaning tagidan"
+      },
+      {
+        "q": "Jasur avval nima qilmoqchi bo‘ldi?",
+        "a": "O‘ziga olib qo‘ymoqchi bo‘ldi"
+      },
+      {
+        "q": "Keyin Jasur nima qildi?",
+        "a": "Qalamni Nodiraga berdi"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Ertakdagi qizning ismi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Nodira"
+          },
+          {
+            "letter": "B",
+            "text": "Lola"
+          },
+          {
+            "letter": "C",
+            "text": "Malika"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Nodira qanday qiz edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Tartibli, ozoda"
+          },
+          {
+            "letter": "B",
+            "text": "Dangasa"
+          },
+          {
+            "letter": "C",
+            "text": "Qo‘pol"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Nodiraning nimasi yo‘qoldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Daftari"
+          },
+          {
+            "letter": "B",
+            "text": "Qizil qalami"
+          },
+          {
+            "letter": "C",
+            "text": "Kitobi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Qalamni kim topdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Jasur"
+          },
+          {
+            "letter": "B",
+            "text": "O‘qituvchi"
+          },
+          {
+            "letter": "C",
+            "text": "Nodira"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Jasur qalamni qayerdan topdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sumkadan"
+          },
+          {
+            "letter": "B",
+            "text": "Partaning tagidan"
+          },
+          {
+            "letter": "C",
+            "text": "Doska yonidan"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Jasur nima qildi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qalamni yashirdi"
+          },
+          {
+            "letter": "B",
+            "text": "Qalamni Nodiraga berdi"
+          },
+          {
+            "letter": "C",
+            "text": "Qalamni sindirdi"
+          }
+        ],
+        "correct": "B"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Nodira",
+        "qalam",
+        "Jasur",
+        "parta",
+        "Nodiraga",
+        "halol"
+      ],
+      "sentences": [
+        "Qizning ismi __________ edi.",
+        "Uning qizil __________ yo‘qoldi.",
+        "Qalamni __________ topdi.",
+        "Jasur qalamni __________ tagidan topdi.",
+        "Jasur qalamni __________ berdi.",
+        "Nodira: “Sen __________ bola ekansan”, dedi."
+      ],
+      "answers": [
+        "Nodira",
+        "qalam",
+        "Jasur",
+        "parta",
+        "Nodiraga",
+        "halol"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Nodira sinfda o‘qir edi.",
+        "answer": true
+      },
+      {
+        "statement": "Nodira tartibli va ozoda qiz edi.",
+        "answer": true
+      },
+      {
+        "statement": "Nodiraning ko‘k qalami yo‘qoldi.",
+        "answer": false
+      },
+      {
+        "statement": "Jasur qalamni partaning tagidan topdi.",
+        "answer": true
+      },
+      {
+        "statement": "Jasur qalamni o‘ziga olib qo‘ydi.",
+        "answer": false
+      },
+      {
+        "statement": "Jasur qalamni Nodiraga berdi.",
+        "answer": true
+      },
+      {
+        "statement": "Nodira Jasurga rahmat dedi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Nodira qalamini yo‘qotganda nima qildi?",
+      "Jasur yaxshi ish qildimi?",
+      "Nima uchun birovning narsasini olish mumkin emas?",
+      "Sen yo‘qolgan narsa topsang nima qilasan?",
+      "Halol bola qanday bo‘ladi?"
+    ],
+    "creative": {
+      "prompt": "Men halol bo‘laman, chunki ____________________________________",
+      "sample": "Men halol bo‘laman, chunki birovning narsasini egasiga qaytarish kerak."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "adashgan-bulutcha-2-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Oppoqoy",
+      "bulutcha",
+      "yomg‘ir",
+      "sug‘ormoq",
+      "yolg‘iz",
+      "ajralmoq",
+      "shamol",
+      "cho‘l",
+      "adashmoq",
+      "mehribon",
+      "kechirim",
+      "birlashmoq",
+      "qishloq",
+      "yashnamoq"
+    ],
+    "comprehension": [
+      {
+        "q": "Kichkina bulutchaning ismi nima?",
+        "a": "Oppoqoy"
+      },
+      {
+        "q": "Oppoqoy qayerda yashar edi?",
+        "a": "Osmonda"
+      },
+      {
+        "q": "U kimlar bilan birga suzib yurardi?",
+        "a": "Katta bulutlar bilan"
+      },
+      {
+        "q": "Katta bulutlar yerga nima yog‘dirishar edi?",
+        "a": "Yomg‘ir"
+      },
+      {
+        "q": "Yomg‘ir nimalarni sug‘orar edi?",
+        "a": "Daraxtlar va gullarni"
+      },
+      {
+        "q": "Oppoqoy nima deb o‘yladi?",
+        "a": "O‘zi ham yolg‘iz yomg‘ir yog‘dira olishini"
+      },
+      {
+        "q": "Oppoqoy qayerga ketib qoldi?",
+        "a": "Uzoqqa suzib ketdi"
+      },
+      {
+        "q": "Shamol uni qayerga olib bordi?",
+        "a": "Cho‘l tomonga"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Bulutchaning ismi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qoravoy"
+          },
+          {
+            "letter": "B",
+            "text": "Oppoqoy"
+          },
+          {
+            "letter": "C",
+            "text": "Ziyrakcha"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Oppoqoy qayerda yashar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Dalada"
+          },
+          {
+            "letter": "B",
+            "text": "Osmonda"
+          },
+          {
+            "letter": "C",
+            "text": "O‘rmonda"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Katta bulutlar nima yog‘dirishar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qor"
+          },
+          {
+            "letter": "B",
+            "text": "Shamol"
+          },
+          {
+            "letter": "C",
+            "text": "Yomg‘ir"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "q": "Shamol Oppoqoyni qayerga olib bordi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qishloqqa"
+          },
+          {
+            "letter": "B",
+            "text": "Cho‘lga"
+          },
+          {
+            "letter": "C",
+            "text": "Bog‘ga"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Oppoqoy kimdan ajralib qoldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Onasidan"
+          },
+          {
+            "letter": "B",
+            "text": "Do‘stlaridan"
+          },
+          {
+            "letter": "C",
+            "text": "Daraxtlardan"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Mehribon shamol nima qildi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Uni uzoqqa uchirdi"
+          },
+          {
+            "letter": "B",
+            "text": "Uni yana katta bulutlar yoniga olib bordi"
+          },
+          {
+            "letter": "C",
+            "text": "Uni yomg‘irga aylantirdi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yolg‘iz yurishga"
+          },
+          {
+            "letter": "B",
+            "text": "Do‘stlardan ajralishga"
+          },
+          {
+            "letter": "C",
+            "text": "Maslahat bilan ish qilishga"
+          }
+        ],
+        "correct": "C"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Oppoqoy",
+        "yomg‘ir",
+        "cho‘l",
+        "adashdim",
+        "shamol",
+        "qishloq"
+      ],
+      "sentences": [
+        "Kichkina bulutchaning ismi __________ edi.",
+        "Katta bulutlar yerga __________ yog‘dirishar edi.",
+        "Shamol uni __________ tomonga olib bordi.",
+        "Oppoqoy “Men __________” deb yig‘ladi.",
+        "Mehribon __________ unga yordam berdi.",
+        "Bulutlar __________ ustidan yomg‘ir yog‘dirishdi."
+      ],
+      "answers": [
+        "Oppoqoy",
+        "yomg‘ir",
+        "cho‘l",
+        "adashdim",
+        "shamol",
+        "qishloq"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Oppoqoy osmonda yashar edi.",
+        "answer": true
+      },
+      {
+        "statement": "U katta bulutlar bilan birga yurardi.",
+        "answer": true
+      },
+      {
+        "statement": "Katta bulutlar yerga qum yog‘dirishar edi.",
+        "answer": false
+      },
+      {
+        "statement": "Oppoqoy yolg‘iz yurishni xohladi.",
+        "answer": true
+      },
+      {
+        "statement": "Shamol uni bog‘ tomonga olib bordi.",
+        "answer": false
+      },
+      {
+        "statement": "Oppoqoy cho‘lda adashib qoldi.",
+        "answer": true
+      },
+      {
+        "statement": "Mehribon shamol unga yordam berdi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Oppoqoy nega do‘stlaridan ajralib ketdi?",
+      "Nima uchun yolg‘iz ish qilish ba’zan qiyin bo‘ladi?",
+      "Mehribon shamol qanday yaxshilik qildi?",
+      "Do‘stlar bilan birga bo‘lishning foydasi nima?",
+      "Sen biror ishni kattalardan maslahat olib qilganmisan?"
+    ],
+    "creative": {
+      "prompt": "Men do‘stlarim bilan ahil bo‘laman, chunki____________________________________",
+      "sample": "Men do‘stlarim bilan ahil bo‘laman, chunki birgalikda ish qilish oson va foydalidir."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "bilimdon-qargacha-2-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Qarg‘acha",
+      "Qoravoy",
+      "bog‘",
+      "qiziquvchan",
+      "maktab",
+      "kitob",
+      "daftar",
+      "deraza",
+      "o‘qituvchi",
+      "harf",
+      "son",
+      "tabiat",
+      "bahor",
+      "bilimdon",
+      "hurmat"
+    ],
+    "comprehension": [
+      {
+        "q": "Qarg‘achaning ismi nima?",
+        "a": "Qoravoy"
+      },
+      {
+        "q": "Qoravoy qayerda yashar edi?",
+        "a": "Katta bog‘da"
+      },
+      {
+        "q": "Qoravoy qanday qarg‘acha edi?",
+        "a": "Qiziquvchan"
+      },
+      {
+        "q": "U har kuni nimani yaxshi ko‘rar edi?",
+        "a": "Yangi narsa o‘rganishni"
+      },
+      {
+        "q": "Bolalar qayerga ketayotgan edi?",
+        "a": "Maktabga"
+      },
+      {
+        "q": "Bolalar qo‘llarida nima ko‘tarib borishar edi?",
+        "a": "Kitob va daftar"
+      },
+      {
+        "q": "Qoravoy qayerda dars tingladi?",
+        "a": "Maktab derazasi yonida"
+      },
+      {
+        "q": "O‘qituvchi bolalarga nimalarni o‘rgatar edi?",
+        "a": "Harflar, sonlar va tabiat haqida ma’lumotlar"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Qarg‘achaning ismi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ziyrakcha"
+          },
+          {
+            "letter": "B",
+            "text": "Qoravoy"
+          },
+          {
+            "letter": "C",
+            "text": "Momiqvoy"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Qoravoy qayerda yashar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Katta bog‘da"
+          },
+          {
+            "letter": "B",
+            "text": "Tog‘da"
+          },
+          {
+            "letter": "C",
+            "text": "Uyda"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Bolalar qayerga ketayotgan edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Bozorga"
+          },
+          {
+            "letter": "B",
+            "text": "Maktabga"
+          },
+          {
+            "letter": "C",
+            "text": "Dalaga"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Qoravoy nimani xohladi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Uxlashni"
+          },
+          {
+            "letter": "B",
+            "text": "Bilimli bo‘lishni"
+          },
+          {
+            "letter": "C",
+            "text": "O‘ynashni"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "O‘qituvchi bolalarga nimalarni o‘rgatdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Harflar, sonlar va tabiat haqida ma’lumotlar"
+          },
+          {
+            "letter": "B",
+            "text": "Faqat qo‘shiq aytishni"
+          },
+          {
+            "letter": "C",
+            "text": "Faqat rasm chizishni"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Bilim olishga"
+          },
+          {
+            "letter": "B",
+            "text": "Dangasa bo‘lishga"
+          },
+          {
+            "letter": "C",
+            "text": "Bahslashishga"
+          }
+        ],
+        "correct": "A"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Qoravoy",
+        "bog‘da",
+        "maktabga",
+        "derazasi",
+        "bahorda",
+        "bilimdon"
+      ],
+      "sentences": [
+        "Qarg‘achaning ismi __________ edi.",
+        "U katta __________ yashar edi.",
+        "Bolalar __________ ketayotgan edi.",
+        "Qoravoy maktab __________ yoniga qo‘ndi.",
+        "Daraxtlar __________ gullaydi.",
+        "Qushlar Qoravoyni __________ deb maqtashdi."
+      ],
+      "answers": [
+        "Qoravoy",
+        "bog‘da",
+        "maktabga",
+        "derazasi",
+        "bahorda",
+        "bilimdon"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Qarg‘achaning ismi Qoravoy edi.",
+        "answer": true
+      },
+      {
+        "statement": "Qoravoy katta bog‘da yashar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Qoravoy bilim olishni xohlamadi.",
+        "answer": false
+      },
+      {
+        "statement": "Bolalar maktabga ketayotgan edi.",
+        "answer": true
+      },
+      {
+        "statement": "Qoravoy darsni maktab derazasi yonida tingladi.",
+        "answer": true
+      },
+      {
+        "statement": "O‘qituvchi bolalarga harflarni o‘rgatdi.",
+        "answer": true
+      },
+      {
+        "statement": "Qushlar daraxtlar nega gullashini darrov bildi.",
+        "answer": false
+      }
+    ],
+    "oral": [
+      "Qoravoy qanday qush edi?",
+      "Nima uchun Qoravoy maktabga qiziqdi?",
+      "Bilimli bo‘lish nima uchun kerak?",
+      "Sen maktabda nimalarni o‘rganasan?",
+      "Qoravoyning qaysi ishi sizga yoqdi?"
+    ],
+    "creative": {
+      "prompt": "Men bilimli bo‘lishni xohlayman, chunki ____________________________________",
+      "sample": "Men bilimli bo‘lishni xohlayman, chunki bilim insonni hurmatli qiladi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "gapiradigan-daftar-2-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Anvar",
+      "daftar",
+      "tartibsiz",
+      "sahifa",
+      "bukilgan",
+      "siyoh",
+      "uy vazifasi",
+      "bilim",
+      "saqlamoq",
+      "xijolat",
+      "ozoda",
+      "muqovalamoq",
+      "chiroyli",
+      "qator",
+      "o‘zgarish",
+      "minnatdor"
+    ],
+    "comprehension": [
+      {
+        "q": "Bolaning ismi nima?",
+        "a": "Anvar"
+      },
+      {
+        "q": "Anvar nechanchi sinfda o‘qir edi?",
+        "a": "Ikkinchi sinfda"
+      },
+      {
+        "q": "Anvar darslarini qanday bilardi?",
+        "a": "Yaxshi bilardi"
+      },
+      {
+        "q": "Anvar daftarini qanday tutardi?",
+        "a": "Tartibsiz tutardi"
+      },
+      {
+        "q": "Daftarning sahifalari qanday edi?",
+        "a": "Ba’zi sahifalari bukilgan edi"
+      },
+      {
+        "q": "Daftarning ba’zi joylari nimaga bo‘yalgan edi?",
+        "a": "Siyohga"
+      },
+      {
+        "q": "Anvar kechqurun nima yozmoqchi bo‘ldi?",
+        "a": "Uy vazifasini"
+      },
+      {
+        "q": "Daftar Anvarga nima dedi?",
+        "a": "“Anvar, menga nega bunday qaraysan?” dedi"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Anvar nechanchi sinfda o‘qir edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Birinchi sinfda"
+          },
+          {
+            "letter": "B",
+            "text": "Ikkinchi sinfda"
+          },
+          {
+            "letter": "C",
+            "text": "Uchinchi sinfda"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Anvar daftarini qanday tutardi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Juda ozoda"
+          },
+          {
+            "letter": "B",
+            "text": "Tartibsiz"
+          },
+          {
+            "letter": "C",
+            "text": "Muqovalangan"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Daftarning ba’zi joylari nimaga bo‘yalgan edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Suvga"
+          },
+          {
+            "letter": "B",
+            "text": "Bo‘yoqqa"
+          },
+          {
+            "letter": "C",
+            "text": "Siyohga"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "q": "Daftar Anvarga nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Meni ozoda tut"
+          },
+          {
+            "letter": "B",
+            "text": "Meni tashlab yubor"
+          },
+          {
+            "letter": "C",
+            "text": "Meni berkitib qo‘y"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Anvar ertasi kundan boshlab daftarini nima qildi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yirtib tashladi"
+          },
+          {
+            "letter": "B",
+            "text": "Muqovaladi"
+          },
+          {
+            "letter": "C",
+            "text": "Yo‘qotib qo‘ydi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "O‘qituvchi Anvarning daftarini ko‘rib nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Daftaring juda chiroyli bo‘libdi"
+          },
+          {
+            "letter": "B",
+            "text": "Daftaring yo‘qolibdi"
+          },
+          {
+            "letter": "C",
+            "text": "Daftaring iflos bo‘libdi"
+          }
+        ],
+        "correct": null
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Anvar",
+        "daftarini",
+        "tartibsiz",
+        "siyohga",
+        "ozoda",
+        "muqovalabdi",
+        "chiroyli"
+      ],
+      "sentences": [
+        "Bolaning ismi __________ edi.",
+        "Anvar __________ yaxshi tutmas edi.",
+        "U daftarini __________ tutardi.",
+        "Daftarning ba’zi joylari __________ bo‘yalgan edi.",
+        "Anvar daftarini endi __________ tutishga va’da berdi.",
+        "Ertasi kundan boshlab Anvar daftarini __________.",
+        "O‘qituvchi: “Daftaring juda __________ bo‘libdi”, dedi."
+      ],
+      "answers": [
+        "Anvar",
+        "daftarini",
+        "tartibsiz",
+        "siyohga",
+        "ozoda",
+        "muqovalabdi",
+        "chiroyli"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Anvar ikkinchi sinfda o‘qir edi.",
+        "answer": true
+      },
+      {
+        "statement": "Anvar darslarini yaxshi bilmas edi.",
+        "answer": false
+      },
+      {
+        "statement": "Anvar daftarini tartibsiz tutardi.",
+        "answer": true
+      },
+      {
+        "statement": "Daftarning sahifalari toza va tekis edi.",
+        "answer": false
+      },
+      {
+        "statement": "Daftar Anvar bilan gaplashdi.",
+        "answer": true
+      },
+      {
+        "statement": "Anvar qo‘rqib ketdi.",
+        "answer": true
+      },
+      {
+        "statement": "Daftar Anvarning bilimlarini saqlashini aytdi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Anvar ertak boshida daftarini qanday tutardi?",
+      "Daftar nima uchun xafa bo‘ldi?",
+      "Nima uchun daftarni ozoda tutish kerak?",
+      "O‘quv qurollariga qanday munosabatda bo‘lish kerak?",
+      "Sen daftarlaringni qanday saqlaysan?",
+      "Chiroyli yozish uchun nimalarga e’tibor berish kerak?"
+    ],
+    "creative": {
+      "prompt": "Men daftarimni ozoda tutaman, chunki ____________________________________",
+      "sample": "Men daftarimni ozoda tutaman, chunki u mening bilimlarimni saqlaydi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "maqtanchoq-qalam-2-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Qalam",
+      "quti",
+      "rangli",
+      "qizil",
+      "ko‘k",
+      "sariq",
+      "yashil",
+      "maqtanchoq",
+      "kerakli",
+      "gul",
+      "olma",
+      "bayroq",
+      "osmon",
+      "daryo",
+      "quyosh",
+      "bog‘",
+      "daraxt",
+      "barg",
+      "maysa"
+    ],
+    "comprehension": [
+      {
+        "q": "Qalamlar qayerda yashar edi?",
+        "a": "Bir qutida"
+      },
+      {
+        "q": "Qizil qalam har kuni nima qilardi?",
+        "a": "Maqtanardi"
+      },
+      {
+        "q": "Qizil qalam bilan nimalar chizishadi?",
+        "a": "Gul, olma, bayroq"
+      },
+      {
+        "q": "Ko‘k qalam nima dedi?",
+        "a": "“Men kerakliman”, dedi"
+      },
+      {
+        "q": "Ko‘k qalam bilan nimalar chizishadi?",
+        "a": "Osmon va daryo"
+      },
+      {
+        "q": "Sariq qalam nima dedi?",
+        "a": "“Quyoshni mensiz chizib bo‘lmaydi”, dedi"
+      },
+      {
+        "q": "Yashil qalam nima qildi?",
+        "a": "Jim turdi, maqtanmadi"
+      },
+      {
+        "q": "Mohira nima chizmoqchi bo‘ldi?",
+        "a": "Bog‘ rasmini"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Qalamlar qayerda yashar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qutida"
+          },
+          {
+            "letter": "B",
+            "text": "Bog‘da"
+          },
+          {
+            "letter": "C",
+            "text": "Daryoda"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Qaysi qalam har kuni maqtanardi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yashil qalam"
+          },
+          {
+            "letter": "B",
+            "text": "Qizil qalam"
+          },
+          {
+            "letter": "C",
+            "text": "Oddiy qalam"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Qizil qalam bilan nimalar chizishadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Osmon va daryo"
+          },
+          {
+            "letter": "B",
+            "text": "Gul, olma, bayroq"
+          },
+          {
+            "letter": "C",
+            "text": "Daraxt va barg"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ko‘k qalam bilan nimalar chizishadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Osmon va daryo"
+          },
+          {
+            "letter": "B",
+            "text": "Quyosh va gul"
+          },
+          {
+            "letter": "C",
+            "text": "Maysa va barg"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Quyoshni chizish uchun qaysi qalam kerak bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sariq qalam"
+          },
+          {
+            "letter": "B",
+            "text": "Ko‘k qalam"
+          },
+          {
+            "letter": "C",
+            "text": "Yashil qalam"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Daraxt, barg va maysalar uchun qaysi qalam kerak bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qizil qalam"
+          },
+          {
+            "letter": "B",
+            "text": "Yashil qalam"
+          },
+          {
+            "letter": "C",
+            "text": "Sariq qalam"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Qalamlar oxirida nimani tushunishdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Faqat bitta qalam kerakligini"
+          },
+          {
+            "letter": "B",
+            "text": "Barcha ranglar kerakligini"
+          },
+          {
+            "letter": "C",
+            "text": "Rasm chizish kerak emasligini"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "O‘zini boshqalardan ustun qo‘ymaslikka"
+          },
+          {
+            "letter": "B",
+            "text": "Maqtanishga"
+          },
+          {
+            "letter": "C",
+            "text": "Faqat bitta rangdan foydalanishga"
+          }
+        ],
+        "correct": "A"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "qalamlar",
+        "qizil",
+        "ko‘k",
+        "sariq",
+        "yashil",
+        "bog‘",
+        "kerak"
+      ],
+      "sentences": [
+        "Bir qutida rangli __________ yashar edi.",
+        "Gul, olma va bayroq uchun __________ qalam kerak bo‘ldi.",
+        "Osmon va daryo uchun __________ qalam kerak bo‘ldi.",
+        "Quyosh uchun __________ qalam kerak bo‘ldi.",
+        "Daraxt, barg va maysalar uchun __________ qalam kerak bo‘ldi.",
+        "Mohira __________ rasmini chizdi.",
+        "Qalamlar hammamiz __________ ekanmiz, deb tushunishdi."
+      ],
+      "answers": [
+        "qalamlar",
+        "qizil",
+        "ko‘k",
+        "sariq",
+        "yashil",
+        "bog‘",
+        "kerak"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Qalamlar bir qutida yashar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Qizil qalam har kuni maqtanardi.",
+        "answer": true
+      },
+      {
+        "statement": "Qizil qalam bilan osmon chizishadi.",
+        "answer": false
+      },
+      {
+        "statement": "Ko‘k qalam bilan osmon va daryo chizishadi.",
+        "answer": true
+      },
+      {
+        "statement": "Sariq qalam quyosh haqida gapirdi.",
+        "answer": true
+      },
+      {
+        "statement": "Yashil qalam ham maqtandi.",
+        "answer": false
+      },
+      {
+        "statement": "Mohira bog‘ rasmini chizmoqchi bo‘ldi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Qizil qalam nima uchun maqtandi?",
+      "Ko‘k qalam o‘zini nima uchun kerakli deb bildi?",
+      "Yashil qalamning jim turishi nimani bildiradi?",
+      "Mohiraning rasmi nima uchun chiroyli chiqdi?",
+      "Nima uchun o‘zini boshqalardan ustun qo‘yish yaxshi emas?",
+      "“Har bir insonning o‘z o‘rni bor” degan gapni qanday tushunasiz?"
+    ],
+    "creative": {
+      "prompt": "Men boshqalarni hurmat qilaman, chunki ____________________________________",
+      "sample": "Men boshqalarni hurmat qilaman, chunki har bir insonning o‘z o‘rni va foydali jihati bor."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "mehnatkash-ari-2-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Asaloy",
+      "ari",
+      "gulzor",
+      "shira",
+      "uya",
+      "chaqqon",
+      "mehnatkash",
+      "Kapalakoy",
+      "kapalak",
+      "o‘yin-kulgi",
+      "asal",
+      "qish",
+      "sovuq shamol",
+      "so‘lmoq",
+      "oziq",
+      "xato",
+      "qadr",
+      "kelajak"
+    ],
+    "comprehension": [
+      {
+        "q": "Arining ismi nima?",
+        "a": "Asaloy"
+      },
+      {
+        "q": "Asaloy qayerda yashar edi?",
+        "a": "Gulzorda"
+      },
+      {
+        "q": "Asaloy har kuni gullardan nima yig‘ar edi?",
+        "a": "Shira"
+      },
+      {
+        "q": "Asaloy shirani qayerga olib borar edi?",
+        "a": "Uyasiga"
+      },
+      {
+        "q": "Asaloy qanday ari edi?",
+        "a": "Chaqqon va mehnatkash"
+      },
+      {
+        "q": "Gulzorda kim bor edi?",
+        "a": "Kapalakoy ismli kapalak"
+      },
+      {
+        "q": "Kapalakoy kun bo‘yi nima qilishni yaxshi ko‘rardi?",
+        "a": "O‘ynashni"
+      },
+      {
+        "q": "Kapalakoy Asaloyga nima dedi?",
+        "a": "“Nega doim ishlaysan?” dedi"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Arining ismi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Asaloy"
+          },
+          {
+            "letter": "B",
+            "text": "Oppoqoy"
+          },
+          {
+            "letter": "C",
+            "text": "Ziyrakcha"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Asaloy qayerda yashar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Cho‘lda"
+          },
+          {
+            "letter": "B",
+            "text": "Gulzorda"
+          },
+          {
+            "letter": "C",
+            "text": "Maktabda"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Asaloy gullardan nima yig‘ar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Barg"
+          },
+          {
+            "letter": "B",
+            "text": "Shira"
+          },
+          {
+            "letter": "C",
+            "text": "Qor"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Kapalakoy kun bo‘yi nima qilishni yaxshi ko‘rardi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Mehnat qilishni"
+          },
+          {
+            "letter": "B",
+            "text": "O‘qishni"
+          },
+          {
+            "letter": "C",
+            "text": "O‘ynashni"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "q": "Asaloy nima uchun ishlardi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qishda oziq bo‘lishi uchun"
+          },
+          {
+            "letter": "B",
+            "text": "Faqat uchish uchun"
+          },
+          {
+            "letter": "C",
+            "text": "Kapalakni kuldirish uchun"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Sovuq shamollar boshlanganda gullar qanday bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ko‘payib ketdi"
+          },
+          {
+            "letter": "B",
+            "text": "So‘lib qoldi"
+          },
+          {
+            "letter": "C",
+            "text": "Yana ochildi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Kapalakoy oxirida nimani tushundi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Faqat o‘ynash kerakligini"
+          },
+          {
+            "letter": "B",
+            "text": "Mehnat va foydali ish muhimligini"
+          },
+          {
+            "letter": "C",
+            "text": "Asal kerak emasligini"
+          }
+        ],
+        "correct": "B"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Asaloy",
+        "gulzorda",
+        "shira",
+        "uyasiga",
+        "Kapalakoy",
+        "asal",
+        "mehnat"
+      ],
+      "sentences": [
+        "Arining ismi __________ edi.",
+        "Asaloy bir __________ yashar edi.",
+        "U har kuni gullardan __________ yig‘ardi.",
+        "Asaloy shirani __________ olib borardi.",
+        "__________ faqat o‘ynashni yaxshi ko‘rardi.",
+        "Asaloy Kapalakoyga ozgina __________ berdi.",
+        "Bugungi __________ ertangi kun uchun kerak."
+      ],
+      "answers": [
+        "Asaloy",
+        "gulzorda",
+        "shira",
+        "uyasiga",
+        "Kapalakoy",
+        "asal",
+        "mehnat"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Asaloy gulzorda yashar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Asaloy har kuni gullardan shira yig‘ar edi.",
+        "answer": false
+      },
+      {
+        "statement": "Asaloy dangasa ari edi.",
+        "answer": true
+      },
+      {
+        "statement": "Kapalakoy kun bo‘yi o‘ynashni yaxshi ko‘rardi.",
+        "answer": true
+      },
+      {
+        "statement": "Kapalakoy Asaloyni mehnat qilishga undadi.",
+        "answer": true
+      },
+      {
+        "statement": "Asaloy qish kelganda oziq kerakligini aytdi.",
+        "answer": false
+      },
+      {
+        "statement": "Sovuq shamollar boshlanganda gullar so‘lib qoldi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Asaloy qanday ari edi?",
+      "Kapalakoy nima uchun oziq topolmay qoldi?",
+      "Nima uchun kelajak uchun oldindan tayyorlanish kerak?",
+      "Mehnatkash bo‘lishning foydasi nimada?",
+      "Sen uyda yoki maktabda qanday foydali ish qilasan?",
+      "“Bugungi mehnat ertangi kun uchun kerak” degan gapni qanday tushunasiz?"
+    ],
+    "creative": {
+      "prompt": "Men mehnatkash bo‘laman, chunki ____________________________________",
+      "sample": "Men mehnatkash bo‘laman, chunki mehnat qilgan kishi kelajakka tayyor bo‘ladi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "mehrli-non-2-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Lola",
+      "qishloq",
+      "maktab",
+      "issiq non",
+      "sumka",
+      "tanaffus",
+      "sinfdosh",
+      "Komil",
+      "xafa",
+      "nonushta",
+      "qorni och",
+      "mehribon",
+      "rahmat",
+      "o‘qituvchi",
+      "mehr",
+      "bo‘lishmoq",
+      "yordam",
+      "fazilat",
+      "do‘stlik"
+    ],
+    "comprehension": [
+      {
+        "q": "Qizning ismi nima?",
+        "a": "Lola"
+      },
+      {
+        "q": "Lola qayerda yashar edi?",
+        "a": "Bir qishloqda"
+      },
+      {
+        "q": "Lola maktabga borayotib sumkasiga nima soldi?",
+        "a": "Onasi pishirgan issiq nonni"
+      },
+      {
+        "q": "Lola nonni qachon yemoqchi bo‘ldi?",
+        "a": "Tanaffusda"
+      },
+      {
+        "q": "Lola kimni xafa o‘tirganini ko‘rdi?",
+        "a": "Sinfdoshi Komilni"
+      },
+      {
+        "q": "Lola Komildan nima deb so‘radi?",
+        "a": "“Nega xafasan?” deb so‘radi"
+      },
+      {
+        "q": "Komil nima uchun xafa edi?",
+        "a": "Nonushta qilmay kelgani uchun"
+      },
+      {
+        "q": "Komilning qorni qanday edi?",
+        "a": "Och edi"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Qizning ismi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Lola"
+          },
+          {
+            "letter": "B",
+            "text": "Malika"
+          },
+          {
+            "letter": "C",
+            "text": "Mohira"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Lola sumkasiga nima soldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Olma"
+          },
+          {
+            "letter": "B",
+            "text": "Issiq non"
+          },
+          {
+            "letter": "C",
+            "text": "Qalam"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Lola nonni qachon yemoqchi bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Dars paytida"
+          },
+          {
+            "letter": "B",
+            "text": "Uyga qaytganda"
+          },
+          {
+            "letter": "C",
+            "text": "Tanaffusda"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "q": "Komil qanday o‘tirgan edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Xursand"
+          },
+          {
+            "letter": "B",
+            "text": "Xafa"
+          },
+          {
+            "letter": "C",
+            "text": "Kulib"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Komil nima uchun xafa edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Daftari yo‘qolgani uchun"
+          },
+          {
+            "letter": "B",
+            "text": "Nonushta qilmay kelgani uchun"
+          },
+          {
+            "letter": "C",
+            "text": "Darsga kechikkani uchun"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Lola nonini nima qildi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ikkiga bo‘ldi"
+          },
+          {
+            "letter": "B",
+            "text": "Yashirib qo‘ydi"
+          },
+          {
+            "letter": "C",
+            "text": "Yerga tashladi"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "O‘qituvchi nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "“Nonni hech kimga bermang”"
+          },
+          {
+            "letter": "B",
+            "text": "“Mehr bilan bo‘lingan non yanada shirin bo‘ladi”"
+          },
+          {
+            "letter": "C",
+            "text": "“Tanaffusda o‘ynamang”"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Do‘stga yordam berishga"
+          },
+          {
+            "letter": "B",
+            "text": "Xafa bo‘lishga"
+          },
+          {
+            "letter": "C",
+            "text": "Nonni yashirishga"
+          }
+        ],
+        "correct": "A"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Lola",
+        "nonni",
+        "tanaffusda",
+        "Komil",
+        "nonushta",
+        "yarmini",
+        "mehribon",
+        "do‘stlikni"
+      ],
+      "sentences": [
+        "Qizning ismi __________ edi.",
+        "Lola onasi pishirgan issiq __________ sumkasiga soldi.",
+        "U nonni __________ yemoqchi bo‘ldi.",
+        "Lola sinfdoshi __________ xafa o‘tirganini ko‘rdi.",
+        "Komil bugun __________ qilmay kelgan edi.",
+        "Lola: “Mana, __________ sen ye”, dedi."
+      ],
+      "answers": [
+        "Lola",
+        "nonni",
+        "tanaffusda",
+        "Komil",
+        "nonushta",
+        "yarmini",
+        "mehribon",
+        "do‘stlikni"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Lola qishloqda yashar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Lola maktabga borayotib sumkasiga issiq non soldi.",
+        "answer": true
+      },
+      {
+        "statement": "Lola nonni tanaffusda yemoqchi bo‘ldi.",
+        "answer": true
+      },
+      {
+        "statement": "Komil juda xursand o‘tirgan edi.",
+        "answer": false
+      },
+      {
+        "statement": "Komil nonushta qilmay kelgan edi.",
+        "answer": true
+      },
+      {
+        "statement": "Komilning qorni och edi.",
+        "answer": true
+      },
+      {
+        "statement": "Lola nonini Komildan yashirdi.",
+        "answer": false
+      }
+    ],
+    "oral": [
+      "Lola qanday mehribonlik qildi?",
+      "Komil nima uchun xafa edi?",
+      "Nima uchun do‘stning holidan xabar olish kerak?",
+      "“Mehr bilan bo‘lingan non yanada shirin bo‘ladi” degan gapni qanday tushunasiz?",
+      "Siz do‘stingizga qanday yordam bergansiz?",
+      "Mehribon bola qanday bo‘ladi?"
+    ],
+    "creative": {
+      "prompt": "Men do‘stimga yordam beraman, chunki ____________________________________",
+      "sample": "Men do‘stimga yordam beraman, chunki mehr do‘stlikni kuchaytiradi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "sabrsiz-nihol-2-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Nihol",
+      "bog‘",
+      "daraxt",
+      "soyali",
+      "bog‘bon",
+      "suv",
+      "yumshatmoq",
+      "sabrsiz",
+      "keksa daraxt",
+      "vaqt",
+      "quyosh nuri",
+      "parvarish",
+      "ildiz",
+      "barg",
+      "shox",
+      "qush",
+      "maqsad",
+      "erishmoq"
+    ],
+    "comprehension": [
+      {
+        "q": "Kichkina nihol qayerda o‘sar edi?",
+        "a": "Bog‘da"
+      },
+      {
+        "q": "Nihol qanday bo‘lishni xohlar edi?",
+        "a": "Katta daraxt bo‘lishni"
+      },
+      {
+        "q": "Nihol katta daraxtlar kabi qanday bo‘lishni istar edi?",
+        "a": "Soyali bo‘lishni"
+      },
+      {
+        "q": "Har kuni bog‘bon nima qilar edi?",
+        "a": "Niholga suv quyar, atrofini yumshatar edi"
+      },
+      {
+        "q": "Nihol nima deb sabrsizlandi?",
+        "a": "“Nega men tez o‘smayapman?” deb"
+      },
+      {
+        "q": "Niholga kim maslahat berdi?",
+        "a": "Yonidagi keksa daraxt"
+      },
+      {
+        "q": "Keksa daraxt nima dedi?",
+        "a": "“Har bir narsaning o‘z vaqti bor”, dedi"
+      },
+      {
+        "q": "Nihol nima bilan asta-sekin o‘sishini bildi?",
+        "a": "Quyosh nuri, suv va parvarish bilan"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Kichkina nihol qayerda o‘sar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Bog‘da"
+          },
+          {
+            "letter": "B",
+            "text": "Cho‘lda"
+          },
+          {
+            "letter": "C",
+            "text": "Maktabda"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Nihol qanday bo‘lishni xohlar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Katta daraxt"
+          },
+          {
+            "letter": "B",
+            "text": "Gul"
+          },
+          {
+            "letter": "C",
+            "text": "Maysa"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Bog‘bon har kuni niholga nima qilar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Suv quyar va atrofini yumshatar edi"
+          },
+          {
+            "letter": "B",
+            "text": "Uni sindirar edi"
+          },
+          {
+            "letter": "C",
+            "text": "Uni ko‘chirib tashlar edi"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Nihol nima uchun sabrsizlandi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Tez o‘smayotgani uchun"
+          },
+          {
+            "letter": "B",
+            "text": "Qushlar kelgani uchun"
+          },
+          {
+            "letter": "C",
+            "text": "Bog‘bon suv quygani uchun"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Niholga kim maslahat berdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Keksa daraxt"
+          },
+          {
+            "letter": "B",
+            "text": "Qush"
+          },
+          {
+            "letter": "C",
+            "text": "Ari"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Keksa daraxt nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Har bir narsaning o‘z vaqti bor"
+          },
+          {
+            "letter": "B",
+            "text": "Hech qachon o‘smaysan"
+          },
+          {
+            "letter": "C",
+            "text": "Suv kerak emas"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Oradan oylar o‘tib nihol nimaga aylandi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Chiroyli daraxtchaga"
+          },
+          {
+            "letter": "B",
+            "text": "Toshga"
+          },
+          {
+            "letter": "C",
+            "text": "Quruq bargga"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sabrli bo‘lishga"
+          },
+          {
+            "letter": "B",
+            "text": "Shoshqaloq bo‘lishga"
+          },
+          {
+            "letter": "C",
+            "text": "Parvarish qilmaslikka"
+          }
+        ],
+        "correct": "A"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "nihol",
+        "daraxt",
+        "bog‘bon",
+        "sabrsizlanibdi",
+        "vaqt",
+        "quyoshga",
+        "daraxtchaga",
+        "maqsadiga"
+      ],
+      "sentences": [
+        "Bog‘da kichkina __________ o‘sar edi.",
+        "U tezroq katta __________ bo‘lishni xohlardi.",
+        "Har kuni __________ unga suv quyar edi.",
+        "Ammo nihol __________.",
+        "Keksa daraxt: “Har bir narsaning o‘z __________ bor”, dedi.",
+        "Nihol barglarini __________ ochibdi.",
+        "Oradan oylar o‘tib, nihol chiroyli __________ aylandi.",
+        "Sabr qilgan kishi albatta __________ yetadi."
+      ],
+      "answers": [
+        "nihol",
+        "daraxt",
+        "bog‘bon",
+        "sabrsizlanibdi",
+        "vaqt",
+        "quyoshga",
+        "daraxtchaga",
+        "maqsadiga"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Kichkina nihol bog‘da o‘sar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Nihol katta daraxt bo‘lishni xohlar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Bog‘bon niholga suv quymas edi.",
+        "answer": false
+      },
+      {
+        "statement": "Bog‘bon nihol atrofini yumshatar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Nihol juda sabrli edi va hech shoshilmadi.",
+        "answer": false
+      },
+      {
+        "statement": "Keksa daraxt niholga maslahat berdi.",
+        "answer": true
+      },
+      {
+        "statement": "Har bir narsaning o‘z vaqti bor.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Nihol nima uchun tezroq katta daraxt bo‘lishni xohladi?",
+      "Bog‘bon niholga qanday yordam berdi?",
+      "Keksa daraxtning maslahati sizga yoqdimi? Nima uchun?",
+      "“Har bir narsaning o‘z vaqti bor” degan gapni qanday tushunasiz?",
+      "Sabrli bo‘lish nima uchun kerak?",
+      "Siz qaysi maqsadingizga sabr bilan erishmoqchisiz?"
+    ],
+    "creative": {
+      "prompt": "Men sabrli bo‘laman, chunki ____________________________________",
+      "sample": "Men sabrli bo‘laman, chunki sabr qilgan kishi albatta maqsadiga yetadi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "sehrli-soz-2-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Aziz",
+      "shaharcha",
+      "rahmat",
+      "iltimos",
+      "kechirasiz",
+      "sehrli so‘z",
+      "do‘kon",
+      "sotuvchi",
+      "jilmaymoq",
+      "qalam",
+      "o‘ylanmoq",
+      "xursand",
+      "bexosdan",
+      "yelka",
+      "hechqisi yo‘q",
+      "odobli",
+      "quvontirmoq"
+    ],
+    "comprehension": [
+      {
+        "q": "Bolaning ismi nima?",
+        "a": "Aziz"
+      },
+      {
+        "q": "Aziz qayerda yashar edi?",
+        "a": "Bir shaharchada"
+      },
+      {
+        "q": "Aziz qanday bola edi?",
+        "a": "Yaxshi bola edi"
+      },
+      {
+        "q": "Aziz ba’zan qaysi so‘zlarni aytishni unutib qo‘yardi?",
+        "a": "“Rahmat”, “iltimos”, “kechirasiz” so‘zlarini"
+      },
+      {
+        "q": "Aziz bir kuni qayerga kirdi?",
+        "a": "Do‘konga"
+      },
+      {
+        "q": "Aziz sotuvchi opadan nima so‘radi?",
+        "a": "Qalam so‘radi"
+      },
+      {
+        "q": "Sotuvchi opa Azizga nima dedi?",
+        "a": "“So‘zingda nimadir yetishmayapti”, dedi"
+      },
+      {
+        "q": "Aziz o‘ylanib nima dedi?",
+        "a": "“Iltimos, menga qalam bering”, dedi"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Bolaning ismi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Anvar"
+          },
+          {
+            "letter": "B",
+            "text": "Aziz"
+          },
+          {
+            "letter": "C",
+            "text": "Komil"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Aziz qayerda yashar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qishloqda"
+          },
+          {
+            "letter": "B",
+            "text": "Bog‘da"
+          },
+          {
+            "letter": "C",
+            "text": "Shaharchada"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "q": "Aziz qaysi so‘zlarni aytishni unutib qo‘yardi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "“Rahmat”, “iltimos”, “kechirasiz”"
+          },
+          {
+            "letter": "B",
+            "text": "“Salom”, “xayr”, “bor”"
+          },
+          {
+            "letter": "C",
+            "text": "“Olma”, “qalam”, “daftar”"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Aziz do‘konda nima so‘radi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Daftar"
+          },
+          {
+            "letter": "B",
+            "text": "Qalam"
+          },
+          {
+            "letter": "C",
+            "text": "Kitob"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Sotuvchi opa Azizga nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "“So‘zingda nimadir yetishmayapti”"
+          },
+          {
+            "letter": "B",
+            "text": "“Qalam yo‘q”"
+          },
+          {
+            "letter": "C",
+            "text": "“Uyga bor”"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Aziz qalamni olish uchun qaysi so‘zni aytdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Kechirasiz"
+          },
+          {
+            "letter": "B",
+            "text": "Rahmat"
+          },
+          {
+            "letter": "C",
+            "text": "Iltimos"
+          }
+        ],
+        "correct": "C"
+      },
+      {
+        "q": "Aziz qalamni olgach nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Rahmat"
+          },
+          {
+            "letter": "B",
+            "text": "Xayr"
+          },
+          {
+            "letter": "C",
+            "text": "Mayli"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Aziz bolaga tegib ketganda nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "“Men aybdor emasman”"
+          },
+          {
+            "letter": "B",
+            "text": "“Kechirasiz”"
+          },
+          {
+            "letter": "C",
+            "text": "“Yo‘limdan qoch”"
+          }
+        ],
+        "correct": "B"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Aziz",
+        "rahmat",
+        "iltimos",
+        "kechirasiz",
+        "do‘konga",
+        "qalam",
+        "xursand",
+        "odobli"
+      ],
+      "sentences": [
+        "Bolaning ismi __________ edi.",
+        "Aziz ba’zan “”, “”, “__________” kabi so‘zlarni unutib qo‘yardi.",
+        "Bir kuni Aziz __________ kiribdi.",
+        "U sotuvchi opadan __________ so‘rabdi.",
+        "Aziz “Iltimos” degandan keyin sotuvchi opa __________ bo‘libdi.",
+        "Aziz qalamni olgach “__________!” debdi.",
+        "__________ so‘z insonni chiroyli ko‘rsatadi."
+      ],
+      "answers": [
+        "Aziz",
+        "rahmat",
+        "iltimos",
+        "kechirasiz",
+        "do‘konga",
+        "qalam",
+        "xursand",
+        "Rahmat",
+        "odobli"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Aziz bir shaharchada yashar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Aziz yomon bola edi.",
+        "answer": false
+      },
+      {
+        "statement": "Aziz ba’zan odobli so‘zlarni aytishni unutardi.",
+        "answer": true
+      },
+      {
+        "statement": "Aziz do‘konga kirdi.",
+        "answer": true
+      },
+      {
+        "statement": "Aziz sotuvchi opadan qalam so‘radi.",
+        "answer": true
+      },
+      {
+        "statement": "Sotuvchi opa qalamni darrov berdi.",
+        "answer": false
+      },
+      {
+        "statement": "Sotuvchi opa “So‘zingda nimadir yetishmayapti”, dedi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Nima uchun “rahmat”, “iltimos”, “kechirasiz” so‘zlari sehrli so‘zlar deyiladi?",
+      "Sotuvchi opa nima uchun qalamni darrov bermadi?",
+      "Aziz o‘z xatosini qanday tushundi?",
+      "Siz qachon “iltimos” so‘zini ishlatasiz?",
+      "Siz qachon “rahmat” deysiz?",
+      "Siz qachon “kechirasiz” deb aytasiz?",
+      "Odobli so‘zlar odamlar orasidagi munosabatni qanday o‘zgartiradi?"
+    ],
+    "creative": {
+      "prompt": "Men odobli so‘zlarni ishlataman, chunki ____________________________________",
+      "sample": "Men odobli so‘zlarni ishlataman, chunki ular odamlarni xursand qiladi va meni chiroyli ko‘rsatadi."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "sehrli-supurgi-2-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Malika",
+      "qishloq",
+      "aqlli",
+      "hovli",
+      "supurgi",
+      "eski",
+      "qimirlamoq",
+      "mehnat",
+      "chang",
+      "barg",
+      "gulzor",
+      "tartib",
+      "yordam",
+      "barakalla"
+    ],
+    "comprehension": [
+      {
+        "q": "Qizning ismi nima?",
+        "a": "Malika"
+      },
+      {
+        "q": "Malika qayerda yashar edi?",
+        "a": "Bir qishloqda"
+      },
+      {
+        "q": "Malika qanday qiz edi?",
+        "a": "Aqlli"
+      },
+      {
+        "q": "Malika nimaga uncha yordam bermas edi?",
+        "a": "Uy ishlariga"
+      },
+      {
+        "q": "Onasi har kuni nimalar qilar edi?",
+        "a": "Hovlini supurib, gullarga suv quyib, uyni tartibga keltirar edi"
+      },
+      {
+        "q": "Malika hovlida nimani ko‘rdi?",
+        "a": "Eski supurgini"
+      },
+      {
+        "q": "Supurgi Malikaga nimani o‘rganish kerakligini aytdi?",
+        "a": "Mehnat qilishni"
+      },
+      {
+        "q": "Supurgi tez supurganda nima bo‘ldi?",
+        "a": "Chang hamma yoqqa tarqaldi, barglar gulzorga uchib ketdi"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Qizning ismi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Malika"
+          },
+          {
+            "letter": "B",
+            "text": "Ziyrakcha"
+          },
+          {
+            "letter": "C",
+            "text": "Kumushcha"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Malika qayerda yashar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Shaharda"
+          },
+          {
+            "letter": "B",
+            "text": "Qishloqda"
+          },
+          {
+            "letter": "C",
+            "text": "O‘rmonda"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Malika hovlida nimani ko‘rdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Eski supurgini"
+          },
+          {
+            "letter": "B",
+            "text": "Kitobni"
+          },
+          {
+            "letter": "C",
+            "text": "O‘yinchoqni"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Supurgi Malikaga nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sen ham mehnat qilishni o‘rganishing kerak"
+          },
+          {
+            "letter": "B",
+            "text": "Men uxlayman"
+          },
+          {
+            "letter": "C",
+            "text": "Sen o‘ynab yur"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Supurgi tez supurganda nima bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Hamma joy toza bo‘ldi"
+          },
+          {
+            "letter": "B",
+            "text": "Chang hamma yoqqa tarqaldi"
+          },
+          {
+            "letter": "C",
+            "text": "Gullar ochildi"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Mehnatni o‘zi bajarishga"
+          },
+          {
+            "letter": "B",
+            "text": "Ishni boshqalarga tashlab qo‘yishga"
+          },
+          {
+            "letter": "C",
+            "text": "Faqat o‘ynashga"
+          }
+        ],
+        "correct": "A"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "Malika",
+        "supurgi",
+        "hovlini",
+        "chang",
+        "tartib",
+        "yordam"
+      ],
+      "sentences": [
+        "Qizning ismi __________ edi.",
+        "Malika hovlida eski __________ ko‘rdi.",
+        "Supurgi __________ supura boshladi.",
+        "Tez supurganda __________ hamma yoqqa tarqaldi.",
+        "Har bir ishni mehr va __________ bilan qilish kerak.",
+        "Malika onasiga __________ beradigan bo‘ldi."
+      ],
+      "answers": [
+        "Malika",
+        "supurgi",
+        "hovlini",
+        "chang",
+        "tartib",
+        "yordam"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Malika qishloqda yashar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Malika uy ishlariga juda ko‘p yordam berar edi.",
+        "answer": false
+      },
+      {
+        "statement": "Onasi hovlini supurar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Malika eski supurgini ko‘rdi.",
+        "answer": true
+      },
+      {
+        "statement": "Supurgi gapira boshladi.",
+        "answer": true
+      },
+      {
+        "statement": "Supurgi hovlini juda sekin va toza supurdi.",
+        "answer": false
+      },
+      {
+        "statement": "Chang hamma yoqqa tarqaldi.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Malika ertak boshida qanday qiz edi?",
+      "Supurgi nima uchun sehrli edi?",
+      "Nima uchun har bir ishni tartib bilan qilish kerak?",
+      "Sen uyda ota-onangga qanday yordam berasan?",
+      "Mehnatkash bola qanday bo‘ladi?"
+    ],
+    "creative": {
+      "prompt": "Men uy ishlarida yordam beraman, chunki____________________________________",
+      "sample": "Men uy ishlarida yordam beraman, chunki mehnat qilish odobli bolalarga xos fazilatdir."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "toza-buloq-2-sinf": {
+    "tier": "a",
+    "new_words": [
+      "Buloq",
+      "toza",
+      "tiniq",
+      "tog‘ etagi",
+      "qishloq",
+      "shirinlik",
+      "qog‘oz",
+      "iflos",
+      "shildiramoq",
+      "Dilshod",
+      "do‘st",
+      "asramoq",
+      "tozalamoq",
+      "taxtacha",
+      "axlat",
+      "tabiat",
+      "burch"
+    ],
+    "comprehension": [
+      {
+        "q": "Buloq qayerda oqib turar edi?",
+        "a": "Tog‘ etagida"
+      },
+      {
+        "q": "Buloq qanday edi?",
+        "a": "Tiniq"
+      },
+      {
+        "q": "Qishloq bolalari buloqdan nima qilishar edi?",
+        "a": "Suv ichishar edi"
+      },
+      {
+        "q": "Bolalar buloq atrofida nima qilishar edi?",
+        "a": "O‘ynashar edi"
+      },
+      {
+        "q": "Ikki bola buloq yonida nima yeyishdi?",
+        "a": "Shirinlik"
+      },
+      {
+        "q": "Ular qog‘ozlarini qayerga tashlashdi?",
+        "a": "Yerga"
+      },
+      {
+        "q": "Buloq nima uchun xafa bo‘ldi?",
+        "a": "Bolalar atrofini iflos qilgani uchun"
+      },
+      {
+        "q": "Buloq bolalarga nima dedi?",
+        "a": "“Men sizlarga tiniq suv beraman, sizlar esa atrofimni iflos qilyapsizlar”, dedi"
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Buloq qayerda oqib turar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Tog‘ etagida"
+          },
+          {
+            "letter": "B",
+            "text": "Cho‘lda"
+          },
+          {
+            "letter": "C",
+            "text": "Maktab hovlisida"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Qishloq bolalari buloqdan nima qilishar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Suv ichishar edi"
+          },
+          {
+            "letter": "B",
+            "text": "Qum olishar edi"
+          },
+          {
+            "letter": "C",
+            "text": "Kitob o‘qishar edi"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Ikki bola nima yeb, qog‘ozlarini yerga tashlab ketishdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Non"
+          },
+          {
+            "letter": "B",
+            "text": "Shirinlik"
+          },
+          {
+            "letter": "C",
+            "text": "Meva"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Buloq nima uchun xafa bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Suvi tugagani uchun"
+          },
+          {
+            "letter": "B",
+            "text": "Atrofi iflos qilingani uchun"
+          },
+          {
+            "letter": "C",
+            "text": "Bolalar o‘ynamagani uchun"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Buloqning gapini kim eshitdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Dilshod"
+          },
+          {
+            "letter": "B",
+            "text": "Anvar"
+          },
+          {
+            "letter": "C",
+            "text": "Asaloy"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Dilshod qog‘ozlarni nima qildi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yig‘di"
+          },
+          {
+            "letter": "B",
+            "text": "Suvga tashladi"
+          },
+          {
+            "letter": "C",
+            "text": "Yirtib tashladi"
+          }
+        ],
+        "correct": "A"
+      },
+      {
+        "q": "Bolalar taxtachaga nima deb yozishdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "“Bu yerda o‘ynamang!”"
+          },
+          {
+            "letter": "B",
+            "text": "“Buloqni asrang!”"
+          },
+          {
+            "letter": "C",
+            "text": "“Suv ichmang!”"
+          }
+        ],
+        "correct": "B"
+      },
+      {
+        "q": "Ertak nimaga o‘rgatadi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Tabiatni asrashga"
+          },
+          {
+            "letter": "B",
+            "text": "Axlat tashlashga"
+          },
+          {
+            "letter": "C",
+            "text": "Suvni isrof qilishga"
+          }
+        ],
+        "correct": "A"
+      }
+    ],
+    "fill_blank": {
+      "words": [
+        "buloq",
+        "tog‘",
+        "suv",
+        "qog‘ozlarini",
+        "Dilshod",
+        "tozalashibdi",
+        "asrang"
+      ],
+      "sentences": [
+        "Bir __________ etagida tiniq buloq oqib turar edi.",
+        "Qishloq bolalari __________dan suv ichishar edi.",
+        "Bolalar shirinlik yeb, __________ yerga tashlab ketishdi.",
+        "Buloq bolalarga tiniq __________ berishini aytdi.",
+        "Buni __________ ismli bola eshitib qoldi.",
+        "Bolalar buloq atrofini __________.",
+        "Taxtachaga: “Buloqni __________!” deb yozishdi."
+      ],
+      "answers": [
+        "tog‘",
+        "buloq",
+        "qog‘ozlarini",
+        "suv",
+        "Dilshod",
+        "tozalashibdi",
+        "asrang"
+      ]
+    },
+    "true_false": [
+      {
+        "statement": "Buloq tog‘ etagida oqib turar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Buloq suvi loyqa edi.",
+        "answer": false
+      },
+      {
+        "statement": "Qishloq bolalari buloqdan suv ichishar edi.",
+        "answer": true
+      },
+      {
+        "statement": "Ikki bola shirinlik qog‘ozlarini yerga tashlab ketdi.",
+        "answer": true
+      },
+      {
+        "statement": "Buloq bundan xursand bo‘ldi.",
+        "answer": false
+      },
+      {
+        "statement": "Buloq “Atrofimni iflos qilyapsizlar”, dedi.",
+        "answer": true
+      },
+      {
+        "statement": "Dilshod qog‘ozlarni yig‘di.",
+        "answer": true
+      }
+    ],
+    "oral": [
+      "Buloq nima uchun xafa bo‘ldi?",
+      "Dilshod qanday yaxshi ish qildi?",
+      "Nima uchun suvni va buloqlarni asrash kerak?",
+      "Tabiatni iflos qilmaslik uchun nimalar qilish kerak?",
+      "Sen maktabda yoki uyda tabiatni asrash uchun qanday ish qilasan?",
+      "“Tabiatni asrash har bir bolaning burchidir” degan gapni qanday tushunasiz?"
+    ],
+    "creative": {
+      "prompt": "Men tabiatni asrayman, chunki ____________________________________",
+      "sample": "Men tabiatni asrayman, chunki toza tabiat sog‘ligimiz uchun foydalidir."
+    },
+    "drawing_task": "Rasm bo‘yash topshirig‘i"
+  },
+  "aqlli-chumoli-3-sinf": {
+    "tier": "b",
+    "new_words": [
+      "Don",
+      "Gul",
+      "Kun",
+      "Qish",
+      "Yer",
+      "Uya",
+      "Bor",
+      "Kel"
+    ],
+    "comprehension": [
+      {
+        "q": "Bahor kelganda yerlar nimaga o‘xshab qoldi?",
+        "a": null
+      },
+      {
+        "q": "Chumoli har kuni uyasiga nima tashirdi?",
+        "a": null
+      },
+      {
+        "q": "Kapalak chumoliga nima dedi?",
+        "a": null
+      },
+      {
+        "q": "Chumoli nima uchun mehnat qilayotganini aytdi?",
+        "a": null
+      },
+      {
+        "q": "Kapalak chumolining gapiga e’tibor berdimi?",
+        "a": null
+      },
+      {
+        "q": "Kunlar o‘tib, havo qanday bo‘ldi?",
+        "a": null
+      },
+      {
+        "q": "Kapalak nima topolmay qoldi?",
+        "a": null
+      },
+      {
+        "q": "Kapalak kimning uyasi oldiga keldi?",
+        "a": null
+      },
+      {
+        "q": "Chumoli kapalakga qanday yordam berdi?",
+        "a": null
+      },
+      {
+        "q": "Siz kapalakning o‘rnida bo‘lsangiz nima qilgan bo‘lardingiz?",
+        "a": null
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Bahor kelganda yerlar nimaga o‘xshab qoldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Oq qorga"
+          },
+          {
+            "letter": "B",
+            "text": "Yashil gilamga"
+          },
+          {
+            "letter": "D",
+            "text": "Katta dalaga"
+          },
+          {
+            "letter": "E",
+            "text": "Sariq bargga"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Chumoli har kuni uyasiga nima tashirdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Gul"
+          },
+          {
+            "letter": "B",
+            "text": "Suv"
+          },
+          {
+            "letter": "D",
+            "text": "Don"
+          },
+          {
+            "letter": "E",
+            "text": "Barg"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Kapalak chumoliga nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "“Uyga kiraylik”"
+          },
+          {
+            "letter": "B",
+            "text": "“Keling, o‘ynaymiz”"
+          },
+          {
+            "letter": "D",
+            "text": "“Don ber”"
+          },
+          {
+            "letter": "E",
+            "text": "“Men ham ishlayman”"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Chumoli nima uchun mehnat qilayotgan edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qishda qiynalmaslik uchun"
+          },
+          {
+            "letter": "B",
+            "text": "Kapalak bilan o‘ynash uchun"
+          },
+          {
+            "letter": "D",
+            "text": "Uyini bezash uchun"
+          },
+          {
+            "letter": "E",
+            "text": "Gullardan bahra olish uchun"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Kapalak nima uchun chumolining uyasi oldiga keldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "O‘ynash uchun"
+          },
+          {
+            "letter": "B",
+            "text": "Ovqat so‘rash uchun"
+          },
+          {
+            "letter": "D",
+            "text": "Gul olib kelish uchun"
+          },
+          {
+            "letter": "E",
+            "text": "Uy qurish uchun"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Hikoyaning asosiy g‘oyasi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Bahorda gullar ochiladi."
+          },
+          {
+            "letter": "B",
+            "text": "Kapalaklar chiroyli bo‘ladi."
+          },
+          {
+            "letter": "D",
+            "text": "Vaqtida mehnat qilgan odam qiynalmaydi."
+          },
+          {
+            "letter": "E",
+            "text": "Yomg‘ir ko‘p yog‘adi."
+          }
+        ],
+        "correct": null
+      }
+    ],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "dangasa-soat-3-sinf": {
+    "tier": "b",
+    "new_words": [
+      "Soat",
+      "Kun",
+      "Uy",
+      "Dars",
+      "Ish",
+      "Vaqt",
+      "Kam",
+      "Tur"
+    ],
+    "comprehension": [
+      {
+        "q": "Javohirning xonasida nima bor edi?",
+        "a": null
+      },
+      {
+        "q": "Soat har kuni ertalab nima qilardi?",
+        "a": null
+      },
+      {
+        "q": "Javohir soat jiringlaganda nima der edi?",
+        "a": null
+      },
+      {
+        "q": "Javohir nima uchun maktabga kech qoldi?",
+        "a": null
+      },
+      {
+        "q": "Birinchi darsda qanday ish bor edi?",
+        "a": null
+      },
+      {
+        "q": "Javohir topshiriqlarni bajarishga nima uchun qiynaldi?",
+        "a": null
+      },
+      {
+        "q": "Javohir uyga qaytgach, soatiga qarab nima dedi?",
+        "a": null
+      },
+      {
+        "q": "Ertasi kuni Javohir soat jiringlaganda nima qildi?",
+        "a": null
+      },
+      {
+        "q": "Javohir maktabga qanday yetib bordi?",
+        "a": null
+      },
+      {
+        "q": "Javohir oxirida nimani bildi?",
+        "a": null
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Javohirning xonasida nima bor edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Kichkina soat"
+          },
+          {
+            "letter": "B",
+            "text": "Katta kitob"
+          },
+          {
+            "letter": "D",
+            "text": "Yangi daftar"
+          },
+          {
+            "letter": "E",
+            "text": "O‘yinchoq ayiqcha"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Soat har kuni ertalab nima qilardi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qo‘shiq aytardi"
+          },
+          {
+            "letter": "B",
+            "text": "Jiringlab, Javohirni uyg‘otardi"
+          },
+          {
+            "letter": "D",
+            "text": "Derazani ochardi"
+          },
+          {
+            "letter": "E",
+            "text": "Dars o‘tardi"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Javohir soat jiringlaganda nima der edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "“Men maktabga boraman”"
+          },
+          {
+            "letter": "B",
+            "text": "“Yana besh daqiqa uxlayman”"
+          },
+          {
+            "letter": "D",
+            "text": "“Dars tayyorlayman”"
+          },
+          {
+            "letter": "E",
+            "text": "“Soatni tuzataman”"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Javohir bir kuni qayerga kech qoldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Bog‘ga"
+          },
+          {
+            "letter": "B",
+            "text": "Do‘konga"
+          },
+          {
+            "letter": "D",
+            "text": "Maktabga"
+          },
+          {
+            "letter": "E",
+            "text": "Mehmondorchilikka"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Birinchi darsda nima bor edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Rasm chizish"
+          },
+          {
+            "letter": "B",
+            "text": "Muhim nazorat ishi"
+          },
+          {
+            "letter": "D",
+            "text": "Sport musobaqasi"
+          },
+          {
+            "letter": "E",
+            "text": "Bayram tadbiri"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Hikoyaning asosiy g‘oyasi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Soatni o‘chirib qo‘yish kerak."
+          },
+          {
+            "letter": "B",
+            "text": "Ko‘p uxlash foydali."
+          },
+          {
+            "letter": "D",
+            "text": "Vaqtni qadrlagan odam ko‘p ishga ulguradi."
+          },
+          {
+            "letter": "E",
+            "text": "Maktabga kech borish mumkin."
+          }
+        ],
+        "correct": null
+      }
+    ],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "halol-daftar-3-sinf": {
+    "tier": "b",
+    "new_words": [
+      "Daftar",
+      "Halol",
+      "Parta",
+      "Ko‘k",
+      "Maktab",
+      "Rahmat",
+      "Varaqa",
+      "Sumka"
+    ],
+    "comprehension": [
+      {
+        "q": "Anvar maktabga nima olib bordi?",
+        "a": null
+      },
+      {
+        "q": "Daftarning muqovasi qanday rangda edi?",
+        "a": null
+      },
+      {
+        "q": "Anvar tanaffusda nimani topib oldi?",
+        "a": null
+      },
+      {
+        "q": "Anvar topilgan daftarni avval nima qilmoqchi bo‘ldi?",
+        "a": null
+      },
+      {
+        "q": "Anvar ichidan qanday ovoz eshitilgandek bo‘ldi?",
+        "a": null
+      },
+      {
+        "q": "Anvar daftarni kimga olib bordi?",
+        "a": null
+      },
+      {
+        "q": "Daftarning egasi kim edi?",
+        "a": null
+      },
+      {
+        "q": "O‘qituvchi halollik haqida nima dedi?",
+        "a": null
+      },
+      {
+        "q": "Anvar nima uchun faxrlandi?",
+        "a": null
+      },
+      {
+        "q": "Siz Anvarning o‘rnida bo‘lsangiz nima qilgan bo‘lardingiz?",
+        "a": null
+      },
+      {
+        "q": "1. Anvar maktabga nima olib bordi?",
+        "a": null
+      },
+      {
+        "q": "2. Daftarning muqovasi qanday rangda edi?",
+        "a": null
+      },
+      {
+        "q": "3. Anvar tanaffusda nimani topib oldi?",
+        "a": null
+      },
+      {
+        "q": "4. Anvar topilgan daftarni kimga olib bordi?",
+        "a": null
+      },
+      {
+        "q": "5. Daftarning egasi kim edi?",
+        "a": null
+      },
+      {
+        "q": "6. Hikoyaning asosiy g‘oyasi nima?",
+        "a": null
+      }
+    ],
+    "mcq": [],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "kitobxon-quyoncha-3-sinf": {
+    "tier": "b",
+    "new_words": [
+      "Kun",
+      "Qush",
+      "Uy",
+      "Ona",
+      "Bor",
+      "Tez",
+      "Xafa",
+      "Bir"
+    ],
+    "comprehension": [
+      {
+        "q": "O‘rmonda qanday quyoncha yashar edi?",
+        "a": null
+      },
+      {
+        "q": "Momiqvoy nimani yaxshi ko‘rardi?",
+        "a": null
+      },
+      {
+        "q": "Momiqvoy nimani yoqtirmasdi?",
+        "a": null
+      },
+      {
+        "q": "O‘rmonda qanday bellashuv bo‘ldi?",
+        "a": null
+      },
+      {
+        "q": "Bellashuvdagi savollar nimalar haqida edi?",
+        "a": null
+      },
+      {
+        "q": "Momiqvoy nima uchun xafa bo‘ldi?",
+        "a": null
+      },
+      {
+        "q": "Onasi Momiqvoyga nima berdi?",
+        "a": null
+      },
+      {
+        "q": "Onasi unga qanday maslahat berdi?",
+        "a": null
+      },
+      {
+        "q": "Momiqvoy kitob o‘qishni qanday boshladi?",
+        "a": null
+      },
+      {
+        "q": "Momiqvoy oxirida nimani tushundi?",
+        "a": null
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Momiqvoy qayerda yashar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Shaharda"
+          },
+          {
+            "letter": "B",
+            "text": "O‘rmonda"
+          },
+          {
+            "letter": "D",
+            "text": "Maktabda"
+          },
+          {
+            "letter": "E",
+            "text": "Bog‘da"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Momiqvoy nimani yoqtirmasdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yugurishni"
+          },
+          {
+            "letter": "B",
+            "text": "Sakrashni"
+          },
+          {
+            "letter": "D",
+            "text": "Kitob o‘qishni"
+          },
+          {
+            "letter": "E",
+            "text": "O‘ynashni"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "O‘rmonda qanday bellashuv bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sport musobaqasi"
+          },
+          {
+            "letter": "B",
+            "text": "Rasm tanlovi"
+          },
+          {
+            "letter": "D",
+            "text": "Bilimdonlar bellashuvi"
+          },
+          {
+            "letter": "E",
+            "text": "Qo‘shiq bayrami"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Onasi Momiqvoyga nima berdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sabzi"
+          },
+          {
+            "letter": "B",
+            "text": "Kichkina kitob"
+          },
+          {
+            "letter": "D",
+            "text": "Qalam"
+          },
+          {
+            "letter": "E",
+            "text": "Daftar"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Momiqvoy keyingi bellashuvda qanday natija ko‘rsatdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yana javob bera olmadi"
+          },
+          {
+            "letter": "B",
+            "text": "Ko‘p savollarga to‘g‘ri javob berdi"
+          },
+          {
+            "letter": "D",
+            "text": "Bellashuvga bormadi"
+          },
+          {
+            "letter": "E",
+            "text": "Faqat yugurdi"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Hikoyaning asosiy g‘oyasi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Quyonlar tez yuguradi."
+          },
+          {
+            "letter": "B",
+            "text": "Kitob o‘qigan bolaning bilimi ortadi."
+          },
+          {
+            "letter": "D",
+            "text": "O‘rmonda hayvonlar yashaydi."
+          },
+          {
+            "letter": "E",
+            "text": "Bellashuvda faqat yugurish kerak."
+          }
+        ],
+        "correct": null
+      }
+    ],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "mehribon-daraxt-3-sinf": {
+    "tier": "b",
+    "new_words": [
+      "Tut",
+      "Yoz",
+      "Kuz",
+      "Barg",
+      "Yer",
+      "Dam",
+      "Bog‘",
+      "Shox"
+    ],
+    "comprehension": [
+      {
+        "q": "Maktab hovlisida qanday daraxt bor edi?",
+        "a": null
+      },
+      {
+        "q": "Yozda bolalar daraxt soyasida nima qilishardi?",
+        "a": null
+      },
+      {
+        "q": "Kuzda daraxt barglari qanday bo‘lardi?",
+        "a": null
+      },
+      {
+        "q": "Bir kuni qanday hodisa yuz berdi?",
+        "a": null
+      },
+      {
+        "q": "Daraxtning nimalari sinib tushdi?",
+        "a": null
+      },
+      {
+        "q": "Sinf rahbari bolalarga nima dedi?",
+        "a": null
+      },
+      {
+        "q": "O‘quvchilar daraxt atrofida qanday ish qildilar?",
+        "a": null
+      },
+      {
+        "q": "Bog‘bon amaki daraxtga qanday yordam berdi?",
+        "a": null
+      },
+      {
+        "q": "Bahor kelganda daraxt qanday bo‘lib ketdi?",
+        "a": null
+      },
+      {
+        "q": "Bolalar daraxt tagiga qanday yozuv osishdi?",
+        "a": null
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Maktab hovlisida qanday daraxt bor edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Olma daraxti"
+          },
+          {
+            "letter": "B",
+            "text": "Katta tut daraxti"
+          },
+          {
+            "letter": "D",
+            "text": "Terak daraxti"
+          },
+          {
+            "letter": "E",
+            "text": "Gilos daraxti"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Bolalar yozda daraxt soyasida nima qilishardi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Kitob sotishardi"
+          },
+          {
+            "letter": "B",
+            "text": "Dam olishardi"
+          },
+          {
+            "letter": "D",
+            "text": "Uy qurishardi"
+          },
+          {
+            "letter": "E",
+            "text": "Suv ichishardi"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Kuzda daraxt barglari qanday bo‘lardi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Oppoq bo‘lardi"
+          },
+          {
+            "letter": "B",
+            "text": "Ko‘k rangga kirardi"
+          },
+          {
+            "letter": "D",
+            "text": "Sarg‘ayib, yerga gilamdek to‘shalardi"
+          },
+          {
+            "letter": "E",
+            "text": "Yo‘qolib qolardi"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Kuchli shamolda daraxtga nima bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Daraxt gulladi"
+          },
+          {
+            "letter": "B",
+            "text": "Bir nechta shoxi sinib tushdi"
+          },
+          {
+            "letter": "D",
+            "text": "Daraxt butunlay quridi"
+          },
+          {
+            "letter": "E",
+            "text": "Daraxt meva berdi"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Bog‘bon amaki daraxtga qanday yordam berdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Uni sug‘ordi"
+          },
+          {
+            "letter": "B",
+            "text": "Singan joylarini kesdi"
+          },
+          {
+            "letter": "D",
+            "text": "Uni boshqa joyga ko‘chirdi"
+          },
+          {
+            "letter": "E",
+            "text": "Daraxt tagiga gul ekdi"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Hikoyaning asosiy g‘oyasi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Daraxtlar faqat yozda kerak."
+          },
+          {
+            "letter": "B",
+            "text": "Bolalar faqat daraxt soyasida o‘ynashi kerak."
+          },
+          {
+            "letter": "D",
+            "text": "Tabiatni asrash va daraxtlarga mehr bilan munosabatda bo‘lish kerak."
+          },
+          {
+            "letter": "E",
+            "text": "Shamolda ko‘chaga chiqish kerak."
+          }
+        ],
+        "correct": null
+      }
+    ],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "qushcha-va-bolakay-3-sinf": {
+    "tier": "b",
+    "new_words": [
+      "Qush",
+      "Yo‘l",
+      "Suv",
+      "Kun",
+      "Uy",
+      "Quti",
+      "Mato",
+      "Jon"
+    ],
+    "comprehension": [
+      {
+        "q": "Akmal qayerdan qaytayotgan edi?",
+        "a": null
+      },
+      {
+        "q": "Akmal yo‘l chetida nimani ko‘rib qoldi?",
+        "a": null
+      },
+      {
+        "q": "Qushcha qanday ahvolda edi?",
+        "a": null
+      },
+      {
+        "q": "Akmal qushchani qanday qilib qo‘liga oldi?",
+        "a": null
+      },
+      {
+        "q": "Akmal qushchani kimga ko‘rsatdi?",
+        "a": null
+      },
+      {
+        "q": "Onasi qushchaga nima berdi?",
+        "a": null
+      },
+      {
+        "q": "Qushcha uchun qanday joy tayyorlandi?",
+        "a": null
+      },
+      {
+        "q": "Bir necha kun o‘tgach, qushcha qanday bo‘ldi?",
+        "a": null
+      },
+      {
+        "q": "Akmal qushchani qayerga olib chiqdi?",
+        "a": null
+      },
+      {
+        "q": "Akmal nima uchun quvonchga to‘ldi?",
+        "a": null
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Akmal qayerdan qaytayotgan edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Bog‘dan"
+          },
+          {
+            "letter": "B",
+            "text": "Maktabdan"
+          },
+          {
+            "letter": "D",
+            "text": "Do‘kondan"
+          },
+          {
+            "letter": "E",
+            "text": "Mehmondorchilikdan"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Akmal yo‘l chetida nimani ko‘rib qoldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Kichkina qushchani"
+          },
+          {
+            "letter": "B",
+            "text": "O‘yinchoq mashinani"
+          },
+          {
+            "letter": "D",
+            "text": "Yangi daftarni"
+          },
+          {
+            "letter": "E",
+            "text": "Koptokni"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Qushcha nima qila olmas edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yura olmas edi"
+          },
+          {
+            "letter": "B",
+            "text": "Ucholmas edi"
+          },
+          {
+            "letter": "D",
+            "text": "Suv icholmas edi"
+          },
+          {
+            "letter": "E",
+            "text": "Chirqillay olmas edi"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Onasi qushchaga nima berdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Non"
+          },
+          {
+            "letter": "B",
+            "text": "Don"
+          },
+          {
+            "letter": "D",
+            "text": "Suv"
+          },
+          {
+            "letter": "E",
+            "text": "Kitob"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Qushcha qachon sog‘aydi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Bir necha kun o‘tgach"
+          },
+          {
+            "letter": "B",
+            "text": "Bir yil o‘tgach"
+          },
+          {
+            "letter": "D",
+            "text": "Darrov"
+          },
+          {
+            "letter": "E",
+            "text": "Ertasiga maktabda"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Hikoyaning asosiy g‘oyasi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qushlar doim uchadi."
+          },
+          {
+            "letter": "B",
+            "text": "Maktabdan tez qaytish kerak."
+          },
+          {
+            "letter": "D",
+            "text": "Jonivorlarga mehribon bo‘lish va yordam berish kerak."
+          },
+          {
+            "letter": "E",
+            "text": "Qutiga faqat o‘yinchoq solish kerak."
+          }
+        ],
+        "correct": null
+      }
+    ],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "rostgoy-kamola-3-sinf": {
+    "tier": "b",
+    "new_words": [
+      "Dars",
+      "Baho",
+      "Qiz",
+      "Sinf",
+      "Xato",
+      "Daftar",
+      "Bilim",
+      "Halol"
+    ],
+    "comprehension": [
+      {
+        "q": "Kamola qanday qizlardan biri edi?",
+        "a": null
+      },
+      {
+        "q": "Kamola darslarini qachon tayyorlardi?",
+        "a": null
+      },
+      {
+        "q": "Bir kuni matematika darsida o‘qituvchi nima berdi?",
+        "a": null
+      },
+      {
+        "q": "Kamola nimani yechishda qiynaldi?",
+        "a": null
+      },
+      {
+        "q": "Yonidagi dugonasi Kamolaga nima demoqchi bo‘ldi?",
+        "a": null
+      },
+      {
+        "q": "Kamola nima uchun ko‘chirmadi?",
+        "a": null
+      },
+      {
+        "q": "Kamola daftariga qanday javob yozdi?",
+        "a": null
+      },
+      {
+        "q": "O‘qituvchi Kamolaning ishidan qanday xato topdi?",
+        "a": null
+      },
+      {
+        "q": "Kamola o‘qituvchiga nima dedi?",
+        "a": null
+      },
+      {
+        "q": "Kamola o‘sha kuni nimani anglab yetdi?",
+        "a": null
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Kamola sinfdagi qanday qizlardan biri edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Eng sho‘x qizlardan biri"
+          },
+          {
+            "letter": "B",
+            "text": "Eng tartibli qizlardan biri"
+          },
+          {
+            "letter": "D",
+            "text": "Eng dangasa qizlardan biri"
+          },
+          {
+            "letter": "E",
+            "text": "Eng uyatchan qizlardan biri"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Matematika darsida o‘qituvchi nima berdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Rasm chizish topshirig‘i"
+          },
+          {
+            "letter": "B",
+            "text": "Mustaqil ish"
+          },
+          {
+            "letter": "D",
+            "text": "Uyga vazifa"
+          },
+          {
+            "letter": "E",
+            "text": "She’r yodlash"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Kamola nimada qiynaldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "She’r aytishda"
+          },
+          {
+            "letter": "B",
+            "text": "Rasm chizishda"
+          },
+          {
+            "letter": "D",
+            "text": "Bir masalani yechishda"
+          },
+          {
+            "letter": "E",
+            "text": "Kitob o‘qishda"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Dugonasi Kamolaga nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "“Mendan ko‘chirib ol”"
+          },
+          {
+            "letter": "B",
+            "text": "“Daftaringni yop”"
+          },
+          {
+            "letter": "D",
+            "text": "“O‘qituvchiga ayt”"
+          },
+          {
+            "letter": "E",
+            "text": "“Darsga kechikma”"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Kamola qanday yo‘l tutdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Dugonasidan ko‘chirib oldi"
+          },
+          {
+            "letter": "B",
+            "text": "Daftarini yopib qo‘ydi"
+          },
+          {
+            "letter": "D",
+            "text": "Bilganicha javob yozdi"
+          },
+          {
+            "letter": "E",
+            "text": "Sinfdan chiqib ketdi"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Hikoyaning asosiy g‘oyasi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Matematika darsi qiyin bo‘ladi."
+          },
+          {
+            "letter": "B",
+            "text": "Yaxshi baho olish uchun ko‘chirish kerak."
+          },
+          {
+            "letter": "D",
+            "text": "Rostgo‘ylik va halollik bilim bilan birga bo‘lishi kerak."
+          },
+          {
+            "letter": "E",
+            "text": "Daftarni chiroyli tutish kerak."
+          }
+        ],
+        "correct": null
+      }
+    ],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "sehrli-fonarcha-3-sinf": {
+    "tier": "b",
+    "new_words": [
+      "Nur",
+      "Yo‘l",
+      "Gul",
+      "Yer",
+      "Ko‘z",
+      "Kech",
+      "Top",
+      "Bor"
+    ],
+    "comprehension": [
+      {
+        "q": "Jasur bobosidan nima sovg‘a oldi?",
+        "a": null
+      },
+      {
+        "q": "Fonarcha qanday ko‘rinardi?",
+        "a": null
+      },
+      {
+        "q": "Bobosi Jasurga fonarcha haqida nima dedi?",
+        "a": null
+      },
+      {
+        "q": "Bir kuni kechqurun mahallada nima bo‘ldi?",
+        "a": null
+      },
+      {
+        "q": "Jasur derazadan qarasa, qo‘shni buvi nima qilayotgan edi?",
+        "a": null
+      },
+      {
+        "q": "Qo‘shni buvi nimani yo‘qotib qo‘ygan edi?",
+        "a": null
+      },
+      {
+        "q": "Jasur buviga qanday yordam berdi?",
+        "a": null
+      },
+      {
+        "q": "Ko‘zoynak qayerdan topildi?",
+        "a": null
+      },
+      {
+        "q": "Buvi Jasurga qanday minnatdorchilik bildirdi?",
+        "a": null
+      },
+      {
+        "q": "Jasur shu kuni nimani tushundi?",
+        "a": null
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Jasur bobosidan nima sovg‘a oldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Kitob"
+          },
+          {
+            "letter": "B",
+            "text": "Kichkina fonarcha"
+          },
+          {
+            "letter": "D",
+            "text": "Qalam"
+          },
+          {
+            "letter": "E",
+            "text": "Soat"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Fonarcha qanday nur sochardi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Xira"
+          },
+          {
+            "letter": "B",
+            "text": "Rangli"
+          },
+          {
+            "letter": "D",
+            "text": "Yorqin"
+          },
+          {
+            "letter": "E",
+            "text": "Sovuq"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Bobosi fonarchadan qanday foydalanishni aytdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Faqat o‘yin uchun"
+          },
+          {
+            "letter": "B",
+            "text": "Faqat yaxshi ish uchun"
+          },
+          {
+            "letter": "D",
+            "text": "Uni hech kimga bermaslik uchun"
+          },
+          {
+            "letter": "E",
+            "text": "Uni yashirib qo‘yish uchun"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Mahallada kechqurun nima bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yomg‘ir yog‘di"
+          },
+          {
+            "letter": "B",
+            "text": "Chiroq o‘chib qoldi"
+          },
+          {
+            "letter": "D",
+            "text": "Bayram boshlandi"
+          },
+          {
+            "letter": "E",
+            "text": "Qo‘ng‘iroq chalindi"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Qo‘shni buvi nimani qidirayotgan edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Kitobini"
+          },
+          {
+            "letter": "B",
+            "text": "Kalitini"
+          },
+          {
+            "letter": "D",
+            "text": "Ko‘zoynagini"
+          },
+          {
+            "letter": "E",
+            "text": "Ro‘molini"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Hikoyaning asosiy g‘oyasi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Fonarcha juda chiroyli buyum."
+          },
+          {
+            "letter": "B",
+            "text": "Qorong‘ida ko‘chaga chiqmaslik kerak."
+          },
+          {
+            "letter": "D",
+            "text": "Yaxshilik va mehr inson qalbini yoritadi."
+          },
+          {
+            "letter": "E",
+            "text": "Ko‘zoynakni gul tuvagiga qo‘yish kerak."
+          }
+        ],
+        "correct": null
+      }
+    ],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "sehrli-qalam-3-sinf": {
+    "tier": "b",
+    "new_words": [
+      "Qalam",
+      "Gul",
+      "Uy",
+      "Kun",
+      "Oy",
+      "Daraxt",
+      "Rasm",
+      "Sariq"
+    ],
+    "comprehension": [
+      {
+        "q": "Madina nimani juda yaxshi ko‘rardi?",
+        "a": null
+      },
+      {
+        "q": "Buvisi Madinaga nima sovg‘a qildi?",
+        "a": null
+      },
+      {
+        "q": "Buvisi qalam haqida nima dedi?",
+        "a": null
+      },
+      {
+        "q": "Madina dastlab daftariga nima chizdi?",
+        "a": null
+      },
+      {
+        "q": "Madina keyin nimalarni chizdi?",
+        "a": null
+      },
+      {
+        "q": "Rasmlar qanday bo‘lib borardi?",
+        "a": null
+      },
+      {
+        "q": "Madina buvisiga nima dedi?",
+        "a": null
+      },
+      {
+        "q": "Buvisi sehr nimada ekanini qanday tushuntirdi?",
+        "a": null
+      },
+      {
+        "q": "Madina buvisining gapidan keyin nima qildi?",
+        "a": null
+      },
+      {
+        "q": "Bir oy o‘tib, sinfdagi eng chiroyli rasmni kim chizdi?",
+        "a": null
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Madina nimani juda yaxshi ko‘rardi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qo‘shiq aytishni"
+          },
+          {
+            "letter": "B",
+            "text": "Rasm chizishni"
+          },
+          {
+            "letter": "D",
+            "text": "Kitob o‘qishni"
+          },
+          {
+            "letter": "E",
+            "text": "O‘yin o‘ynashni"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Buvisi Madinaga qanday qalam sovg‘a qildi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qizil qalam"
+          },
+          {
+            "letter": "B",
+            "text": "Ko‘k qalam"
+          },
+          {
+            "letter": "D",
+            "text": "Sariq qalam"
+          },
+          {
+            "letter": "E",
+            "text": "Yashil qalam"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Buvisi qalam haqida nima dedi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Bu qalam eski"
+          },
+          {
+            "letter": "B",
+            "text": "Bu qalam sehrli"
+          },
+          {
+            "letter": "D",
+            "text": "Bu qalam uzun"
+          },
+          {
+            "letter": "E",
+            "text": "Bu qalam siniq"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Madina daftariga avval nima chizdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Daraxt"
+          },
+          {
+            "letter": "B",
+            "text": "Uycha"
+          },
+          {
+            "letter": "D",
+            "text": "Gul"
+          },
+          {
+            "letter": "E",
+            "text": "Quyosh"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Buvisi sehr nimada ekanini aytdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Qalamda"
+          },
+          {
+            "letter": "B",
+            "text": "Daftarda"
+          },
+          {
+            "letter": "D",
+            "text": "Mehnat, sabr va ishtiyoqda"
+          },
+          {
+            "letter": "E",
+            "text": "Ranglarda"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Hikoyaning asosiy g‘oyasi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sariq qalam eng yaxshi qalam."
+          },
+          {
+            "letter": "B",
+            "text": "Chiroyli rasm faqat sehrli qalam bilan chiziladi."
+          },
+          {
+            "letter": "D",
+            "text": "Mehnat, sabr va ishtiyoq orqali yaxshi natijaga erishiladi."
+          },
+          {
+            "letter": "E",
+            "text": "Rasm chizish oson ish."
+          }
+        ],
+        "correct": null
+      }
+    ],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "yoqolgan-kalit-3-sinf": {
+    "tier": "b",
+    "new_words": [
+      "Kalit",
+      "Stol",
+      "Uy",
+      "Joy",
+      "Gilam",
+      "Dada",
+      "Rost",
+      "Ish"
+    ],
+    "comprehension": [
+      {
+        "q": "O‘rmonda qanday quyoncha yashar edi?",
+        "a": null
+      },
+      {
+        "q": "Momiqvoy nimani yaxshi ko‘rardi?",
+        "a": null
+      },
+      {
+        "q": "Momiqvoy nimani yoqtirmasdi?",
+        "a": null
+      },
+      {
+        "q": "O‘rmonda qanday bellashuv bo‘ldi?",
+        "a": null
+      },
+      {
+        "q": "Bellashuvdagi savollar nimalar haqida edi?",
+        "a": null
+      },
+      {
+        "q": "Momiqvoy nima uchun xafa bo‘ldi?",
+        "a": null
+      },
+      {
+        "q": "Onasi Momiqvoyga nima berdi?",
+        "a": null
+      },
+      {
+        "q": "Onasi unga qanday maslahat berdi?",
+        "a": null
+      },
+      {
+        "q": "Momiqvoy kitob o‘qishni qanday boshladi?",
+        "a": null
+      },
+      {
+        "q": "Momiqvoy oxirida nimani tushundi?",
+        "a": null
+      }
+    ],
+    "mcq": [
+      {
+        "q": "Momiqvoy qayerda yashar edi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Shaharda"
+          },
+          {
+            "letter": "B",
+            "text": "O‘rmonda"
+          },
+          {
+            "letter": "D",
+            "text": "Maktabda"
+          },
+          {
+            "letter": "E",
+            "text": "Bog‘da"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Momiqvoy nimani yoqtirmasdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yugurishni"
+          },
+          {
+            "letter": "B",
+            "text": "Sakrashni"
+          },
+          {
+            "letter": "D",
+            "text": "Kitob o‘qishni"
+          },
+          {
+            "letter": "E",
+            "text": "O‘ynashni"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "O‘rmonda qanday bellashuv bo‘ldi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sport musobaqasi"
+          },
+          {
+            "letter": "B",
+            "text": "Rasm tanlovi"
+          },
+          {
+            "letter": "D",
+            "text": "Bilimdonlar bellashuvi"
+          },
+          {
+            "letter": "E",
+            "text": "Qo‘shiq bayrami"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Onasi Momiqvoyga nima berdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Sabzi"
+          },
+          {
+            "letter": "B",
+            "text": "Kichkina kitob"
+          },
+          {
+            "letter": "D",
+            "text": "Qalam"
+          },
+          {
+            "letter": "E",
+            "text": "Daftar"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Momiqvoy keyingi bellashuvda qanday natija ko‘rsatdi?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Yana javob bera olmadi"
+          },
+          {
+            "letter": "B",
+            "text": "Ko‘p savollarga to‘g‘ri javob berdi"
+          },
+          {
+            "letter": "D",
+            "text": "Bellashuvga bormadi"
+          },
+          {
+            "letter": "E",
+            "text": "Faqat yugurdi"
+          }
+        ],
+        "correct": null
+      },
+      {
+        "q": "Hikoyaning asosiy g‘oyasi nima?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Quyonlar tez yuguradi."
+          },
+          {
+            "letter": "B",
+            "text": "Kitob o‘qigan bolaning bilimi ortadi."
+          },
+          {
+            "letter": "D",
+            "text": "O‘rmonda hayvonlar yashaydi."
+          },
+          {
+            "letter": "E",
+            "text": "Bellashuvda faqat yugurish kerak."
+          }
+        ],
+        "correct": null
+      }
+    ],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "bir-dona-urugning-sayohati-4-sinf": {
+    "tier": "c",
+    "new_words": [
+      "urug‘",
+      "momiqcha",
+      "terak daraxti",
+      "shamol",
+      "tuproq",
+      "suv",
+      "quyosh",
+      "nihol",
+      "ildiz",
+      "barg",
+      "katta daraxt",
+      "qush uyasi",
+      "tosh"
+    ],
+    "comprehension": [],
+    "mcq": [],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "korinmas-koprik-4-sinf": {
+    "tier": "c",
+    "new_words": [
+      "sinf",
+      "deraza",
+      "daftar",
+      "rasm",
+      "qulay zinapoya",
+      "ovozli kutubxona",
+      "sport zali",
+      "loyiha",
+      "o‘qituvchi",
+      "guruh"
+    ],
+    "comprehension": [],
+    "mcq": [],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "muzeydagi-jim-soat-4-sinf": {
+    "tier": "c",
+    "new_words": [
+      "muzey",
+      "qadimiy idish",
+      "eski kitob",
+      "tanga",
+      "devor soati",
+      "soat millari",
+      "yozuv",
+      "kundalik",
+      "matematika daftari",
+      "o‘qish kitobi",
+      "rasm daftari"
+    ],
+    "comprehension": [],
+    "mcq": [],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "oy-nuridagi-xarita-4-sinf": {
+    "tier": "c",
+    "new_words": [
+      "xarita",
+      "telefon",
+      "buloq",
+      "eski tut daraxti",
+      "yaylov",
+      "oy",
+      "qishloq",
+      "daraxtJavoblar kaliti"
+    ],
+    "comprehension": [],
+    "mcq": [],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "qogoz-kemaning-maktubi-4-sinf": {
+    "tier": "c",
+    "new_words": [
+      "qog‘oz kema",
+      "yomg‘ir",
+      "maktab hovlisi",
+      "ko‘lmak",
+      "daftar varag‘i",
+      "suv yo‘li",
+      "daraxt",
+      "doska",
+      "yozuv",
+      "rangli qalamlar",
+      "birinchi sinf o‘quvchisi"
+    ],
+    "comprehension": [],
+    "mcq": [],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "qumdagi-izlar-4-sinf": {
+    "tier": "c",
+    "new_words": [
+      "dengiz",
+      "qum",
+      "izlar",
+      "toshbaqa",
+      "butalar",
+      "shox-shabba",
+      "murabbiy",
+      "bolalar",
+      "oromgoh",
+      "suv",
+      "qirg‘oq"
+    ],
+    "comprehension": [],
+    "mcq": [],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "robotga-berilgan-vada-4-sinf": {
+    "tier": "c",
+    "new_words": [
+      "robot",
+      "g‘ildirak",
+      "rangli belgi",
+      "qog‘oz chiqindi",
+      "maxsus quti",
+      "ip",
+      "sinfxona",
+      "hakam",
+      "yo‘lJavoblar kaliti"
+    ],
+    "comprehension": [],
+    "mcq": [],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "shamol-tegirmonining-siri-4-sinf": {
+    "tier": "c",
+    "new_words": [
+      "shamol tegirmoni",
+      "qanotlar",
+      "shamol",
+      "o‘qituvchi",
+      "bolalar",
+      "mexanizm",
+      "don",
+      "un",
+      "elektr energiyasi",
+      "qishloq"
+    ],
+    "comprehension": [],
+    "mcq": [],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "sukunat-darsidagi-galaba-4-sinf": {
+    "tier": "c",
+    "new_words": [
+      "telefon",
+      "kitob",
+      "deraza",
+      "maktab hovlisi",
+      "chumchuq",
+      "don",
+      "kutubxona",
+      "globus",
+      "mamlakat nomlari",
+      "shaxmat",
+      "o‘qituvchi",
+      "o‘quvchilar"
+    ],
+    "comprehension": [],
+    "mcq": [],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  },
+  "tandir-hidi-kelgan-xat-4-sinf": {
+    "tier": "c",
+    "new_words": [
+      "xat",
+      "konvert",
+      "tandir non",
+      "yupqa mato",
+      "telefon",
+      "rangli qog‘oz",
+      "tandir rasmi",
+      "patir",
+      "qo‘shnilar"
+    ],
+    "comprehension": [],
+    "mcq": [],
+    "fill_blank": null,
+    "true_false": [],
+    "oral": [],
+    "creative": null,
+    "drawing_task": null
+  }
+}

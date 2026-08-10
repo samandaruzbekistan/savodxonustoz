@@ -12,7 +12,7 @@
     $focuses  = ['Tenglik', 'Kitobxonlik madaniyati', 'Maktab-kutubxona hamkorligi', 'Mustaqil o\'qish', 'Media savodxonlik'];
     $colors = [
         'badge' => 'bg-teal-100 text-teal-700', 'ring' => 'ring-teal-300',
-        'head'  => 'from-teal-600 to-cyan-600',  'light' => 'bg-teal-50',
+        'head'  => 'from-teal-600/85 to-cyan-600/80',  'light' => 'bg-teal-50',
         'border'=> 'border-teal-200',             'text'  => 'text-teal-700',
         'btn'   => 'bg-teal-600 hover:bg-teal-700',
         'dot'   => 'bg-teal-500',
@@ -24,8 +24,10 @@
     <div class="min-w-0 flex-1">
 
         {{-- Header --}}
-        <div class="mb-6 rounded-2xl bg-gradient-to-br {{ $colors['head'] }} p-6 text-white">
-            <div class="flex items-start gap-4">
+        <div class="relative mb-6 overflow-hidden rounded-2xl p-6 text-white">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/finlandiya.jpeg') }}')"></div>
+            <div class="absolute inset-0 bg-gradient-to-br {{ $colors['head'] }}"></div>
+            <div class="relative flex items-start gap-4">
                 <span class="text-5xl leading-none">{{ $flag }}</span>
                 <div class="flex-1 min-w-0">
                     <div class="flex items-center gap-2 mb-1">
@@ -41,6 +43,8 @@
                 </div>
             </div>
         </div>
+
+        <x-xalqaro.gallery-strip :images="['finlandiya.jpeg', 'xalqaro/finlandiya-2.jpg', 'xalqaro/finlandiya-3.jpg']" name="Finlandiya" />
 
         {{-- 3 intro boxes --}}
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3 mb-6">

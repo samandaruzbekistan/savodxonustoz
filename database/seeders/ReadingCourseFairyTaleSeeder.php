@@ -11,16 +11,27 @@ use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
+use ZipArchive;
 
 /**
  * Imports the "101 o'qish kursi" fairy tales. The story text was
  * extracted once from the source .docx files (shipped locally under
  * Sayt/9. 101 o'qish kursi/ertaklar va audiolar) and is committed as
  * JSON in data/fairy-tale-bodies.json, so seeding never depends on
- * that local-only folder being present on the deploy target. Only the
- * narrated .mp3 needs to already exist under storage/app/public — if
- * it's missing, that tale is skipped with a warning instead of the
- * seeder silently producing an empty catalogue.
+ * that local-only folder being present on the deploy target. Each
+ * docx also embeds a worksheet (new words, comprehension questions,
+ * a quiz, fill-in-the-blank, true/false, oral and creative prompts)
+ * after the story text; that structured part is parsed out separately
+ * into data/fairy-tale-tasks.json and stored as meta['tasks']. Source
+ * quality varies by grade: 1-2-sinf worksheets are complete with answer
+ * keys, 3-sinf worksheets are missing answers, and 4-sinf worksheets
+ * were pasted into the docx as images so only a leaked word list
+ * survives text extraction — see meta['tasks']['tier'] (a/b/c).
+ * The narrated .mp3 and the cover image (each tale's docx always embeds its
+ * cover as the first image under word/media/) both only need to already
+ * exist under storage/app/public — if either is missing and the source
+ * .docx isn't available to (re-)extract it from, that piece is skipped
+ * with a warning instead of the seeder silently producing gaps.
  */
 class ReadingCourseFairyTaleSeeder extends Seeder
 {
@@ -28,12 +39,17 @@ class ReadingCourseFairyTaleSeeder extends Seeder
 
     private const STORAGE_DIR = 'ertaklar';
 
+    private const COVER_DIR = 'ertaklar-cover';
+
     private const BODIES_FILE = __DIR__.'/data/fairy-tale-bodies.json';
+
+    private const TASKS_FILE = __DIR__.'/data/fairy-tale-tasks.json';
 
     public function run(): void
     {
         $authorId = User::where('email', 'admin@savodxon.uz')->value('id');
         $bodies = json_decode(File::get(self::BODIES_FILE), true);
+        $tasks = json_decode(File::get(self::TASKS_FILE), true);
 
         $parent = Category::updateOrCreate(
             ['type' => CategoryType::Content->value, 'slug' => 'ertaklar-va-audiolar'],
@@ -87,6 +103,21 @@ class ReadingCourseFairyTaleSeeder extends Seeder
                 continue;
             }
 
+            $coverRelativePath = self::COVER_DIR."/{$tale['grade']}-sinf/{$slug}.jpg";
+            $coverAbsolutePath = storage_path('app/public/'.$coverRelativePath);
+
+            if (! File::exists($coverAbsolutePath)) {
+                $docxPath = "{$sourcePath}/{$tale['grade']}-sinflar uchun/{$tale['docx']}";
+                $cover = File::exists($docxPath) ? $this->extractCover($docxPath) : null;
+
+                if ($cover) {
+                    File::ensureDirectoryExists(dirname($coverAbsolutePath));
+                    $this->saveCoverAsJpeg($cover, $coverAbsolutePath);
+                } else {
+                    $this->command?->warn("Muqova rasmi topilmadi, o'tkazib yuborildi: {$tale['title']} ({$tale['grade']}-sinf)");
+                }
+            }
+
             Content::updateOrCreate(
                 ['slug' => $slug],
                 [
@@ -96,16 +127,84 @@ class ReadingCourseFairyTaleSeeder extends Seeder
                     'title' => $tale['title'],
                     'excerpt' => "{$tale['grade']}-sinf uchun audio ertak",
                     'body' => $bodies[$slug],
+                    'cover_image' => File::exists($coverAbsolutePath) ? $coverRelativePath : null,
                     'meta' => [
                         'grade' => $tale['grade'],
                         'audio_path' => $audioRelativePath,
                         'audio_size' => File::size($audioAbsolutePath),
+                        'tasks' => $tasks[$slug] ?? null,
                     ],
                     'status' => ContentStatus::Published->value,
                     'published_at' => now()->subDays(count($this->tales()) - $index),
                 ],
             );
         }
+    }
+
+    /**
+     * Every tale's docx embeds its cover illustration as the first image
+     * under word/media/ (image1.jpeg or image1.png depending on how the
+     * source document was authored).
+     *
+     * @return array{data: string, ext: string}|null
+     */
+    private function extractCover(string $docxPath): ?array
+    {
+        $zip = new ZipArchive;
+
+        if ($zip->open($docxPath) !== true) {
+            return null;
+        }
+
+        $entryName = null;
+
+        for ($i = 0; $i < $zip->numFiles; $i++) {
+            $name = $zip->getNameIndex($i);
+
+            if ($name !== false && preg_match('#^word/media/image1\.(jpe?g|png)$#i', $name)) {
+                $entryName = $name;
+                break;
+            }
+        }
+
+        $data = $entryName ? $zip->getFromName($entryName) : false;
+        $zip->close();
+
+        if ($data === false || $entryName === null) {
+            return null;
+        }
+
+        return ['data' => $data, 'ext' => strtolower(pathinfo($entryName, PATHINFO_EXTENSION))];
+    }
+
+    /**
+     * Normalizes every cover to a compressed JPEG capped at 800px wide, so a
+     * 40-tale grid never has to load megabytes-large source illustrations.
+     *
+     * @param  array{data: string, ext: string}  $cover
+     */
+    private function saveCoverAsJpeg(array $cover, string $destination): void
+    {
+        $source = @imagecreatefromstring($cover['data']);
+
+        if ($source === false) {
+            return;
+        }
+
+        $width = imagesx($source);
+        $height = imagesy($source);
+        $maxWidth = 800;
+
+        if ($width > $maxWidth) {
+            $newHeight = (int) round($height * ($maxWidth / $width));
+            $resized = imagecreatetruecolor($maxWidth, $newHeight);
+            imagecopyresampled($resized, $source, 0, 0, 0, 0, $maxWidth, $newHeight, $width, $height);
+            imagedestroy($source);
+            $source = $resized;
+        }
+
+        imagejpeg($source, $destination, 82);
+        imagedestroy($source);
     }
 
     /**

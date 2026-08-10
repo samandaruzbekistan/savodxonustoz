@@ -12,8 +12,10 @@
     <div class="min-w-0 flex-1">
 
         {{-- Header --}}
-        <div class="mb-6 rounded-2xl bg-gradient-to-br from-rose-600 to-red-700 p-6 text-white">
-            <div class="flex items-start gap-4">
+        <div class="relative mb-6 overflow-hidden rounded-2xl p-6 text-white">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/koreya.jpg') }}')"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-rose-600/85 to-red-700/80"></div>
+            <div class="relative flex items-start gap-4">
                 <span class="text-5xl leading-none">🇰🇷</span>
                 <div class="flex-1 min-w-0">
                     <div class="flex items-center gap-2 mb-1">
@@ -29,6 +31,8 @@
                 </div>
             </div>
         </div>
+
+        <x-xalqaro.gallery-strip :images="['koreya.jpg', 'xalqaro/janubiy-koreya-2.jpg', 'xalqaro/janubiy-koreya-3.jpg']" name="Janubiy Koreya" />
 
         {{-- Ehtiyotkorlik ogohlantirishi --}}
         <div class="mb-6 rounded-2xl border border-yellow-300 bg-yellow-50 p-4 flex gap-3 items-start">

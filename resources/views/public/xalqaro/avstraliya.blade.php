@@ -12,8 +12,10 @@
     <div class="min-w-0 flex-1">
 
         {{-- Header --}}
-        <div class="mb-6 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-600 p-6 text-white">
-            <div class="flex items-start gap-4">
+        <div class="relative mb-6 overflow-hidden rounded-2xl p-6 text-white">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/avstraliya.jpg') }}')"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-orange-500/85 to-amber-600/80"></div>
+            <div class="relative flex items-start gap-4">
                 <span class="text-5xl leading-none">🇦🇺</span>
                 <div class="flex-1 min-w-0">
                     <div class="flex items-center gap-2 mb-1">
@@ -29,6 +31,8 @@
                 </div>
             </div>
         </div>
+
+        <x-xalqaro.gallery-strip :images="['avstraliya.jpg', 'xalqaro/avstraliya-2.jpg', 'xalqaro/avstraliya-3.jpg']" name="Avstraliya" />
 
         {{-- 3 intro boxes --}}
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3 mb-6">

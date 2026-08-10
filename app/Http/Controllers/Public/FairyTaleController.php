@@ -8,6 +8,7 @@ use App\Enums\ContentType;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Content;
+use App\Models\Test;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -54,14 +55,30 @@ class FairyTaleController extends Controller
         $tale->load('category');
         $tale->increment('view_count');
 
-        $related = Content::query()
+        $siblings = Content::query()
             ->ofType(ContentType::Ertak)
             ->published()
             ->where('category_id', $tale->category_id)
-            ->whereKeyNot($tale->id)
-            ->limit(4)
-            ->get();
+            ->orderBy('title')
+            ->get(['id', 'slug', 'title']);
 
-        return view('public.fairy-tales.show', compact('tale', 'related'));
+        $position = $siblings->search(fn ($item) => $item->is($tale));
+        $previous = $position > 0 ? $siblings->get($position - 1) : null;
+        $next = $position !== false && $position < $siblings->count() - 1 ? $siblings->get($position + 1) : null;
+
+        $related = $siblings->reject(fn ($item) => $item->is($tale))->take(4);
+
+        $quiz = Test::query()->published()->where('slug', $tale->slug)->withCount('questions')->first();
+
+        return view('public.fairy-tales.show', [
+            'tale' => $tale,
+            'related' => $related,
+            'previous' => $previous,
+            'next' => $next,
+            'position' => $position === false ? null : $position + 1,
+            'total' => $siblings->count(),
+            'quiz' => $quiz,
+            'tasks' => $tale->meta['tasks'] ?? null,
+        ]);
     }
 }

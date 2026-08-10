@@ -24,11 +24,8 @@
                 </div>
             </div>
             <div class="hidden md:flex shrink-0 items-center justify-center">
-                <div class="h-32 w-32 rounded-full bg-white/10 border-2 border-white/20 flex items-center justify-center">
-                    <div class="h-24 w-24 rounded-full bg-white/15 border border-white/25 flex items-center justify-center">
-                        <x-icon name="play" class="h-14 w-14 text-white" stroke="1.2" />
-                    </div>
-                </div>
+                <img src="{{ asset('images/ertaklar-va-audiolar/ertaklar-va-audiolar.png') }}"
+                     alt="" class="h-64 w-64 object-contain drop-shadow-2xl">
             </div>
         </div>
     </div>

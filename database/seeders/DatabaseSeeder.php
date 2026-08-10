@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             ScientificArticleSeeder::class,
             ReadingCourseSeeder::class,
             ReadingCourseFairyTaleSeeder::class,
+            ReadingCourseFairyTaleQuizSeeder::class,
             TestSeeder::class,
         ]);
     }
