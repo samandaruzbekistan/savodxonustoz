@@ -5,13 +5,18 @@
     @include('public.metodik._sidebar', ['activeSlug' => 'javob-baholash'])
     <div class="min-w-0 flex-1">
 
-        <div class="mb-6">
-            <div class="flex items-center gap-3 mb-2">
-                <span class="inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold bg-emerald-100 text-emerald-700">4</span>
-                <span class="text-xs text-slate-500 uppercase tracking-wide font-medium">Metodik modul • 4-bo'lim</span>
+        {{-- Hero --}}
+        <div class="relative mb-8 overflow-hidden rounded-3xl shadow-sm">
+            <img src="{{ asset('images/metodik/javob-baholash/hero.jpg') }}" alt="O'quvchi doskada javob yozmoqda" class="h-56 w-full object-cover object-top sm:h-64" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/95 via-emerald-900/70 to-emerald-900/10"></div>
+            <div class="absolute inset-0 flex flex-col justify-center px-7 sm:px-10">
+                <span class="mb-3 inline-flex w-fit items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/25 backdrop-blur-sm">
+                    <span class="grid h-4 w-4 place-items-center rounded-full bg-white/20 text-[10px]">4</span>
+                    Metodik modul · 4-bo'lim
+                </span>
+                <h1 class="max-w-2xl text-3xl font-extrabold tracking-tight text-white sm:text-4xl">O'quvchi javobini baholash</h1>
+                <p class="mt-3 max-w-xl text-sm leading-relaxed text-emerald-100">Ochiq javoblarni mezon asosida tahlil qilish va sun'iy intellekt yordamida baholash rubrikasini yaratish sahifasi. Bo'lajak o'qituvchilarda adolatli, aniq va mezonli baholash kompetensiyasini rivojlantirish.</p>
             </div>
-            <h1 class="text-3xl font-extrabold tracking-tight text-slate-900">O'quvchi javobini baholash</h1>
-            <p class="mt-2 text-slate-600 leading-relaxed max-w-3xl">Ochiq javoblarni mezon asosida tahlil qilish va sun'iy intellekt yordamida baholash rubrikasini yaratish sahifasi. Bo'lajak o'qituvchilarda adolatli, aniq va mezonli baholash kompetensiyasini rivojlantirish.</p>
         </div>
 
         {{-- Maqsad --}}
@@ -50,15 +55,18 @@
 
         {{-- Nazariy izoh --}}
         <div class="mb-6 grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div class="rounded-xl border border-teal-300 bg-teal-100 p-5">
-                <div class="flex items-center gap-2 mb-3">
-                    <span class="grid h-8 w-8 place-items-center rounded-lg bg-teal-600">
-                        <svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
-                    </span>
-                    <h3 class="text-sm font-bold text-teal-900">NAZARIY IZOH</h3>
+            <div class="overflow-hidden rounded-xl border border-teal-300 bg-teal-100">
+                <img src="{{ asset('images/metodik/javob-baholash/teacher-review.jpg') }}" alt="O'qituvchi o'quvchi javobini ko'zdan kechirmoqda" class="h-36 w-full object-cover object-[center_35%]">
+                <div class="p-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="grid h-8 w-8 place-items-center rounded-lg bg-teal-600">
+                            <svg class="h-4 w-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
+                        </span>
+                        <h3 class="text-sm font-bold text-teal-900">NAZARIY IZOH</h3>
+                    </div>
+                    <p class="text-xs text-teal-800 leading-relaxed mb-2">O'qish savodxonligini rivojlantirishda baholash oddiy ball qo'yish jarayoni emas. Baholash — bu o'quvchining matnni qay darajada tushungani, savol mazmunini anglagani, matndan dalil keltira olgani va o'z fikrini mustaqil ifodalaganini aniqlash vositasidir.</p>
+                    <p class="text-xs text-teal-800 leading-relaxed">Boshlang'ich sinflarda ochiq javoblarni baholash alohida ahamiyatga ega. Bunday javoblarda o'quvchi tayyor variantni tanlamaydi, balki o'z tushunchasi, munosabati va xulosasini bildiradi.</p>
                 </div>
-                <p class="text-xs text-teal-800 leading-relaxed mb-2">O'qish savodxonligini rivojlantirishda baholash oddiy ball qo'yish jarayoni emas. Baholash — bu o'quvchining matnni qay darajada tushungani, savol mazmunini anglagani, matndan dalil keltira olgani va o'z fikrini mustaqil ifodalaganini aniqlash vositasidir.</p>
-                <p class="text-xs text-teal-800 leading-relaxed">Boshlang'ich sinflarda ochiq javoblarni baholash alohida ahamiyatga ega. Bunday javoblarda o'quvchi tayyor variantni tanlamaydi, balki o'z tushunchasi, munosabati va xulosasini bildiradi.</p>
             </div>
             <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
                 <h3 class="text-xs font-bold text-slate-800 mb-3">O'QUVCHI JAVOBINI BAHOLASHDA QO'YIDAGI JIHATLAR E'TIBORGA OLINADI:</h3>
@@ -291,8 +299,13 @@
         {{-- Talabalar uchun mashq --}}
         <div class="mb-6">
             <div class="mb-4 rounded-lg bg-slate-800 px-4 py-2.5 text-center text-sm font-bold text-white uppercase tracking-wide">TALABALAR UCHUN MASHQ</div>
-            <div class="mb-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-                <p class="text-xs font-bold text-slate-700 mb-1">Savol: <span class="font-normal text-slate-600">Nima uchun qahramon do'stiga yordam berdi?</span></p>
+            <div class="mb-3 grid grid-cols-1 gap-3 sm:grid-cols-[160px_1fr]">
+                <div class="hidden overflow-hidden rounded-xl border border-slate-200 sm:block">
+                    <img src="{{ asset('images/metodik/javob-baholash/classroom.jpg') }}" alt="O'quvchilar sinfda diqqat bilan tinglamoqda" class="h-full w-full object-cover">
+                </div>
+                <div class="rounded-xl border border-slate-200 bg-white p-4 shadow-sm flex items-center">
+                    <p class="text-xs font-bold text-slate-700">Savol: <span class="font-normal text-slate-600">Nima uchun qahramon do'stiga yordam berdi?</span></p>
+                </div>
             </div>
             <div class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
                 <table class="w-full text-xs">

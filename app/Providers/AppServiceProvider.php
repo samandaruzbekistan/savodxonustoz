@@ -37,6 +37,8 @@ class AppServiceProvider extends ServiceProvider
             $view->with('navCategories', Category::query()
                 ->where('type', CategoryType::Content)
                 ->whereNull('parent_id')
+                // Fairy tales now live inside the "101 o'qish kursi" page, not as their own top-level section.
+                ->where('slug', '!=', 'ertaklar-va-audiolar')
                 ->orderBy('sort_order')
                 ->get());
         });

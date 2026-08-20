@@ -12,19 +12,21 @@
         @endphp
 
         {{-- Hero banner --}}
-        <div class="mb-6 rounded-2xl overflow-hidden relative bg-gradient-to-br from-emerald-600 to-teal-600">
-            <div class="relative px-6 py-8 flex items-center gap-6 sm:px-10">
-                <div class="flex-1 min-w-0">
-                    <div class="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 mb-4 ring-1 ring-inset ring-white/25">
-                        <span class="h-2 w-2 rounded-full bg-emerald-200 animate-pulse"></span>
-                        <span class="text-xs font-semibold text-white/90">Bo'lajak o'qituvchilar uchun</span>
-                    </div>
-                    <h1 class="text-3xl font-extrabold tracking-tight text-white leading-tight">Bo'lajak boshlang'ich sinf o'qituvchilari uchun metodik modul</h1>
-                    <p class="mt-3 text-emerald-50 leading-relaxed max-w-xl text-sm">
+        <div class="relative mb-8 overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-900 p-7 shadow-sm sm:p-9">
+            <div class="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/5"></div>
+            <div class="pointer-events-none absolute -bottom-20 left-1/3 h-40 w-40 rounded-full bg-white/5"></div>
+            <div class="relative z-10 flex items-center gap-6">
+                <div class="max-w-xl flex-1">
+                    <span class="mb-3 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/25 backdrop-blur-sm">
+                        <span class="h-2 w-2 rounded-full bg-emerald-300 animate-pulse"></span>
+                        Bo'lajak o'qituvchilar uchun
+                    </span>
+                    <h1 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Metodik modul</h1>
+                    <p class="mt-3 leading-relaxed text-emerald-100">
                         Boshlang'ich sinf o'qituvchilarining o'qish savodxonligini rivojlantirish bo'yicha amaliy metodikalar, savol tuzish, baholash va lug'at ustida ishlash usullari.
                     </p>
                 </div>
-                <div class="hidden md:flex shrink-0 items-center justify-center rounded-2xl bg-white/95 p-4 shadow-xl">
+                <div class="hidden shrink-0 items-center justify-center rounded-2xl bg-white/95 p-4 shadow-xl md:flex">
                     <img src="{{ $imgUrl('bannerga.png') }}" alt="" class="h-40 w-56 object-contain">
                 </div>
             </div>
@@ -94,49 +96,58 @@
             ];
         @endphp
 
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-6">
+        <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             @foreach ($cards as $card)
                 @php $c = $colorMap[$card['color']]; @endphp
-                <div class="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="relative -mx-5 -mt-5 mb-3 flex h-28 items-center justify-center overflow-hidden rounded-t-2xl {{ $c['bg'] }}">
+                <div class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+                    <div class="relative flex h-28 items-center justify-center overflow-hidden {{ $c['bg'] }}">
                         <img src="{{ $imgUrl($card['img']) }}" alt="{{ $card['title'] }}" loading="lazy" class="h-24 w-24 object-contain">
                         <span class="absolute right-3 top-3 inline-flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold shadow-sm {{ $c['badge'] }}">{{ $card['num'] }}</span>
                     </div>
-                    <h3 class="text-sm font-bold text-slate-800 leading-snug mb-1.5">{{ $card['title'] }}</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed mb-3">{{ $card['desc'] }}</p>
-                    <ul class="flex-1 space-y-1.5 mb-4">
-                        @foreach ($card['points'] as $point)
-                            <li class="flex items-start gap-1.5 text-xs text-slate-600">
-                                <svg class="mt-0.5 h-3.5 w-3.5 shrink-0 text-slate-400" fill="currentColor" viewBox="0 0 6 6"><circle cx="3" cy="3" r="2"/></svg>
-                                {{ $point }}
-                            </li>
-                        @endforeach
-                    </ul>
-                    @if (!empty($card['soon']))
-                        <span class="inline-flex items-center gap-1 rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-400">
-                            <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            Tez orada
-                        </span>
-                    @else
-                        <a href="{{ route('metodik.show', $card['slug']) }}"
-                           class="inline-flex items-center gap-1 rounded-lg border px-3 py-1.5 text-xs font-semibold transition {{ $c['btn'] }}">
-                            Batafsil o'rganish
-                            <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                        </a>
-                    @endif
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="mb-1.5 text-sm font-bold leading-snug text-slate-800">{{ $card['title'] }}</h3>
+                        <p class="mb-3 text-xs leading-relaxed text-slate-500">{{ $card['desc'] }}</p>
+                        <ul class="mb-4 flex-1 space-y-1.5">
+                            @foreach ($card['points'] as $point)
+                                <li class="flex items-start gap-1.5 text-xs text-slate-600">
+                                    <x-icon name="check" class="mt-0.5 h-3.5 w-3.5 shrink-0 text-slate-400" stroke="2.5" />
+                                    {{ $point }}
+                                </li>
+                            @endforeach
+                        </ul>
+                        @if (!empty($card['soon']))
+                            <span class="inline-flex items-center gap-1.5 self-start rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-400">
+                                <x-icon name="dot" class="h-3.5 w-3.5" />
+                                Tez orada
+                            </span>
+                        @else
+                            <a href="{{ route('metodik.show', $card['slug']) }}"
+                               class="inline-flex items-center gap-1 self-start rounded-lg border px-3 py-1.5 text-xs font-semibold transition {{ $c['btn'] }}">
+                                Batafsil o'rganish
+                                <x-icon name="arrow-right" class="h-3.5 w-3.5" />
+                            </a>
+                        @endif
+                    </div>
                 </div>
             @endforeach
         </div>
 
-        <div class="rounded-2xl border border-emerald-200 bg-gradient-to-r from-emerald-50 to-teal-50 px-6 py-5">
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <div>
-                    <p class="text-sm font-bold text-emerald-900 mb-1">Metodik tayyorgarlik — sifatli ta'lim va ongli savodxonlikning tayanchi.</p>
-                    <p class="text-xs text-emerald-700">Har bir bo'limda nazariy izoh, amaliy metodlar, namunay topshiriqlar va dissertatsiya uchun ilmiy asoslar berilgan.</p>
+        <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-900 p-6 text-white shadow-sm">
+            <div class="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/5"></div>
+            <div class="relative z-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <div class="max-w-2xl">
+                    <div class="mb-2 flex items-center gap-2.5">
+                        <span class="grid h-9 w-9 place-items-center rounded-xl bg-white/10 text-emerald-200">
+                            <x-icon name="target" class="h-4.5 w-4.5" />
+                        </span>
+                        <span class="text-xs font-semibold uppercase tracking-wide text-emerald-200">Metodik tayyorgarlik</span>
+                    </div>
+                    <p class="text-sm font-bold leading-relaxed text-white">Sifatli ta'lim va ongli savodxonlikning tayanchi.</p>
+                    <p class="mt-1 text-xs leading-relaxed text-emerald-100">Har bir bo'limda nazariy izoh, amaliy metodlar, namunay topshiriqlar va dissertatsiya uchun ilmiy asoslar berilgan.</p>
                 </div>
-                <a href="{{ route('metodik.show', 'matn-ishlash') }}" class="shrink-0 inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors">
+                <a href="{{ route('metodik.show', 'matn-ishlash') }}" class="inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-emerald-900 transition-colors hover:bg-emerald-50">
                     Boshlash
-                    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    <x-icon name="arrow-right" class="h-4 w-4" />
                 </a>
             </div>
         </div>

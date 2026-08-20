@@ -9,7 +9,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Content;
 use App\Models\Test;
+use App\Models\TestAttempt;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 
 class FairyTaleController extends Controller
@@ -70,6 +72,34 @@ class FairyTaleController extends Controller
 
         $quiz = Test::query()->published()->where('slug', $tale->slug)->withCount('questions')->first();
 
+        $latestAttempt = $quiz && Auth::check()
+            ? $quiz->attempts()->with('answers')->where('user_id', Auth::id())->whereNotNull('submitted_at')->latest('submitted_at')->first()
+            : null;
+
+        $totalErtaklar = Content::query()->ofType(ContentType::Ertak)->published()->count();
+
+        $achievements = null;
+        if (Auth::check()) {
+            $ertakSlugs = Content::query()->ofType(ContentType::Ertak)->published()->pluck('slug');
+
+            $attempts = TestAttempt::query()
+                ->where('user_id', Auth::id())
+                ->whereNotNull('submitted_at')
+                ->whereHas('test', fn ($q) => $q->whereIn('slug', $ertakSlugs))
+                ->get(['id', 'test_id', 'score', 'max_score']);
+
+            if ($attempts->isNotEmpty()) {
+                $percentages = $attempts->map->percentage;
+
+                $achievements = [
+                    'read' => $attempts->pluck('test_id')->unique()->count(),
+                    'total' => $totalErtaklar,
+                    'average' => (int) round($percentages->avg()),
+                    'best' => $percentages->max(),
+                ];
+            }
+        }
+
         return view('public.fairy-tales.show', [
             'tale' => $tale,
             'related' => $related,
@@ -78,6 +108,9 @@ class FairyTaleController extends Controller
             'position' => $position === false ? null : $position + 1,
             'total' => $siblings->count(),
             'quiz' => $quiz,
+            'latestAttempt' => $latestAttempt,
+            'achievements' => $achievements,
+            'totalErtaklar' => $totalErtaklar,
             'tasks' => $tale->meta['tasks'] ?? null,
         ]);
     }
