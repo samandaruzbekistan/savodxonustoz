@@ -47,7 +47,10 @@ class FairyTaleController extends Controller
                 ->where('category_id', $grade->id)->count();
         }
 
-        return view('public.fairy-tales.index', compact('tales', 'grades', 'counts'));
+        $totalErtaklar = $counts['total'];
+        $achievements = $this->computeAchievements($totalErtaklar);
+
+        return view('public.fairy-tales.index', compact('tales', 'grades', 'counts', 'totalErtaklar', 'achievements'));
     }
 
     public function show(Content $tale): View
@@ -78,27 +81,7 @@ class FairyTaleController extends Controller
 
         $totalErtaklar = Content::query()->ofType(ContentType::Ertak)->published()->count();
 
-        $achievements = null;
-        if (Auth::check()) {
-            $ertakSlugs = Content::query()->ofType(ContentType::Ertak)->published()->pluck('slug');
-
-            $attempts = TestAttempt::query()
-                ->where('user_id', Auth::id())
-                ->whereNotNull('submitted_at')
-                ->whereHas('test', fn ($q) => $q->whereIn('slug', $ertakSlugs))
-                ->get(['id', 'test_id', 'score', 'max_score']);
-
-            if ($attempts->isNotEmpty()) {
-                $percentages = $attempts->map->percentage;
-
-                $achievements = [
-                    'read' => $attempts->pluck('test_id')->unique()->count(),
-                    'total' => $totalErtaklar,
-                    'average' => (int) round($percentages->avg()),
-                    'best' => $percentages->max(),
-                ];
-            }
-        }
+        $achievements = $this->computeAchievements($totalErtaklar);
 
         return view('public.fairy-tales.show', [
             'tale' => $tale,
@@ -113,5 +96,36 @@ class FairyTaleController extends Controller
             'totalErtaklar' => $totalErtaklar,
             'tasks' => $tale->meta['tasks'] ?? null,
         ]);
+    }
+
+    /**
+     * @return array{read: int, total: int, average: int, best: int}|null
+     */
+    private function computeAchievements(int $totalErtaklar): ?array
+    {
+        if (! Auth::check()) {
+            return null;
+        }
+
+        $ertakSlugs = Content::query()->ofType(ContentType::Ertak)->published()->pluck('slug');
+
+        $attempts = TestAttempt::query()
+            ->where('user_id', Auth::id())
+            ->whereNotNull('submitted_at')
+            ->whereHas('test', fn ($q) => $q->whereIn('slug', $ertakSlugs))
+            ->get(['id', 'test_id', 'score', 'max_score']);
+
+        if ($attempts->isEmpty()) {
+            return null;
+        }
+
+        $percentages = $attempts->map->percentage;
+
+        return [
+            'read' => $attempts->pluck('test_id')->unique()->count(),
+            'total' => $totalErtaklar,
+            'average' => (int) round($percentages->avg()),
+            'best' => $percentages->max(),
+        ];
     }
 }

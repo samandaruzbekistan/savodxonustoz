@@ -9,15 +9,19 @@
         <div class="relative mb-8 overflow-hidden rounded-3xl bg-gradient-to-br from-teal-950 via-teal-900 to-cyan-900 p-7 shadow-sm sm:p-9">
             <div class="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/5"></div>
             <div class="pointer-events-none absolute -bottom-20 left-1/3 h-40 w-40 rounded-full bg-white/5"></div>
-            <div class="relative z-10 max-w-xl">
-                <span class="mb-3 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/25 backdrop-blur-sm">
-                    <span class="grid h-4 w-4 place-items-center rounded-full bg-white/20 text-[10px]">5</span>
-                    Metodik modul · 5-bo'lim
-                </span>
-                <h1 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Ravon o'qishni rivojlantirish</h1>
-                <p class="mt-3 leading-relaxed text-teal-100">Bo'lajak boshlang'ich sinf o'qituvchilariga o'quvchilarda to'g'ri, me'yorida, ifodali va tushungan holda o'qish ko'nikmasini rivojlantirish metodikasini o'rgatish.</p>
+            <div class="relative z-10 flex flex-col items-center gap-6 md:flex-row md:items-center md:justify-between">
+                <div class="max-w-xl">
+                    <span class="mb-3 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/25 backdrop-blur-sm">
+                        <span class="grid h-4 w-4 place-items-center rounded-full bg-white/20 text-[10px]">5</span>
+                        Metodik modul · 5-bo'lim
+                    </span>
+                    <h1 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Ravon o'qishni rivojlantirish</h1>
+                    <p class="mt-3 leading-relaxed text-teal-100">Bo'lajak boshlang'ich sinf o'qituvchilariga o'quvchilarda to'g'ri, me'yorida, ifodali va tushungan holda o'qish ko'nikmasini rivojlantirish metodikasini o'rgatish.</p>
+                </div>
+                <div class="shrink-0 overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-white/20">
+                    <img src="{{ asset('images/sections/ravon-rivojlantirish/01_hero_bola_kitob.png') }}" alt="Bola kitob o'qimoqda" class="h-40 w-52 object-cover sm:h-44 sm:w-60 lg:h-52 lg:w-72">
+                </div>
             </div>
-            <img src="{{ asset('images/metodik modul/Ravon o\'qishni rivojlantirish.png') }}" alt="Ravon o'qishni rivojlantirish" class="pointer-events-none absolute right-6 bottom-0 hidden h-36 w-36 object-contain opacity-90 md:block lg:h-40 lg:w-40">
         </div>
 
         {{-- Maqsad + Nazariy izoh --}}
@@ -47,7 +51,7 @@
         <div class="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             <div class="grid grid-cols-1 md:grid-cols-[220px_1fr_1fr]">
                 <div class="hidden md:block">
-                    <img src="{{ asset('images/metodik/ravon-rivojlantirish/darajalar.jpg') }}" alt="O'qituvchi bolalarga ifodali o'qib bermoqda" class="h-full min-h-[260px] w-full object-cover">
+                    <img src="{{ asset('images/sections/ravon-rivojlantirish/02_dars_oqituvchi_va_oquvchilar.png') }}" alt="O'qituvchi bolalarga ifodali o'qib bermoqda" class="h-full min-h-[260px] w-full object-cover">
                 </div>
                 <div class="p-5">
                     <h2 class="mb-3 text-xs font-bold uppercase tracking-wide text-slate-400">Ravon o'qish mashg'uloti</h2>
@@ -91,24 +95,29 @@
 
         {{-- Amaliy metodlar --}}
         <div class="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-            <img src="{{ asset('images/metodik/ravon-rivojlantirish/metodlar.jpg') }}" alt="O'quvchilar sinfda ovoz chiqarib o'qimoqda" class="h-36 w-full object-cover">
+            <img src="{{ asset('images/sections/ravon-rivojlantirish/03_oquvchi_oqish_fotosi.png') }}" alt="O'quvchilar sinfda ovoz chiqarib o'qimoqda" class="h-36 w-full object-cover">
             <div class="p-5">
                 <h2 class="mb-4 text-xs font-bold uppercase tracking-wide text-slate-400">Amaliy metodlar</h2>
                 <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                     @foreach ([
-                        ['n'=>1,'title'=>"Takroriy o'qish",'desc'=>"O'quvchi bir matnni bir necha marta o'qiydi. Har safar aniqlik, ifodalilik va tushunish yaxshilanadi.",'tint'=>'bg-teal-50 text-teal-600'],
-                        ['n'=>2,'title'=>"Juftlikda o'qish",'desc'=>"Kuchliroq o'quvchi sustroq o'quvchi bilan birga o'qiydi. Bu hamkorlikni kuchaytiradi.",'tint'=>'bg-cyan-50 text-cyan-600'],
-                        ['n'=>3,'title'=>'Echo reading','desc'=>"O'qituvchi bir gapni ifodali o'qiydi, o'quvchilar takrorlaydi. Ohang va intonatsiya o'rganiladi.",'tint'=>'bg-sky-50 text-sky-600'],
-                        ['n'=>4,'title'=>"Audio bilan o'qish",'desc'=>"O'quvchi matn audiosini tinglaydi, so'ng unga qo'shilib o'qiydi. Quloq va til birga ishlaydi.",'tint'=>'bg-blue-50 text-blue-600'],
-                        ['n'=>5,'title'=>"Rollarga bo'lib o'qish",'desc'=>"Dialogli matnlar qahramonlarga bo'linib o'qiladi. Ifodalilik va irodalilik rivojlanadi.",'tint'=>'bg-emerald-50 text-emerald-600'],
-                        ['n'=>6,'title'=>"O'z ovozini yozib tahlil qilish",'desc'=>"O'quvchi o'z o'qishini yozib oladi va qayta eshitib, xatolarini aniqlaydi.",'tint'=>'bg-violet-50 text-violet-600'],
+                        ['n'=>1,'title'=>"Takroriy o'qish",'desc'=>"O'quvchi bir matnni bir necha marta o'qiydi. Har safar aniqlik, ifodalilik va tushunish yaxshilanadi.",'tint'=>'bg-teal-50 text-teal-600','img'=>'04_takroriy_oqish_kitoblar.png'],
+                        ['n'=>2,'title'=>"Juftlikda o'qish",'desc'=>"Kuchliroq o'quvchi sustroq o'quvchi bilan birga o'qiydi. Bu hamkorlikni kuchaytiradi.",'tint'=>'bg-cyan-50 text-cyan-600','img'=>'05_juftlikda_oqish.png'],
+                        ['n'=>3,'title'=>'Echo reading','desc'=>"O'qituvchi bir gapni ifodali o'qiydi, o'quvchilar takrorlaydi. Ohang va intonatsiya o'rganiladi.",'tint'=>'bg-sky-50 text-sky-600','img'=>'06_echo_reading_megafon.png'],
+                        ['n'=>4,'title'=>"Audio bilan o'qish",'desc'=>"O'quvchi matn audiosini tinglaydi, so'ng unga qo'shilib o'qiydi. Quloq va til birga ishlaydi.",'tint'=>'bg-blue-50 text-blue-600','img'=>'07_audio_oqish_quloqchin.png'],
+                        ['n'=>5,'title'=>"Rollarga bo'lib o'qish",'desc'=>"Dialogli matnlar qahramonlarga bo'linib o'qiladi. Ifodalilik va irodalilik rivojlanadi.",'tint'=>'bg-emerald-50 text-emerald-600','img'=>'08_rollarga_bolib_oqish.png'],
+                        ['n'=>6,'title'=>"O'z ovozini yozib tahlil qilish",'desc'=>"O'quvchi o'z o'qishini yozib oladi va qayta eshitib, xatolarini aniqlaydi.",'tint'=>'bg-violet-50 text-violet-600','img'=>'09_ovozini_yozib_tahlil.png'],
                     ] as $m)
-                        <div class="rounded-xl border border-slate-200 p-4 transition hover:-translate-y-0.5 hover:shadow-sm">
-                            <div class="mb-2 flex items-center gap-2">
-                                <span class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold {{ $m['tint'] }}">{{ $m['n'] }}</span>
-                                <h4 class="text-xs font-bold text-slate-800">{{ $m['title'] }}</h4>
+                        <div class="flex h-full flex-col overflow-hidden rounded-xl border border-slate-200 transition hover:-translate-y-0.5 hover:shadow-sm">
+                            <div class="flex h-24 shrink-0 items-center justify-center overflow-hidden bg-slate-50 p-3">
+                                <img src="{{ asset('images/sections/ravon-rivojlantirish/'.$m['img']) }}" alt="{{ $m['title'] }}" class="h-full w-full object-contain">
                             </div>
-                            <p class="text-xs leading-relaxed text-slate-500">{{ $m['desc'] }}</p>
+                            <div class="flex flex-1 flex-col p-4">
+                                <div class="mb-2 flex items-center gap-2">
+                                    <span class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold {{ $m['tint'] }}">{{ $m['n'] }}</span>
+                                    <h4 class="text-xs font-bold text-slate-800">{{ $m['title'] }}</h4>
+                                </div>
+                                <p class="text-xs leading-relaxed text-slate-500">{{ $m['desc'] }}</p>
+                            </div>
                         </div>
                     @endforeach
                 </div>
@@ -119,8 +128,8 @@
         <div class="mb-8 grid grid-cols-1 gap-4 md:grid-cols-2">
             <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <div class="mb-3 flex items-center gap-2.5">
-                    <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-slate-100 text-slate-600">
-                        <x-icon name="clipboard" class="h-4.5 w-4.5" />
+                    <span class="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-xl bg-slate-100 p-1.5">
+                        <img src="{{ asset('images/sections/ravon-rivojlantirish/10_darsda_qollash_tartibi_clipboard.png') }}" alt="" class="h-full w-full object-contain">
                     </span>
                     <h3 class="text-sm font-bold text-slate-800">Darsda qo'llash tartibi</h3>
                 </div>
@@ -144,8 +153,8 @@
             </div>
             <div class="rounded-2xl border border-teal-200 bg-teal-50/50 p-5">
                 <div class="mb-3 flex items-center gap-2.5">
-                    <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-teal-100 text-teal-600">
-                        <x-icon name="cap" class="h-4.5 w-4.5" />
+                    <span class="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-xl bg-teal-100 p-1.5">
+                        <img src="{{ asset('images/sections/ravon-rivojlantirish/11_talabalar_uchun_mashq_daftar.png') }}" alt="" class="h-full w-full object-contain">
                     </span>
                     <h3 class="text-sm font-bold text-teal-900">Talabalar uchun mashq</h3>
                 </div>
@@ -170,11 +179,11 @@
         {{-- O'qituvchi uchun tavsiya --}}
         <div class="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             <div class="grid grid-cols-1 md:grid-cols-[200px_1fr]">
-                <img src="{{ asset('images/metodik/ravon-rivojlantirish/tavsiya.jpg') }}" alt="O'quvchilar kulib kitob o'qimoqda" class="hidden h-full w-full object-cover md:block">
+                <img src="{{ asset('images/sections/ravon-rivojlantirish/12_oqituvchi_bilan_mashq.png') }}" alt="O'quvchilar kulib kitob o'qimoqda" class="hidden h-full w-full object-cover md:block">
                 <div class="p-5">
                     <div class="mb-3 flex items-center gap-2.5">
-                        <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-amber-50 text-amber-600">
-                            <x-icon name="bulb" class="h-4.5 w-4.5" />
+                        <span class="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-xl bg-amber-50 p-1.5">
+                            <img src="{{ asset('images/sections/ravon-rivojlantirish/13_oqituvchi_tavsiyasi_lampochka.png') }}" alt="" class="h-full w-full object-contain">
                         </span>
                         <h3 class="text-sm font-bold text-slate-800">O'qituvchi uchun tavsiya</h3>
                     </div>
@@ -193,7 +202,7 @@
             </div>
             <div class="grid grid-cols-1 gap-4 md:grid-cols-[160px_1fr_1fr]">
                 <div class="hidden overflow-hidden rounded-2xl border border-slate-200 md:block">
-                    <img src="{{ asset('images/metodik/ravon-rivojlantirish/namuna.jpg') }}" alt="Katta kishi bolalarga ovoz chiqarib o'qib bermoqda" class="h-full w-full object-cover">
+                    <img src="{{ asset('images/sections/ravon-rivojlantirish/14_namunaviy_topshiriq_kitoblar.png') }}" alt="Katta kishi bolalarga ovoz chiqarib o'qib bermoqda" class="h-full w-full object-cover">
                 </div>
                 <div class="rounded-2xl border border-teal-200 bg-teal-50/50 p-5">
                     <p class="mb-3 text-xs font-bold text-teal-900">Mashq: "Uch marta o'qi"</p>
@@ -214,7 +223,12 @@
                     </ol>
                 </div>
                 <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                    <p class="mb-3 text-xs font-bold text-slate-700">Baholash mezoni:</p>
+                    <div class="mb-3 flex items-center gap-2.5">
+                        <span class="grid h-8 w-8 shrink-0 place-items-center overflow-hidden rounded-xl bg-amber-50 p-1.5">
+                            <img src="{{ asset('images/sections/ravon-rivojlantirish/15_baholash_mezoni_kubok.png') }}" alt="" class="h-full w-full object-contain">
+                        </span>
+                        <p class="text-xs font-bold text-slate-700">Baholash mezoni:</p>
+                    </div>
                     <ul class="space-y-2">
                         @foreach ([
                             "So'zlarni to'g'ri o'qidi",
@@ -237,8 +251,8 @@
             <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-teal-950 via-teal-900 to-cyan-900 p-5 text-white shadow-sm">
                 <div class="pointer-events-none absolute -right-8 -top-8 h-32 w-32 rounded-full bg-white/5"></div>
                 <div class="relative z-10 mb-3 flex items-center gap-2.5">
-                    <span class="grid h-9 w-9 place-items-center rounded-xl bg-white/10 text-teal-200">
-                        <x-icon name="star" class="h-4.5 w-4.5" />
+                    <span class="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-xl bg-white/10 p-1.5">
+                        <img src="{{ asset('images/sections/ravon-rivojlantirish/16_kutiladigan_natija_nishon.png') }}" alt="" class="h-full w-full object-contain">
                     </span>
                     <p class="text-xs font-semibold uppercase tracking-wide text-teal-200">Kutiladigan natija</p>
                 </div>
@@ -257,8 +271,8 @@
             </div>
             <div class="rounded-2xl border border-amber-200 bg-amber-50/50 p-5">
                 <div class="mb-3 flex items-center gap-2.5">
-                    <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-amber-100 text-amber-600">
-                        <x-icon name="doc" class="h-4.5 w-4.5" />
+                    <span class="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-xl bg-amber-100 p-1.5">
+                        <img src="{{ asset('images/sections/ravon-rivojlantirish/17_dissertatsiya_ilmiy_ahamiyati_diplom.png') }}" alt="" class="h-full w-full object-contain">
                     </span>
                     <p class="text-xs font-semibold uppercase tracking-wide text-amber-800">Dissertatsiyadagi ilmiy ahamiyati</p>
                 </div>

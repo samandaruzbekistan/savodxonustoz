@@ -5,13 +5,29 @@
     @include('public.barcha-oquvchilarga-yordam._sidebar', ['activeSlug' => 'individual-oqish-xaritasi'])
     <div class="min-w-0 flex-1">
 
-        <div class="mb-6">
-            <div class="flex items-center gap-3 mb-2">
-                <span class="inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold bg-rose-100 text-rose-700">5</span>
-                <span class="text-xs text-slate-500 uppercase tracking-wide font-medium">Barcha o'quvchilarga yordam berish • 5-bo'lim</span>
+        <div class="mb-6 rounded-2xl overflow-hidden relative bg-gradient-to-br from-rose-600 to-pink-700 px-6 py-6">
+            <div class="relative flex items-center gap-6">
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold bg-white/20 text-white">5</span>
+                        <span class="text-xs text-rose-100 uppercase tracking-wide font-medium">Barcha o'quvchilarga yordam berish • 5-bo'lim</span>
+                    </div>
+                    <h1 class="text-3xl font-extrabold tracking-tight text-white">Individual o'qish xaritasi</h1>
+                    <p class="mt-2 text-rose-100 leading-relaxed max-w-lg text-sm">Har bir o'quvchining o'qishdagi rivojlanish yo'li turlicha. Individual o'qish xaritasi — bu har bir o'quvchining o'qish savodxonligi bo'yicha rivojlanishini kuzatish jadvalidir.</p>
+                </div>
+                <div class="hidden sm:block shrink-0 pr-2" aria-hidden="true">
+                    <svg class="h-24 w-32" viewBox="0 0 128 96" fill="none">
+                        <polyline points="4,80 4,4" stroke="white" stroke-opacity="0.35" stroke-width="2"/>
+                        <polyline points="4,80 124,80" stroke="white" stroke-opacity="0.35" stroke-width="2"/>
+                        <polyline points="10,68 40,55 70,42 100,20 122,8" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="10" cy="68" r="3.5" fill="white"/>
+                        <circle cx="40" cy="55" r="3.5" fill="white"/>
+                        <circle cx="70" cy="42" r="3.5" fill="white"/>
+                        <circle cx="100" cy="20" r="3.5" fill="white"/>
+                        <circle cx="122" cy="8" r="4" fill="white"/>
+                    </svg>
+                </div>
             </div>
-            <h1 class="text-3xl font-extrabold tracking-tight text-slate-900">Individual o'qish xaritasi</h1>
-            <p class="mt-2 text-slate-600 leading-relaxed max-w-3xl">Har bir o'quvchining o'qishdagi rivojlanish yo'li turlicha. Individual o'qish xaritasi — bu har bir o'quvchining o'qish savodxonligi bo'yicha rivojlanishini kuzatish jadvalidir.</p>
         </div>
 
         {{-- Muammo tavsifi --}}
@@ -85,12 +101,16 @@
                 </div>
             </div>
             <div class="mt-4 rounded-xl border border-emerald-200 bg-emerald-50 p-5">
-                <p class="text-xs font-bold text-emerald-900 mb-3">3-mashq. "Rivojlanish grafigi" — oylik natijalar</p>
-                <div class="grid grid-cols-4 gap-3">
-                    @foreach([['Sentabr','45%'],['Oktabr','58%'],['Noyabr','67%'],['Dekabr','75%']] as [$oy,$foiz])
-                        <div class="rounded-lg bg-white border border-emerald-200 px-3 py-3 text-center">
-                            <div class="text-xl font-extrabold text-emerald-600">{{ $foiz }}</div>
-                            <div class="text-xs text-emerald-700 mt-0.5">{{ $oy }}</div>
+                <p class="text-xs font-bold text-emerald-900 mb-4">3-mashq. "Rivojlanish grafigi" — oylik natijalar</p>
+                @php $monthly = [['Sentabr', 45], ['Oktabr', 58], ['Noyabr', 67], ['Dekabr', 75]]; @endphp
+                <div class="flex items-end justify-between gap-4 px-2">
+                    @foreach($monthly as [$oy, $foiz])
+                        <div class="flex flex-1 flex-col items-center gap-1.5">
+                            <span class="text-xs font-extrabold text-emerald-700">{{ $foiz }}%</span>
+                            <div class="flex h-24 w-full max-w-10 items-end">
+                                <div class="w-full rounded-t-md bg-gradient-to-t from-emerald-600 to-emerald-400" style="height: {{ $foiz }}%"></div>
+                            </div>
+                            <span class="text-[11px] text-emerald-800 mt-1">{{ $oy }}</span>
                         </div>
                     @endforeach
                 </div>

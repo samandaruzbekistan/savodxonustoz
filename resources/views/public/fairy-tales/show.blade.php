@@ -25,9 +25,8 @@
         $taskTip = $taskTips[$tale->id % count($taskTips)];
 
         $navItems = [
-            ['label' => "Kurs haqida", 'icon' => 'book', 'color' => 'bg-sky-100 text-sky-600', 'href' => route('reading-course.index')],
-            ['label' => "Matnlar darajasi", 'icon' => 'layers', 'color' => 'bg-teal-100 text-teal-600', 'href' => route('fairy-tales.index')],
-            ['label' => "Matnlar ro'yxati", 'icon' => 'clipboard', 'color' => 'bg-indigo-100 text-indigo-600', 'href' => route('fairy-tales.index'), 'active' => true],
+            ['label' => "Ertaklar va audiolar", 'icon' => 'book', 'color' => 'bg-emerald-100 text-emerald-700', 'href' => route('reading-course.index'), 'active' => true],
+            ['label' => "Darsliklar (PDF)", 'icon' => 'library', 'color' => 'bg-sky-100 text-sky-600', 'href' => route('reading-course.textbooks')],
             ['label' => "Audio bilan ishlash", 'icon' => 'play', 'color' => 'bg-sky-100 text-sky-600', 'href' => '#audio'],
             ['label' => "Topshiriqlar", 'icon' => 'chart', 'color' => 'bg-violet-100 text-violet-600', 'href' => '#topshiriqlar'],
             ['label' => "Natijam", 'icon' => 'target', 'color' => 'bg-emerald-100 text-emerald-600', 'href' => $quiz ? route('tests.show', $quiz->slug) : null],
@@ -41,48 +40,7 @@
 
     <div class="grid gap-5 lg:grid-cols-[240px_1fr_300px]" x-data="fairyTalePlayer()">
         {{-- Left: course nav --}}
-        <aside class="space-y-4 lg:sticky lg:top-24 lg:self-start">
-            <div class="rounded-2xl bg-gradient-to-br from-sky-500 to-blue-600 p-5 text-white shadow-sm">
-                <span class="grid h-11 w-11 place-items-center rounded-xl bg-white/20">
-                    <x-icon name="library" class="h-5 w-5" />
-                </span>
-                <h2 class="mt-3 text-sm font-bold">101 o'qish kursi</h2>
-                <p class="mt-1 text-xs leading-relaxed text-sky-100">Ertaklar bilan o'qishni zavqli tarzda o'rganing va natijangizni kuzating.</p>
-            </div>
-
-            <nav class="rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
-                @foreach ($navItems as $item)
-                    @if (! empty($item['soon']))
-                        <span class="flex items-center justify-between gap-2 rounded-xl px-2.5 py-2 text-sm text-slate-300">
-                            <span class="flex items-center gap-2.5">
-                                <span class="grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-slate-50"><x-icon :name="$item['icon']" class="h-3.5 w-3.5" /></span>
-                                {{ $item['label'] }}
-                            </span>
-                            <span class="rounded-full bg-slate-100 px-1.5 py-0.5 text-[9px] font-semibold uppercase">Tez orada</span>
-                        </span>
-                    @elseif ($item['href'])
-                        <a href="{{ $item['href'] }}"
-                           class="flex items-center gap-2.5 rounded-xl px-2.5 py-2 text-sm font-semibold transition
-                               {{ ! empty($item['active']) ? 'bg-blue-50 text-blue-700' : 'text-slate-600 hover:bg-slate-50' }}">
-                            <span class="grid h-7 w-7 shrink-0 place-items-center rounded-lg {{ $item['color'] }}"><x-icon :name="$item['icon']" class="h-3.5 w-3.5" /></span>
-                            {{ $item['label'] }}
-                        </a>
-                    @else
-                        <span class="flex items-center gap-2.5 rounded-xl px-2.5 py-2 text-sm font-medium text-slate-300">
-                            <span class="grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-slate-50"><x-icon :name="$item['icon']" class="h-3.5 w-3.5" /></span>
-                            {{ $item['label'] }}
-                        </span>
-                    @endif
-                @endforeach
-            </nav>
-
-            <div class="rounded-2xl border border-amber-200 bg-amber-50 p-4">
-                <h3 class="mb-1.5 flex items-center gap-1.5 text-xs font-bold text-amber-900">
-                    <x-icon name="star" class="h-3.5 w-3.5" /> Maslahat
-                </h3>
-                <p class="text-xs leading-relaxed text-amber-800">{{ $habitTip }}</p>
-            </div>
-        </aside>
+        <x-reading-course.nav-sidebar :items="$navItems" :tip="$habitTip" />
 
         {{-- Center: matn oynasi --}}
         <div class="min-w-0">
@@ -233,23 +191,60 @@
                     @if (! empty($tasks['new_words']))
                         <div id="yangi-sozlar" class="mt-8 scroll-mt-24">
                             <h3 class="mb-3 text-base font-bold text-slate-800">Yangi so'zlar</h3>
-                            <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
-                                @foreach ($tasks['new_words'] as $i => $word)
-                                    @php $wordImage = $tasks['new_word_images'][$word] ?? null; @endphp
-                                    <div class="flex flex-col items-center gap-2 rounded-2xl border border-slate-100 bg-slate-50 p-3 text-center">
-                                        @if ($wordImage)
-                                            <img src="{{ \Illuminate\Support\Facades\Storage::url($wordImage) }}"
-                                                 alt="{{ $word }}" loading="lazy"
-                                                 class="h-14 w-14 shrink-0 rounded-full object-cover ring-2 ring-white shadow-sm">
-                                        @else
-                                            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full {{ $wordPalette[$i % count($wordPalette)] }}">
-                                                <x-icon name="sparkle" class="h-4 w-4" />
-                                            </span>
-                                        @endif
-                                        <span class="text-sm font-bold text-slate-800">{{ $word }}</span>
-                                    </div>
-                                @endforeach
-                            </div>
+
+                            @if (! empty($tale->meta['words_table_image'] ?? null))
+                                <img src="{{ \Illuminate\Support\Facades\Storage::url($tale->meta['words_table_image']) }}"
+                                     alt="Yangi so'zlar" loading="lazy"
+                                     class="mx-auto max-w-md w-full rounded-2xl border border-slate-100 shadow-sm">
+                            @else
+                                <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
+                                    @foreach ($tasks['new_words'] as $i => $word)
+                                        @php $wordImage = $tasks['new_word_images'][$word] ?? null; @endphp
+                                        <div class="flex flex-col items-center gap-2 rounded-2xl border border-slate-100 bg-slate-50 p-3 text-center">
+                                            @if ($wordImage)
+                                                <img src="{{ \Illuminate\Support\Facades\Storage::url($wordImage) }}"
+                                                     alt="{{ $word }}" loading="lazy"
+                                                     class="h-14 w-14 shrink-0 rounded-full object-cover ring-2 ring-white shadow-sm">
+                                            @else
+                                                <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full {{ $wordPalette[$i % count($wordPalette)] }}">
+                                                    <x-icon name="sparkle" class="h-4 w-4" />
+                                                </span>
+                                            @endif
+                                            <span class="text-sm font-bold text-slate-800">{{ $word }}</span>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            @endif
+                        </div>
+                    @endif
+
+                    @if (! empty($tale->meta['comic_image'] ?? null))
+                        <div class="mt-8">
+                            <h3 class="mb-3 text-base font-bold text-slate-800">Rasmga qarab ayting</h3>
+                            <img src="{{ \Illuminate\Support\Facades\Storage::url($tale->meta['comic_image']) }}"
+                                 alt="{{ $tale->title }} — rasmli hikoya" loading="lazy"
+                                 class="mx-auto max-w-md w-full rounded-2xl border border-slate-100 shadow-sm">
+                        </div>
+                    @endif
+
+                    @if (! empty($tale->meta['picture_task_image'] ?? null))
+                        <div class="mt-8">
+                            <h3 class="mb-3 text-base font-bold text-slate-800">Rasmli topshiriq</h3>
+                            <img src="{{ \Illuminate\Support\Facades\Storage::url($tale->meta['picture_task_image']) }}"
+                                 alt="{{ $tale->title }} — rasmli topshiriq" loading="lazy"
+                                 class="mx-auto max-w-md w-full rounded-2xl border border-slate-100 shadow-sm">
+                        </div>
+                    @endif
+
+                    @if (! empty($tale->meta['coloring_image'] ?? null))
+                        <div class="mt-8">
+                            <h3 class="mb-3 text-base font-bold text-slate-800">Rasm bo'yash topshirig'i</h3>
+                            <a href="{{ \Illuminate\Support\Facades\Storage::url($tale->meta['coloring_image']) }}" target="_blank" rel="noopener" class="block">
+                                <img src="{{ \Illuminate\Support\Facades\Storage::url($tale->meta['coloring_image']) }}"
+                                     alt="{{ $tale->title }} — bo'yash uchun rasm" loading="lazy"
+                                     class="mx-auto max-w-md w-full rounded-2xl border border-slate-100 shadow-sm hover:opacity-90 transition">
+                            </a>
+                            <p class="mt-2 text-center text-xs text-slate-400">Chop etish uchun rasmni bosing</p>
                         </div>
                     @endif
 
@@ -450,107 +445,13 @@
         </div>
 
         {{-- Right: achievements & tips --}}
-        <aside class="space-y-4 lg:sticky lg:top-24 lg:self-start">
-            <div id="yutuqlarim" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <h3 class="flex items-center gap-2 text-sm font-bold text-slate-800">
-                    <x-icon name="target" class="h-4 w-4 text-emerald-600" /> Mening yutuqlarim
-                </h3>
-
-                @php
-                    $read = $achievements['read'] ?? 0;
-                    $average = $achievements['average'] ?? 0;
-                    $best = $achievements['best'] ?? 0;
-                    $pct = $totalErtaklar ? (int) round(($read / $totalErtaklar) * 100) : 0;
-                @endphp
-
-                <div class="mt-4 flex flex-col items-center">
-                    <div class="relative grid h-28 w-28 place-items-center rounded-full"
-                         style="background: conic-gradient(#10b981 {{ $pct * 3.6 }}deg, #e2e8f0 0deg);">
-                        <div class="grid h-[88px] w-[88px] place-items-center rounded-full bg-white text-xl font-extrabold text-slate-800">
-                            {{ $pct }}%
-                        </div>
-                    </div>
-                    <p class="mt-3 text-sm font-bold text-slate-800">Jami progress</p>
-                    <p class="text-xs text-slate-400">{{ $read }}/{{ $totalErtaklar }} matn</p>
-                </div>
-
-                <dl class="mt-5 space-y-3 border-t border-slate-100 pt-4">
-                    <div class="flex items-center justify-between text-sm">
-                        <dt class="flex items-center gap-2 text-slate-500"><x-icon name="book" class="h-4 w-4 text-sky-500" /> O'qilgan matnlar</dt>
-                        <dd class="font-bold text-slate-800">{{ $read }}</dd>
-                    </div>
-                    <div class="flex items-center justify-between text-sm">
-                        <dt class="flex items-center gap-2 text-slate-500"><x-icon name="star" class="h-4 w-4 text-amber-500" /> O'rtacha ball</dt>
-                        <dd class="font-bold text-slate-800">{{ $average }}%</dd>
-                    </div>
-                    <div class="flex items-center justify-between text-sm">
-                        <dt class="flex items-center gap-2 text-slate-500"><x-icon name="trophy" class="h-4 w-4 text-violet-500" /> Eng yaxshi natija</dt>
-                        <dd class="font-bold text-slate-800">{{ $best }}%</dd>
-                    </div>
-                </dl>
-
-                @auth
-                    @unless ($achievements)
-                        <p class="mt-4 text-xs text-slate-400">Progressingizni ko'rish uchun kamida bitta ertak testini yeching.</p>
-                    @endunless
-                @else
-                    <a href="{{ route('login') }}" class="mt-4 flex items-center justify-center gap-1.5 rounded-lg border border-slate-200 py-2 text-xs font-semibold text-blue-600 hover:bg-slate-50">
-                        Tizimga kiring va progressni saqlang <x-icon name="arrow-right" class="h-3.5 w-3.5" />
-                    </a>
-                @endauth
-            </div>
-
-            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <h3 class="flex items-center gap-2 text-sm font-bold text-slate-800">
-                    <x-icon name="chart" class="h-4 w-4 text-violet-600" /> So'nggi natijam
-                </h3>
-
-                @php
-                    $attemptPct = $latestAttempt?->percentage ?? 0;
-                    $correct = $latestAttempt ? $latestAttempt->answers->where('is_correct', true)->count() : 0;
-                    $incorrect = $latestAttempt ? $latestAttempt->answers->count() - $correct : 0;
-                    $scoreLabel = $latestAttempt ? (int) $latestAttempt->score.'/'.(int) $latestAttempt->max_score : '—';
-                @endphp
-                <div class="mt-4 flex items-center gap-4">
-                    <div class="relative grid h-20 w-20 shrink-0 place-items-center rounded-full"
-                         style="background: conic-gradient(#10b981 {{ $attemptPct * 3.6 }}deg, #f43f5e {{ $attemptPct * 3.6 }}deg 360deg);">
-                        <div class="grid h-14 w-14 place-items-center rounded-full bg-white text-xs font-extrabold text-slate-800">
-                            {{ $scoreLabel }}
-                        </div>
-                    </div>
-                    <div class="space-y-1 text-xs">
-                        <p class="flex items-center gap-1.5 font-semibold text-emerald-700"><span class="h-2 w-2 rounded-full bg-emerald-500"></span> To'g'ri javoblar {{ $correct }}</p>
-                        <p class="flex items-center gap-1.5 font-semibold text-rose-600"><span class="h-2 w-2 rounded-full bg-rose-500"></span> Noto'g'ri javoblar {{ $incorrect }}</p>
-                        <p class="font-semibold text-slate-500">Foiz {{ $attemptPct }}%</p>
-                    </div>
-                </div>
-
-                @if ($latestAttempt)
-                    <a href="{{ route('tests.result', $latestAttempt->id) }}"
-                       class="mt-4 block rounded-lg bg-blue-600 py-2 text-center text-sm font-semibold text-white transition hover:bg-blue-700">
-                        Batafsil natija
-                    </a>
-                @elseif ($quiz)
-                    <p class="mt-3 text-xs text-slate-400">Bu ertak bo'yicha hali test topshirmagansiz.</p>
-                    <a href="{{ route('tests.show', $quiz->slug) }}"
-                       class="mt-2 block rounded-lg bg-blue-600 py-2 text-center text-sm font-semibold text-white transition hover:bg-blue-700">
-                        Testni boshlash
-                    </a>
-                @else
-                    <p class="mt-3 text-xs text-slate-400">Bu ertak uchun test hali mavjud emas.</p>
-                @endif
-            </div>
-
-            <div class="rounded-2xl border border-amber-200 bg-amber-50 p-5">
-                <h3 class="flex items-center gap-2 text-sm font-bold text-amber-900">
-                    <x-icon name="bulb" class="h-4 w-4" /> Tavsiya
-                </h3>
-                <p class="mt-2 text-sm leading-relaxed text-amber-800">{{ $taskTip }}</p>
-                <a href="#topshiriqlar" class="mt-4 block rounded-lg bg-blue-600 py-2 text-center text-sm font-semibold text-white transition hover:bg-blue-700">
-                    Mashq qilish
-                </a>
-            </div>
-        </aside>
+        <x-reading-course.progress-sidebar
+            :achievements="$achievements"
+            :total-ertaklar="$totalErtaklar"
+            :latest-attempt="$latestAttempt"
+            :quiz="$quiz"
+            :tip="$taskTip"
+            tip-href="#topshiriqlar" />
     </div>
 
     {{-- Quick links --}}

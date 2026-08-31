@@ -17,15 +17,15 @@
                 <h1 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">PIRLS topshiriqlarini yaratish</h1>
                 <p class="mt-3 leading-relaxed text-blue-100">Bo'lajak boshlang'ich sinf o'qituvchilariga PIRLS tipidagi topshiriqlarni yaratish, savollarni o'qish maqsadlariga moslashtirish, javob kaliti va baholash mezonlarini ishlab chiqishni o'rgatish.</p>
             </div>
-            <img src="{{ asset('images/metodik modul/PIRLS topshiriqlarini yaratish.png') }}" alt="PIRLS topshiriqlarini yaratish" class="pointer-events-none absolute right-6 bottom-0 hidden h-36 w-36 object-contain opacity-90 md:block lg:h-40 lg:w-40">
+            <img src="{{ asset('images/sections/metodik/pirls-topshiriq/01_header_clipboard_plant.png') }}" alt="PIRLS topshiriqlarini yaratish" class="pointer-events-none absolute right-6 bottom-0 hidden h-36 w-36 object-contain opacity-90 md:block lg:h-40 lg:w-40">
         </div>
 
         {{-- Maqsad + Nazariy izoh --}}
         <div class="mb-8 grid grid-cols-1 gap-4 md:grid-cols-2">
             <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
                 <div class="mb-3 flex items-center gap-2.5">
-                    <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600">
-                        <x-icon name="target" class="h-5 w-5" />
+                    <span class="grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-blue-50">
+                        <img src="{{ asset('images/sections/metodik/pirls-topshiriq/04_target.png') }}" alt="Maqsad" class="h-7 w-7 object-contain">
                     </span>
                     <h3 class="text-sm font-bold text-slate-800">Maqsad</h3>
                 </div>
@@ -33,8 +33,8 @@
             </div>
             <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
                 <div class="mb-3 flex items-center gap-2.5">
-                    <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-cyan-50 text-cyan-600">
-                        <x-icon name="sparkle" class="h-5 w-5" />
+                    <span class="grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-cyan-50">
+                        <img src="{{ asset('images/sections/metodik/pirls-topshiriq/05_lightbulb.png') }}" alt="Nazariy izoh" class="h-7 w-7 object-contain">
                     </span>
                     <h3 class="text-sm font-bold text-slate-800">Nazariy izoh</h3>
                 </div>
@@ -45,7 +45,7 @@
 
         {{-- 2 matn turi + 7 element --}}
         <div class="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-            <img src="{{ asset('images/metodik/pirls-topshiriq/matn-turlari.png') }}" alt="O'quvchilar sinfda" class="h-36 w-full object-cover">
+            <img src="{{ asset('images/sections/metodik/pirls-topshiriq/02_reading_children_banner.png') }}" alt="O'quvchilar sinfda" class="h-36 w-full object-cover">
             <div class="grid grid-cols-1 gap-4 p-5 md:grid-cols-2">
                 <div class="grid grid-cols-1 gap-3">
                     <div class="rounded-xl border border-blue-200 bg-blue-50/50 p-4">
@@ -79,10 +79,13 @@
 
         {{-- Amaliy metodlar --}}
         <div class="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-            <img src="{{ asset('images/metodik/pirls-topshiriq/metodlar.png') }}" alt="Amaliy metodlar" class="h-36 w-full object-cover">
+            <img src="{{ asset('images/sections/metodik/pirls-topshiriq/03_study_desk_banner.png') }}" alt="Amaliy metodlar" class="h-36 w-full object-cover">
             <div class="grid grid-cols-1 gap-4 p-5 md:grid-cols-2">
                 <div class="rounded-xl border border-blue-200 bg-blue-50/50 p-4">
-                    <h4 class="mb-3 text-xs font-bold text-blue-900">"4 darajali savol modeli"</h4>
+                    <div class="mb-3 flex items-center gap-2">
+                        <img src="{{ asset('images/sections/metodik/pirls-topshiriq/06_blue_book.png') }}" alt="" class="h-6 w-6 shrink-0 object-contain">
+                        <h4 class="text-xs font-bold text-blue-900">"4 darajali savol modeli"</h4>
+                    </div>
                     <p class="mb-3 text-xs text-blue-800">Har bir matnga kamida 4 xil savol tuziladi:</p>
                     <div class="space-y-2">
                         @foreach ([
@@ -119,8 +122,8 @@
         <div class="mb-8 grid grid-cols-1 gap-4 md:grid-cols-2">
             <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <div class="mb-3 flex items-center gap-2.5">
-                    <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-slate-100 text-slate-600">
-                        <x-icon name="clipboard" class="h-4.5 w-4.5" />
+                    <span class="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-xl bg-slate-100">
+                        <img src="{{ asset('images/sections/metodik/pirls-topshiriq/07_books_stack.png') }}" alt="" class="h-6 w-6 object-contain">
                     </span>
                     <h3 class="text-sm font-bold text-slate-800">Darsda qo'llash tartibi</h3>
                 </div>
@@ -145,7 +148,10 @@
             </div>
             <div class="flex flex-col gap-3">
                 <div class="rounded-2xl border border-cyan-200 bg-cyan-50/50 p-4">
-                    <h3 class="mb-2 text-sm font-bold text-cyan-900">Talabalar uchun mashq</h3>
+                    <div class="mb-2 flex items-center gap-2">
+                        <img src="{{ asset('images/sections/metodik/pirls-topshiriq/13_stationery_paper_plane.png') }}" alt="" class="h-6 w-6 shrink-0 object-contain">
+                        <h3 class="text-sm font-bold text-cyan-900">Talabalar uchun mashq</h3>
+                    </div>
                     <ol class="space-y-1.5">
                         @foreach ([
                             "4-sinf o'quvchilari uchun 250–300 so'zli matn tanlang",
@@ -164,7 +170,7 @@
                 </div>
                 <div class="flex-1 overflow-hidden rounded-2xl border border-amber-200 bg-white shadow-sm">
                     <div class="grid h-full grid-cols-[96px_1fr]">
-                        <img src="{{ asset('images/metodik/pirls-topshiriq/tavsiya.jpg') }}" alt="O'qituvchi uchun tavsiya" class="h-full w-full object-cover">
+                        <img src="{{ asset('images/sections/metodik/pirls-topshiriq/08_teacher.png') }}" alt="O'qituvchi uchun tavsiya" class="h-full w-full object-cover">
                         <div class="bg-amber-50/50 p-4">
                             <h3 class="mb-2 text-sm font-bold text-amber-900">O'qituvchi uchun tavsiya</h3>
                             <p class="text-xs leading-relaxed text-amber-800">PIRLS topshiriqlarini yaratishda savollarni haddan tashqari murakkablashtirib yubormang. Boshlang'ich sinf o'quvchisi fikrlashi kerak, lekin savolni tushunmay qolmasligi lozim. <strong class="text-amber-900">Savol matn mazmuniga tayangan, aniq, yoshga mos va baholash mezoni bilan ta'minlangan bo'lishi kerak.</strong></p>
@@ -183,7 +189,7 @@
             </div>
             <div class="grid grid-cols-1 gap-4 md:grid-cols-[140px_1fr_1fr]">
                 <div class="hidden items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-sky-50 md:flex">
-                    <img src="{{ asset('images/metodik/pirls-topshiriq/namuna.png') }}" alt="Laylak — Bahromning hikoyasi" class="h-24 w-24 object-contain">
+                    <img src="{{ asset('images/sections/metodik/pirls-topshiriq/09_bird.png') }}" alt="Laylak — Bahromning hikoyasi" class="h-24 w-24 object-contain">
                 </div>
                 <div>
                     <div class="mb-3 rounded-2xl border border-slate-200 bg-slate-50 p-4">
@@ -191,7 +197,10 @@
                         <p class="rounded-lg border border-slate-200 bg-white p-3 text-xs italic leading-relaxed text-slate-600">"Bahrom maktab kutubxonasidan qushlar haqida kitob oldi. U kitobdan laylaklar uzoq masofaga uchishini, ular bahorda yana o'z uyalariga qaytishini bildi. Ertasi kuni Bahrom hovlidagi daraxtga qarab, unda qushlar uchun kichik uya yasashni o'yladi."</p>
                     </div>
                     <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                        <p class="mb-2 text-xs font-bold text-slate-700">Baholash mezoni:</p>
+                        <div class="mb-2 flex items-center gap-1.5">
+                            <img src="{{ asset('images/sections/metodik/pirls-topshiriq/12_medals.png') }}" alt="" class="h-5 w-5 shrink-0 object-contain">
+                            <p class="text-xs font-bold text-slate-700">Baholash mezoni:</p>
+                        </div>
                         <div class="overflow-hidden rounded-lg border border-slate-200">
                             <table class="w-full text-xs">
                                 <thead><tr class="border-b border-slate-200 bg-slate-100">
@@ -257,16 +266,18 @@
                         </li>
                     @endforeach
                 </ul>
-                <img src="{{ asset('images/metodik/pirls-topshiriq/natija.png') }}" alt="Yutuq" class="pointer-events-none absolute -right-3 -bottom-3 h-20 w-20 object-contain opacity-90">
+                <img src="{{ asset('images/sections/metodik/pirls-topshiriq/10_trophy.png') }}" alt="Yutuq" class="pointer-events-none absolute -right-3 -bottom-3 h-20 w-20 object-contain opacity-90">
             </div>
-            <div class="rounded-2xl border border-amber-200 bg-amber-50/50 p-5">
-                <div class="mb-3 flex items-center gap-2.5">
+            <div class="relative overflow-hidden rounded-2xl border border-amber-200 bg-amber-50/50 p-5">
+                <div class="relative z-10 mb-3 flex items-center gap-2.5">
                     <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-amber-100 text-amber-600">
                         <x-icon name="doc" class="h-4.5 w-4.5" />
                     </span>
                     <p class="text-xs font-semibold uppercase tracking-wide text-amber-800">Dissertatsiyadagi ilmiy ahamiyati</p>
                 </div>
-                <p class="text-xs leading-relaxed text-amber-900">Bu sahifa dissertatsiyada bo'lajak o'qituvchilarning diagnostik-baholash va metodik loyihalash kompetensiyasini rivojlantirish vositasi sifatida asoslanadi. PIRLS topshiriqlarini yaratish orqali talaba xalqaro baholash mezonlarini amaliy dars jarayoniga moslashtirishni o'rganadi.</p>
+                <p class="relative z-10 max-w-[calc(100%-4rem)] text-xs leading-relaxed text-amber-900">Bu sahifa dissertatsiyada bo'lajak o'qituvchilarning diagnostik-baholash va metodik loyihalash kompetensiyasini rivojlantirish vositasi sifatida asoslanadi. PIRLS topshiriqlarini yaratish orqali talaba xalqaro baholash mezonlarini amaliy dars jarayoniga moslashtirishni o'rganadi.</p>
+                <img src="{{ asset('images/sections/metodik/pirls-topshiriq/11_graduation_cap_diploma.png') }}" alt="" class="pointer-events-none absolute -right-2 -bottom-2 h-20 w-20 object-contain opacity-90">
+                <img src="{{ asset('images/sections/metodik/pirls-topshiriq/14_plant.png') }}" alt="" class="pointer-events-none absolute -left-2 -top-2 h-14 w-14 object-contain opacity-40">
             </div>
         </div>
 

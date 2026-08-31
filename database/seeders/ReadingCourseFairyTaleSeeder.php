@@ -32,14 +32,54 @@ use ZipArchive;
  * exist under storage/app/public — if either is missing and the source
  * .docx isn't available to (re-)extract it from, that piece is skipped
  * with a warning instead of the seeder silently producing gaps.
+ *
+ * Every grade's docx also follows a fixed word/media/imageN.* order beyond
+ * the cover (image1) and a decorative QR code (image2, unused) — but the
+ * order means something different per grade, since 1-2-sinf and 3-4-sinf
+ * worksheets were built from different templates:
+ *  - 1-2-sinf: image3 is a single ready-made "Yangi so'zlar" table (word +
+ *    meaning + illustration per row), image4 is a comic-strip retelling
+ *    with "Rasmga qarab ayting" questions baked in, image5 is a printable
+ *    "Rasm bo'yash" coloring page.
+ *  - 3-sinf: image5 is a "which picture doesn't belong to the story"
+ *    task (no separate word-illustration table exists for this grade).
+ *  - 4-sinf: image4 is a "which pictures match the story" task, image7 is
+ *    a labeled word-illustration grid that doubles as this grade's
+ *    "Yangi so'zlar" table.
+ * See EXTRA_IMAGE_MAP, keyed by grade then Content meta key then image
+ * index.
  */
 class ReadingCourseFairyTaleSeeder extends Seeder
 {
-    private const SOURCE_DIR = "Sayt/9. 101 o'qish kursi/ertaklar va audiolar/extracted";
+    private const SOURCE_DIR = "Sayt/9. 101 o'qish kursi/ertaklar va audiolar";
 
     private const STORAGE_DIR = 'ertaklar';
 
     private const COVER_DIR = 'ertaklar-cover';
+
+    private const EXTRA_DIR = 'ertaklar-extras';
+
+    /**
+     * @var array<int, array<string, int>>
+     */
+    private const EXTRA_IMAGE_MAP = [
+        1 => ['words_table_image' => 3, 'comic_image' => 4, 'coloring_image' => 5],
+        2 => ['words_table_image' => 3, 'comic_image' => 4, 'coloring_image' => 5],
+        3 => ['picture_task_image' => 5],
+        4 => ['picture_task_image' => 4, 'words_table_image' => 7],
+    ];
+
+    /**
+     * Filename suffix for each extra image's meta key.
+     *
+     * @var array<string, string>
+     */
+    private const EXTRA_SUFFIXES = [
+        'words_table_image' => 'sozlar',
+        'comic_image' => 'hikoya',
+        'coloring_image' => 'boyash',
+        'picture_task_image' => 'topshiriq',
+    ];
 
     private const BODIES_FILE = __DIR__.'/data/fairy-tale-bodies.json';
 
@@ -105,9 +145,9 @@ class ReadingCourseFairyTaleSeeder extends Seeder
 
             $coverRelativePath = self::COVER_DIR."/{$tale['grade']}-sinf/{$slug}.jpg";
             $coverAbsolutePath = storage_path('app/public/'.$coverRelativePath);
+            $docxPath = "{$sourcePath}/{$tale['grade']}-sinflar uchun/{$tale['docx']}";
 
             if (! File::exists($coverAbsolutePath)) {
-                $docxPath = "{$sourcePath}/{$tale['grade']}-sinflar uchun/{$tale['docx']}";
                 $cover = File::exists($docxPath) ? $this->extractCover($docxPath) : null;
 
                 if ($cover) {
@@ -116,6 +156,13 @@ class ReadingCourseFairyTaleSeeder extends Seeder
                 } else {
                     $this->command?->warn("Muqova rasmi topilmadi, o'tkazib yuborildi: {$tale['title']} ({$tale['grade']}-sinf)");
                 }
+            }
+
+            $extras = [];
+
+            foreach (self::EXTRA_IMAGE_MAP[$tale['grade']] ?? [] as $metaKey => $imageIndex) {
+                $suffix = self::EXTRA_SUFFIXES[$metaKey];
+                $extras[$metaKey] = $this->extractExtraImage($docxPath, $imageIndex, $slug, $tale['grade'], $suffix);
             }
 
             Content::updateOrCreate(
@@ -133,12 +180,81 @@ class ReadingCourseFairyTaleSeeder extends Seeder
                         'audio_path' => $audioRelativePath,
                         'audio_size' => File::size($audioAbsolutePath),
                         'tasks' => $tasks[$slug] ?? null,
+                        ...$extras,
                     ],
                     'status' => ContentStatus::Published->value,
                     'published_at' => now()->subDays(count($this->tales()) - $index),
                 ],
             );
         }
+    }
+
+    /**
+     * Extracts one of the fixed-position illustration images (word table,
+     * comic strip, coloring page) from a tale's docx and stores it as a
+     * compressed JPEG. Reuses whatever is already on disk so re-seeding
+     * doesn't refetch, and returns null (with a warning) if the docx isn't
+     * available locally — the seeder never fails the whole run over a
+     * missing illustration.
+     */
+    private function extractExtraImage(string $docxPath, int $imageIndex, string $slug, int $grade, string $suffix): ?string
+    {
+        $relativePath = self::EXTRA_DIR."/{$grade}-sinf/{$slug}-{$suffix}.jpg";
+        $absolutePath = storage_path('app/public/'.$relativePath);
+
+        if (File::exists($absolutePath)) {
+            return $relativePath;
+        }
+
+        if (! File::exists($docxPath)) {
+            return null;
+        }
+
+        $image = $this->extractMediaImage($docxPath, $imageIndex);
+
+        if (! $image) {
+            $this->command?->warn("Rasm (image{$imageIndex}) topilmadi: {$slug} ({$suffix})");
+
+            return null;
+        }
+
+        File::ensureDirectoryExists(dirname($absolutePath));
+        $this->saveCoverAsJpeg($image, $absolutePath, 1000, 90);
+
+        return $relativePath;
+    }
+
+    /**
+     * @return array{data: string, ext: string}|null
+     */
+    private function extractMediaImage(string $docxPath, int $imageIndex): ?array
+    {
+        $zip = new ZipArchive;
+
+        if ($zip->open($docxPath) !== true) {
+            return null;
+        }
+
+        $data = false;
+        $ext = null;
+
+        foreach (['jpeg', 'jpg', 'png'] as $candidateExt) {
+            $entryName = "word/media/image{$imageIndex}.{$candidateExt}";
+            $data = $zip->getFromName($entryName);
+
+            if ($data !== false) {
+                $ext = $candidateExt;
+                break;
+            }
+        }
+
+        $zip->close();
+
+        if ($data === false || $ext === null) {
+            return null;
+        }
+
+        return ['data' => $data, 'ext' => $ext];
     }
 
     /**
@@ -183,7 +299,7 @@ class ReadingCourseFairyTaleSeeder extends Seeder
      *
      * @param  array{data: string, ext: string}  $cover
      */
-    private function saveCoverAsJpeg(array $cover, string $destination): void
+    private function saveCoverAsJpeg(array $cover, string $destination, int $maxWidth = 800, int $quality = 82): void
     {
         $source = @imagecreatefromstring($cover['data']);
 
@@ -193,18 +309,18 @@ class ReadingCourseFairyTaleSeeder extends Seeder
 
         $width = imagesx($source);
         $height = imagesy($source);
-        $maxWidth = 800;
+        $targetWidth = min($width, $maxWidth);
+        $targetHeight = (int) round($height * ($targetWidth / $width));
 
-        if ($width > $maxWidth) {
-            $newHeight = (int) round($height * ($maxWidth / $width));
-            $resized = imagecreatetruecolor($maxWidth, $newHeight);
-            imagecopyresampled($resized, $source, 0, 0, 0, 0, $maxWidth, $newHeight, $width, $height);
-            imagedestroy($source);
-            $source = $resized;
-        }
-
-        imagejpeg($source, $destination, 82);
+        // Flatten onto white first: source PNGs may carry an alpha channel,
+        // and imagejpeg() renders transparent pixels as black otherwise.
+        $flattened = imagecreatetruecolor($targetWidth, $targetHeight);
+        imagefill($flattened, 0, 0, imagecolorallocate($flattened, 255, 255, 255));
+        imagecopyresampled($flattened, $source, 0, 0, 0, 0, $targetWidth, $targetHeight, $width, $height);
         imagedestroy($source);
+
+        imagejpeg($flattened, $destination, $quality);
+        imagedestroy($flattened);
     }
 
     /**

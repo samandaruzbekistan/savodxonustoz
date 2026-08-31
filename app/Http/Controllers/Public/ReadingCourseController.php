@@ -11,7 +11,7 @@ use Illuminate\View\View;
 
 class ReadingCourseController extends Controller
 {
-    public function index(Request $request): View
+    public function textbooks(Request $request): View
     {
         $parent = Category::query()
             ->where('type', CategoryType::Resource)
@@ -54,6 +54,6 @@ class ReadingCourseController extends Controller
                 ->count();
         }
 
-        return view('public.reading-course.index', compact('textbooks', 'categories', 'counts', 'grades', 'gradeCounts'));
+        return view('public.reading-course.textbooks', compact('textbooks', 'categories', 'counts', 'grades', 'gradeCounts'));
     }
 }

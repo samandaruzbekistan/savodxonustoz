@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\Storage;
 
 class Resource extends Model
 {
@@ -83,5 +84,12 @@ class Resource extends Model
     protected function published(Builder $query): void
     {
         $query->where('status', ContentStatus::Published);
+    }
+
+    public function coverUrl(): ?string
+    {
+        $path = "resource-covers/{$this->slug}.jpg";
+
+        return Storage::disk('public')->exists($path) ? Storage::disk('public')->url($path) : null;
     }
 }

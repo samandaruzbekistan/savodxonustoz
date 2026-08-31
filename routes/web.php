@@ -44,6 +44,8 @@ Route::get('/bolim/sinf-strategiyalari/{slug}', fn (string $slug) => view("publi
 Route::get('/bolim/barcha-oquvchilarga-yordam', fn () => view('public.barcha-oquvchilarga-yordam.index'))->name('barcha-oquvchilarga-yordam.index');
 Route::get('/bolim/barcha-oquvchilarga-yordam/{slug}', fn (string $slug) => view("public.barcha-oquvchilarga-yordam.{$slug}"))->name('barcha-oquvchilarga-yordam.show');
 
+Route::get('/bolim/kitoblar-mualliflar', fn () => view('public.kitoblar-mualliflar.index'))->name('kitoblar-mualliflar.index');
+
 Route::get('/amaliyot-maydoni', fn () => view('public.amaliyot-maydoni'))->name('amaliyot-maydoni');
 
 Route::get('/bolim/{category:slug}', [ContentController::class, 'section'])->name('sections.show');
@@ -54,7 +56,8 @@ Route::get('/resurslar/{resource:slug}/yuklab-olish', [ResourceController::class
 
 Route::get('/ilmiy-maqolalar', [ScientificArticleController::class, 'index'])->name('articles.index');
 
-Route::get('/101-oqish-kursi', [ReadingCourseController::class, 'index'])->name('reading-course.index');
+Route::get('/101-oqish-kursi', [FairyTaleController::class, 'index'])->name('reading-course.index');
+Route::get('/101-oqish-kursi/darsliklar', [ReadingCourseController::class, 'textbooks'])->name('reading-course.textbooks');
 
 Route::get('/101-oqish-kursi/ertaklar', [FairyTaleController::class, 'index'])->name('fairy-tales.index');
 Route::get('/101-oqish-kursi/ertaklar/{tale:slug}', [FairyTaleController::class, 'show'])->name('fairy-tales.show');

@@ -5,13 +5,20 @@
     @include('public.barcha-oquvchilarga-yordam._sidebar', ['activeSlug' => 'oqishda-qiynalayotganlar'])
     <div class="min-w-0 flex-1">
 
-        <div class="mb-6">
-            <div class="flex items-center gap-3 mb-2">
-                <span class="inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold bg-blue-100 text-blue-700">1</span>
-                <span class="text-xs text-slate-500 uppercase tracking-wide font-medium">Barcha o'quvchilarga yordam berish • 1-bo'lim</span>
+        <div class="mb-6 rounded-2xl overflow-hidden relative bg-gradient-to-br from-blue-600 to-indigo-700 px-6 py-6">
+            <div class="relative flex items-center gap-6">
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold bg-white/20 text-white">1</span>
+                        <span class="text-xs text-blue-100 uppercase tracking-wide font-medium">Barcha o'quvchilarga yordam berish • 1-bo'lim</span>
+                    </div>
+                    <h1 class="text-3xl font-extrabold tracking-tight text-white">O'qishda qiynalayotgan o'quvchilar</h1>
+                    <p class="mt-2 text-blue-100 leading-relaxed max-w-lg text-sm">Boshlang'ich sinflarda ayrim o'quvchilar matnni o'qishda yoki tushunishda qiynalishi mumkin. Bunday o'quvchi dangasa yoki qobiliyatsiz emas — unga faqat mos metodik yordam, ko'proq vaqt va rag'bat kerak bo'ladi.</p>
+                </div>
+                <div class="hidden sm:block shrink-0">
+                    <img src="{{ asset('images/sections/oqishda-qiynalayotganlar/hero.png') }}" alt="" class="h-40 w-auto drop-shadow-xl">
+                </div>
             </div>
-            <h1 class="text-3xl font-extrabold tracking-tight text-slate-900">O'qishda qiynalayotgan o'quvchilar</h1>
-            <p class="mt-2 text-slate-600 leading-relaxed max-w-3xl">Boshlang'ich sinflarda ayrim o'quvchilar matnni o'qishda yoki tushunishda qiynalishi mumkin. Bunday o'quvchi dangasa yoki qobiliyatsiz emas — unga faqat mos metodik yordam, ko'proq vaqt va rag'bat kerak bo'ladi.</p>
         </div>
 
         {{-- Muammo tavsifi --}}
@@ -30,15 +37,15 @@
             <div class="mb-4 rounded-lg bg-slate-800 px-4 py-2.5 text-center text-sm font-bold text-white uppercase tracking-wide">METODIK YECHIM</div>
             <div class="grid grid-cols-2 gap-3 sm:grid-cols-3">
                 @foreach([
-                    ['icon'=>'✂️','label'=>"Matnni qismlarga bo'lib berish",'sub'=>'Uzoq matn charchatadi'],
-                    ['icon'=>'🎧','label'=>'Audio bilan qo\'llab-quvvatlash','sub'=>'Avval tinglash, keyin o\'qish'],
-                    ['icon'=>'🖼️','label'=>'Rasm va kalit so\'zlar','sub'=>'Mazmunni tushunishga yordam'],
-                    ['icon'=>'🔁','label'=>'Qayta o\'qish mashqlari','sub'=>'2-3 marta o\'qish'],
-                    ['icon'=>'🤝','label'=>'Juftlikda o\'qish','sub'=>'Kuchli o\'quvchi yordami'],
-                    ['icon'=>'❓','label'=>'Sodda savollardan boshlash','sub'=>'"Kim?", "Nima?" dan boshlab'],
+                    ['icon'=>'method-matn.png','label'=>"Matnni qismlarga bo'lib berish",'sub'=>'Uzoq matn charchatadi'],
+                    ['icon'=>'method-audio.png','label'=>'Audio bilan qo\'llab-quvvatlash','sub'=>'Avval tinglash, keyin o\'qish'],
+                    ['icon'=>'method-rasm.png','label'=>'Rasm va kalit so\'zlar','sub'=>'Mazmunni tushunishga yordam'],
+                    ['icon'=>'method-qaytaoqish.png','label'=>'Qayta o\'qish mashqlari','sub'=>'2-3 marta o\'qish'],
+                    ['icon'=>'method-juftlik.png','label'=>'Juftlikda o\'qish','sub'=>'Kuchli o\'quvchi yordami'],
+                    ['icon'=>'method-savol.png','label'=>'Sodda savollardan boshlash','sub'=>'"Kim?", "Nima?" dan boshlab'],
                 ] as $m)
                     <div class="rounded-xl border border-slate-200 bg-white p-4 text-center">
-                        <div class="text-2xl mb-1">{{ $m['icon'] }}</div>
+                        <img src="{{ asset('images/sections/oqishda-qiynalayotganlar/'.$m['icon']) }}" alt="" class="mx-auto h-10 w-10 object-contain mb-1.5">
                         <p class="text-xs font-bold text-slate-700">{{ $m['label'] }}</p>
                         <p class="text-xs text-slate-400 mt-0.5">{{ $m['sub'] }}</p>
                     </div>
@@ -50,34 +57,46 @@
         <div class="mb-6">
             <div class="mb-4 rounded-lg bg-slate-800 px-4 py-2.5 text-center text-sm font-bold text-white uppercase tracking-wide">AMALIY MASHQLAR</div>
             <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div class="rounded-xl border border-blue-200 bg-blue-50 p-5">
-                    <p class="text-xs font-bold text-blue-900 mb-2">1-mashq. "Bir gapdan boshlaymiz"</p>
-                    <p class="text-xs text-blue-800 leading-relaxed mb-3">O'quvchiga butun matn emas, avval bitta gap beriladi. U gapni o'qiydi, so'ng mazmunini aytadi.</p>
-                    <p class="text-xs text-blue-700 italic mb-2">Namuna: "Ali kichik mushukchaga suv berdi."</p>
-                    <ul class="space-y-1 text-xs text-blue-800">
-                        <li>• Kim suv berdi?</li>
-                        <li>• Ali kimga yordam berdi?</li>
-                        <li>• Ali qanday bola?</li>
-                    </ul>
+                <div class="rounded-xl border border-blue-200 bg-blue-50 p-5 flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-xs font-bold text-blue-900 mb-2">1-mashq. "Bir gapdan boshlaymiz"</p>
+                        <p class="text-xs text-blue-800 leading-relaxed mb-3">O'quvchiga butun matn emas, avval bitta gap beriladi. U gapni o'qiydi, so'ng mazmunini aytadi.</p>
+                        <p class="text-xs text-blue-700 italic mb-2">Namuna: "Ali kichik mushukchaga suv berdi."</p>
+                        <ul class="space-y-1 text-xs text-blue-800">
+                            <li>• Kim suv berdi?</li>
+                            <li>• Ali kimga yordam berdi?</li>
+                            <li>• Ali qanday bola?</li>
+                        </ul>
+                    </div>
+                    <img src="{{ asset('images/sections/oqishda-qiynalayotganlar/mashq-1.png') }}" alt="" class="hidden sm:block h-24 w-auto shrink-0 object-contain">
                 </div>
-                <div class="rounded-xl border border-violet-200 bg-violet-50 p-5">
-                    <p class="text-xs font-bold text-violet-900 mb-2">2-mashq. "Audio bilan o'qi"</p>
-                    <ol class="space-y-1.5 text-xs text-violet-800">
-                        <li>1. O'quvchi matn audiosini tinglaydi.</li>
-                        <li>2. Ikkinchi marta audio bilan birga o'qiydi.</li>
-                        <li>3. Uchinchi marta mustaqil o'qiydi.</li>
-                        <li>4. O'qituvchi 2–3 ta sodda savol beradi.</li>
-                    </ol>
+                <div class="rounded-xl border border-violet-200 bg-violet-50 p-5 flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-xs font-bold text-violet-900 mb-2">2-mashq. "Audio bilan o'qi"</p>
+                        <ol class="space-y-1.5 text-xs text-violet-800">
+                            <li>1. O'quvchi matn audiosini tinglaydi.</li>
+                            <li>2. Ikkinchi marta audio bilan birga o'qiydi.</li>
+                            <li>3. Uchinchi marta mustaqil o'qiydi.</li>
+                            <li>4. O'qituvchi 2–3 ta sodda savol beradi.</li>
+                        </ol>
+                    </div>
+                    <img src="{{ asset('images/sections/oqishda-qiynalayotganlar/mashq-2.png') }}" alt="" class="hidden sm:block h-24 w-auto shrink-0 object-contain">
                 </div>
-                <div class="rounded-xl border border-emerald-200 bg-emerald-50 p-5">
-                    <p class="text-xs font-bold text-emerald-900 mb-2">3-mashq. "Kalit so'zni top"</p>
-                    <p class="text-xs text-emerald-800 leading-relaxed mb-2">Matndan 3–5 ta asosiy so'z ajratiladi. O'quvchi shu so'zlar asosida matn nima haqida ekanini aytadi.</p>
-                    <p class="text-xs text-emerald-700 italic">Masalan: qushcha, sovuq, yordam, uyacha, mehribon.</p>
+                <div class="rounded-xl border border-emerald-200 bg-emerald-50 p-5 flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-xs font-bold text-emerald-900 mb-2">3-mashq. "Kalit so'zni top"</p>
+                        <p class="text-xs text-emerald-800 leading-relaxed mb-2">Matndan 3–5 ta asosiy so'z ajratiladi. O'quvchi shu so'zlar asosida matn nima haqida ekanini aytadi.</p>
+                        <p class="text-xs text-emerald-700 italic">Masalan: qushcha, sovuq, yordam, uyacha, mehribon.</p>
+                    </div>
+                    <img src="{{ asset('images/sections/oqishda-qiynalayotganlar/mashq-3.png') }}" alt="" class="hidden sm:block h-24 w-auto shrink-0 object-contain">
                 </div>
-                <div class="rounded-xl border border-amber-200 bg-amber-50 p-5">
-                    <p class="text-xs font-bold text-amber-900 mb-2">4-mashq. "Bo'g'inlab o'qi"</p>
-                    <p class="text-xs text-amber-800 leading-relaxed mb-2">Qiyin so'zlar bo'g'inlarga ajratiladi:</p>
-                    <p class="text-xs text-amber-700 italic">g'am-xo'r-lik • meh-nat-se-var • ku-tub-xo-na • ta-bi-at</p>
+                <div class="rounded-xl border border-amber-200 bg-amber-50 p-5 flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                        <p class="text-xs font-bold text-amber-900 mb-2">4-mashq. "Bo'g'inlab o'qi"</p>
+                        <p class="text-xs text-amber-800 leading-relaxed mb-2">Qiyin so'zlar bo'g'inlarga ajratiladi:</p>
+                        <p class="text-xs text-amber-700 italic">g'am-xo'r-lik • meh-nat-se-var • ku-tub-xo-na • ta-bi-at</p>
+                    </div>
+                    <img src="{{ asset('images/sections/oqishda-qiynalayotganlar/mashq-4.png') }}" alt="" class="hidden sm:block h-24 w-auto shrink-0 object-contain">
                 </div>
             </div>
         </div>
@@ -86,19 +105,19 @@
         <div class="mb-6">
             <div class="mb-4 rounded-lg bg-slate-800 px-4 py-2.5 text-center text-sm font-bold text-white uppercase tracking-wide">O'QITUVCHI HARAKATI</div>
             <div class="rounded-xl border border-slate-200 bg-white p-5">
-                <ul class="grid grid-cols-1 gap-2 sm:grid-cols-2 mb-4">
+                <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 mb-4">
                     @foreach([
-                        "O'quvchini sinf oldida uyaltirmaslik",
-                        'Xatosini keskin tanqid qilmaslik',
-                        'Qisqa va aniq topshiriq berish',
-                        "O'quvchini kichik yutuqlari uchun rag'batlantirish",
-                        "Bir xil matnni qayta o'qishga imkon berish",
-                        "Matnni rasm, audio va so'z kartochkalari bilan qo'llab-quvvatlash",
-                        'Individual rivojlanish jadvalini yuritish',
+                        ['icon'=>'icon-heart.png','text'=>"O'quvchini sinf oldida uyaltirmaslik"],
+                        ['icon'=>'icon-scissors.png','text'=>'Xatosini keskin tanqid qilmaslik'],
+                        ['icon'=>'icon-clipboard.png','text'=>'Qisqa va aniq topshiriq berish'],
+                        ['icon'=>'icon-trophy.png','text'=>"O'quvchini kichik yutuqlari uchun rag'batlantirish"],
+                        ['icon'=>'icon-refresh.png','text'=>"Bir xil matnni qayta o'qishga imkon berish"],
+                        ['icon'=>'icon-books.png','text'=>"Matnni rasm, audio va so'z kartochkalari bilan qo'llab-quvvatlash"],
+                        ['icon'=>'icon-chart.png','text'=>'Individual rivojlanish jadvalini yuritish'],
                     ] as $a)
-                        <li class="flex items-start gap-2 text-xs text-slate-600">
-                            <svg class="mt-0.5 h-3.5 w-3.5 shrink-0 text-blue-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                            {{ $a }}
+                        <li class="flex items-center gap-2.5 text-xs text-slate-600">
+                            <img src="{{ asset('images/sections/oqishda-qiynalayotganlar/'.$a['icon']) }}" alt="" class="h-8 w-8 shrink-0 object-contain">
+                            {{ $a['text'] }}
                         </li>
                     @endforeach
                 </ul>
@@ -114,19 +133,19 @@
         <div class="mb-6">
             <div class="mb-4 rounded-lg bg-slate-800 px-4 py-2.5 text-center text-sm font-bold text-white uppercase tracking-wide">OTA-ONA BILAN HAMKORLIK</div>
             <div class="rounded-xl border border-rose-200 bg-rose-50 p-5">
-                <ul class="grid grid-cols-1 gap-2 sm:grid-cols-2 mb-3">
+                <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 mb-3">
                     @foreach([
-                        'Bolani har kuni 10–15 daqiqa ovoz chiqarib o\'qitish',
-                        'Bola xato qilganda darhol urishmaslik',
-                        'Matnni birga tinglash',
-                        '"Nima haqida o\'qiding?" deb savol berish',
-                        'Uyda kichik kitob burchagi yaratish',
-                        'Bolaga oson va qiziqarli kitob tanlash',
-                        'Har kuni kichik yutuqni maqtash',
+                        ['icon'=>'icon-clock.png','text'=>'Bolani har kuni 10–15 daqiqa ovoz chiqarib o\'qitish'],
+                        ['icon'=>'icon-heart2.png','text'=>'Bola xato qilganda darhol urishmaslik'],
+                        ['icon'=>'icon-headphones.png','text'=>'Matnni birga tinglash'],
+                        ['icon'=>'icon-presentation.png','text'=>'"Nima haqida o\'qiding?" deb savol berish'],
+                        ['icon'=>'icon-books.png','text'=>'Uyda kichik kitob burchagi yaratish'],
+                        ['icon'=>'icon-gift.png','text'=>'Bolaga oson va qiziqarli kitob tanlash'],
+                        ['icon'=>'icon-trophy.png','text'=>'Har kuni kichik yutuqni maqtash'],
                     ] as $o)
-                        <li class="flex items-start gap-2 text-xs text-rose-800">
-                            <svg class="mt-0.5 h-3.5 w-3.5 shrink-0 text-rose-400" fill="currentColor" viewBox="0 0 6 6"><circle cx="3" cy="3" r="2"/></svg>
-                            {{ $o }}
+                        <li class="flex items-center gap-2.5 text-xs text-rose-800">
+                            <img src="{{ asset('images/sections/oqishda-qiynalayotganlar/'.$o['icon']) }}" alt="" class="h-8 w-8 shrink-0 object-contain">
+                            {{ $o['text'] }}
                         </li>
                     @endforeach
                 </ul>
