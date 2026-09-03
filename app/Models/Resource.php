@@ -92,4 +92,13 @@ class Resource extends Model
 
         return Storage::disk('public')->exists($path) ? Storage::disk('public')->url($path) : null;
     }
+
+    public function fileUrl(): string
+    {
+        $url = Storage::disk($this->disk)->url($this->file_path);
+
+        // Root-relative so it always resolves against the current origin
+        // (avoids cross-origin fetch/CORS issues for the PDF.js preview).
+        return parse_url($url, PHP_URL_PATH) ?: $url;
+    }
 }
