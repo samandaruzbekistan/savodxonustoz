@@ -7,37 +7,95 @@
         ['slug' => 'individual-oqish-xaritasi',      'label' => "Individual o'qish xaritasi"],
     ];
     $current = $activeSlug ?? null;
+    $currentLabel = collect($navItems)->firstWhere('slug', $current)['label'] ?? "Bo'lim menyusi";
 @endphp
 
+{{-- ── Mobile: collapsible drawer trigger ─────────────────────────── --}}
+<div x-data="{ drawerOpen: false }" class="lg:hidden">
+    <button @click="drawerOpen = !drawerOpen"
+            class="flex w-full items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+        <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600">
+            <x-icon name="users" class="h-4.5 w-4.5 text-white" stroke="1.8" />
+        </span>
+        <span class="min-w-0 flex-1 text-left">
+            <span class="block text-[11px] font-semibold uppercase tracking-wide text-indigo-500">Barcha o'quvchilarga yordam</span>
+            <span class="block truncate text-sm font-bold text-slate-800">{{ $currentLabel }}</span>
+        </span>
+        <x-icon name="chevron-down" class="h-4 w-4 shrink-0 text-slate-400 transition-transform duration-200" ::class="drawerOpen ? 'rotate-180' : ''" />
+    </button>
+
+    <div x-show="drawerOpen" x-cloak
+         x-transition:enter="transition ease-out duration-150"
+         x-transition:enter-start="opacity-0 -translate-y-1"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         class="mt-2 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <nav class="divide-y divide-slate-100">
+            @foreach ($navItems as $item)
+                @php $active = $current === $item['slug']; @endphp
+                <a href="{{ route('barcha-oquvchilarga-yordam.show', $item['slug']) }}"
+                   class="flex items-center gap-3 px-4 py-3 text-sm transition-colors
+                       {{ $active ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-slate-600 font-medium hover:bg-slate-50' }}">
+                    <span class="grid h-5.5 w-5.5 shrink-0 place-items-center rounded-full text-[11px] font-bold
+                        {{ $active ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-400' }}">{{ $loop->iteration }}</span>
+                    <span class="leading-snug">{{ $item['label'] }}</span>
+                </a>
+            @endforeach
+        </nav>
+        <div class="border-t border-amber-200 bg-amber-50 p-4">
+            <div class="flex items-start gap-2.5">
+                <span class="grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-amber-100">
+                    <x-icon name="bulb" class="h-4 w-4 text-amber-600" stroke="1.8" />
+                </span>
+                <div>
+                    <p class="text-xs font-bold text-amber-800 mb-1">Eslatma</p>
+                    <p class="text-xs text-amber-700 leading-relaxed">Har bir bo'lim muammo tavsifi, metodik yechim, amaliy mashqlar, o'qituvchi va ota-ona hamkorligi hamda baholash mezonlarini o'z ichiga oladi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="divide-y divide-slate-100 border-t border-slate-200">
+            <a href="{{ route('resources.index') }}" class="flex items-center gap-3 px-4 py-3 text-sm text-slate-600 hover:text-blue-700 transition-colors">
+                <x-icon name="download" class="h-4 w-4 shrink-0 text-slate-400" stroke="1.8" />
+                Materiallar yuklab olish
+            </a>
+            <a href="{{ route('contact') }}" class="flex items-center gap-3 px-4 py-3 text-sm text-slate-600 hover:text-blue-700 transition-colors">
+                <x-icon name="help" class="h-4 w-4 shrink-0 text-slate-400" stroke="1.8" />
+                Savollaringiz bormi?
+            </a>
+        </div>
+    </div>
+</div>
+
+{{-- ── Desktop: sticky sidebar ─────────────────────────────────────── --}}
 <aside class="hidden w-64 shrink-0 lg:block">
     <div class="sticky top-20 rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-        <a href="{{ route('barcha-oquvchilarga-yordam.index') }}" class="block relative overflow-hidden bg-gradient-to-br from-blue-600 to-indigo-600 px-4 pt-4 pb-3">
-            <div class="pointer-events-none absolute -right-6 -top-8 h-24 w-24 rounded-full bg-white/5"></div>
+        <a href="{{ route('barcha-oquvchilarga-yordam.index') }}" class="block relative overflow-hidden bg-gradient-to-br from-blue-600 to-indigo-600 px-4 pt-4 pb-4">
+            <div class="pointer-events-none absolute -right-6 -top-8 h-24 w-24 rounded-full bg-white/5 su-float-slow"></div>
             <div class="relative flex items-center gap-2.5">
-                <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-white/20">
-                    <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/>
-                    </svg>
+                <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-white/20 ring-1 ring-inset ring-white/25">
+                    <x-icon name="users" class="h-4.5 w-4.5 text-white" stroke="1.8" />
                 </span>
-                <span class="text-sm font-bold leading-tight text-white mb-3">Barcha o'quvchilarga yordam berish</span>
+                <span class="text-sm font-bold leading-tight text-white">Barcha o'quvchilarga yordam berish</span>
             </div>
         </a>
         <nav class="bg-white divide-y divide-slate-100">
             @foreach ($navItems as $item)
+                @php $active = $current === $item['slug']; @endphp
                 <a href="{{ route('barcha-oquvchilarga-yordam.show', $item['slug']) }}"
-                   class="flex items-center gap-3 px-4 py-3 text-sm font-medium transition-colors
-                       {{ $current === $item['slug']
-                           ? 'bg-blue-50 text-blue-700 border-l-2 border-blue-500'
-                           : 'text-slate-700 hover:bg-blue-50 hover:text-blue-700' }}">
+                   class="flex items-center gap-3 px-4 py-3 text-sm transition-colors
+                       {{ $active
+                           ? 'bg-blue-50 text-blue-700 border-l-[3px] border-blue-600 font-semibold'
+                           : 'border-l-[3px] border-transparent text-slate-600 font-medium hover:bg-slate-50 hover:text-blue-700' }}">
+                    <span class="grid h-5.5 w-5.5 shrink-0 place-items-center rounded-full text-[11px] font-bold
+                        {{ $active ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-400' }}">{{ $loop->iteration }}</span>
                     <span class="leading-snug">{{ $item['label'] }}</span>
                 </a>
             @endforeach
         </nav>
         <div class="bg-amber-50 border-t border-amber-200 p-4">
-            <div class="flex items-start gap-2">
-                <svg class="h-4 w-4 shrink-0 mt-0.5 text-amber-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
-                </svg>
+            <div class="flex items-start gap-2.5">
+                <span class="grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-amber-100">
+                    <x-icon name="bulb" class="h-4 w-4 text-amber-600" stroke="1.8" />
+                </span>
                 <div>
                     <p class="text-xs font-bold text-amber-800 mb-1">Eslatma</p>
                     <p class="text-xs text-amber-700 leading-relaxed">Har bir bo'lim muammo tavsifi, metodik yechim, amaliy mashqlar, o'qituvchi va ota-ona hamkorligi hamda baholash mezonlarini o'z ichiga oladi.</p>
@@ -46,11 +104,11 @@
         </div>
         <div class="bg-white divide-y divide-slate-100 border-t border-slate-200">
             <a href="{{ route('resources.index') }}" class="flex items-center gap-3 px-4 py-3 text-sm text-slate-600 hover:text-blue-700 transition-colors">
-                <svg class="h-4 w-4 shrink-0 text-slate-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                <x-icon name="download" class="h-4 w-4 shrink-0 text-slate-400" stroke="1.8" />
                 Materiallar yuklab olish
             </a>
             <a href="{{ route('contact') }}" class="flex items-center gap-3 px-4 py-3 text-sm text-slate-600 hover:text-blue-700 transition-colors">
-                <svg class="h-4 w-4 shrink-0 text-slate-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"/></svg>
+                <x-icon name="help" class="h-4 w-4 shrink-0 text-slate-400" stroke="1.8" />
                 Savollaringiz bormi?
             </a>
         </div>

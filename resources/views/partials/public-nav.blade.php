@@ -26,14 +26,8 @@
     <div class="mx-auto flex max-w-[88rem] items-center gap-3 px-4 py-3">
 
         {{-- ── Brand ─────────────────────────────── --}}
-        <a href="{{ route('home') }}" class="flex shrink-0 items-center gap-2.5">
-            <span class="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-indigo-600 to-violet-600 text-white shadow">
-                <x-icon name="book" class="h-5 w-5" stroke="1.6" />
-            </span>
-            <span class="hidden leading-tight sm:block">
-                <span class="block text-sm font-extrabold tracking-tight text-slate-800">{{ $siteName }}</span>
-                <span class="block text-[11px] text-slate-400">{{ $tagline }}</span>
-            </span>
+        <a href="{{ route('home') }}" class="flex shrink-0 items-center">
+            <img src="{{ asset('main-logo.png') }}" alt="{{ $siteName }}" class="h-9 w-auto sm:h-10">
         </a>
 
         {{-- ── Desktop links ────────────────────── --}}

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', "Individual o'qish xaritasi — Barcha o'quvchilarga yordam berish")
 @section('content')
-<div class="flex gap-6 -mt-2">
+<div class="flex flex-col gap-6 lg:flex-row lg:-mt-2">
     @include('public.barcha-oquvchilarga-yordam._sidebar', ['activeSlug' => 'individual-oqish-xaritasi'])
     <div class="min-w-0 flex-1">
 
