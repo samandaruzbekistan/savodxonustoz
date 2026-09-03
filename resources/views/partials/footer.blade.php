@@ -19,9 +19,8 @@
     <div class="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
         {{-- Brand --}}
         <div class="sm:col-span-2 lg:col-span-1">
-            <a href="{{ route('home') }}" class="flex items-center gap-2 text-lg font-bold text-indigo-700">
-                <span class="grid h-9 w-9 place-items-center rounded-lg bg-indigo-600 text-sm font-bold text-white">SU</span>
-                {{ $siteName }}
+            <a href="{{ route('home') }}" class="flex items-center">
+                <img src="{{ asset('main-logo.png') }}" alt="{{ $siteName }}" class="h-9 w-auto">
             </a>
             <p class="mt-3 max-w-xs text-sm text-slate-500">{{ $footerText ?: "Bo'lajak boshlang'ich sinf o'qituvchilari uchun o'qish savodxonligini rivojlantirish metodik platformasi." }}</p>
 

@@ -11,9 +11,8 @@
 <body class="flex min-h-screen items-center justify-center bg-slate-100 p-4 font-sans text-slate-800 antialiased">
     <div class="w-full max-w-md">
         <div class="mb-6 text-center">
-            <a href="{{ route('home') }}" class="inline-flex items-center gap-2 text-xl font-bold text-indigo-700">
-                <span class="grid h-10 w-10 place-items-center rounded-lg bg-indigo-600 font-bold text-white">SU</span>
-                {{ config('app.name') }}
+            <a href="{{ route('home') }}" class="inline-flex items-center">
+                <img src="{{ asset('main-logo.png') }}" alt="{{ config('app.name') }}" class="h-12 w-auto">
             </a>
         </div>
 

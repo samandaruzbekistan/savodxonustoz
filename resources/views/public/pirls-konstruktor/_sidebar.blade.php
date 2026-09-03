@@ -52,4 +52,24 @@
             </a>
         </div>
     </div>
+
+    {{-- Eslatma --}}
+    <div class="mt-4 overflow-hidden rounded-2xl border border-amber-200 bg-amber-50">
+        <div class="p-4">
+            <div class="mb-2.5 flex items-center gap-2">
+                <span class="grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-amber-500">
+                    <x-icon name="bulb" class="h-4 w-4 text-white" stroke="1.8" />
+                </span>
+                <h3 class="text-xs font-bold uppercase tracking-wide text-amber-800">Eslatma</h3>
+            </div>
+            <p class="text-xs leading-relaxed text-amber-900">
+                PIRLS konstruktori o'qituvchilarga matn va savollarni PIRLS metodikasiga mos ravishda yaratishda
+                metodik yordam beradi. Har bir bosqichda tegishli yo'riqnoma mavjud.
+            </p>
+        </div>
+        <div class="flex justify-center border-t border-amber-100 bg-amber-100/60 py-3">
+            <img src="{{ asset('images/sections/pirls-konstruktor/16_talim_shapkasi.png') }}" alt=""
+                 class="h-14 w-14 object-contain drop-shadow-sm">
+        </div>
+    </div>
 </aside>
