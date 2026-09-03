@@ -9,41 +9,67 @@
 
     <div class="min-w-0 flex-1">
 
-        {{-- Hero --}}
-        <div class="mb-8 rounded-2xl overflow-hidden relative" style="background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 45%, #0369a1 100%);">
-            <div class="absolute inset-0 opacity-10">
-                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
-                        </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#grid)"/>
-                </svg>
+        {{-- Hero + info panel --}}
+        <div class="mb-8 flex flex-col xl:flex-row gap-5 items-stretch">
+
+            {{-- Hero --}}
+            <div class="flex-1 min-w-0 rounded-2xl overflow-hidden relative" style="background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 45%, #0369a1 100%);">
+                <div class="absolute inset-0 opacity-10">
+                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                            </pattern>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#grid)"/>
+                    </svg>
+                </div>
+                <div class="relative px-8 py-8 flex gap-6 items-center">
+                    <div class="flex-1 min-w-0">
+                        <div class="inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1 mb-4">
+                            <span class="h-2 w-2 rounded-full bg-cyan-300"></span>
+                            <span class="text-xs font-semibold text-white/90">O'qish savodxonligi</span>
+                        </div>
+                        <h1 class="text-3xl font-extrabold tracking-tight text-white leading-tight">Dars ishlanmalar banki</h1>
+                        <p class="mt-3 text-blue-100 leading-relaxed max-w-xl text-sm">
+                            1–5-sinf uchun o'qish savodxonligi bo'yicha tayyor dars ishlanmalari, namunaviy matnlar,
+                            PIRLS tipidagi savollar va baholash mezonlari.
+                        </p>
+                        <div class="mt-5 flex flex-wrap gap-2">
+                            <span class="inline-flex items-center gap-1.5 rounded-full bg-white/20 border border-white/30 px-3 py-1 text-xs font-semibold text-white">📚 1–5 sinf</span>
+                            <span class="inline-flex items-center gap-1.5 rounded-full bg-white/20 border border-white/30 px-3 py-1 text-xs font-semibold text-white">📝 PIRLS standartida</span>
+                            <span class="inline-flex items-center gap-1.5 rounded-full bg-white/20 border border-white/30 px-3 py-1 text-xs font-semibold text-white">✅ Baholash mezonlari</span>
+                        </div>
+                    </div>
+                    <div class="hidden md:block shrink-0">
+                        <img src="{{ asset('images/sections/dars-ishlanmalar/01_hero_children_books.png') }}"
+                             alt="O'quvchilar kitob bilan" class="w-52 h-auto object-contain" loading="lazy">
+                    </div>
+                </div>
             </div>
-            <div class="relative px-8 py-8 flex gap-6 items-center">
-                <div class="flex-1 min-w-0">
-                    <div class="inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1 mb-4">
-                        <span class="h-2 w-2 rounded-full bg-cyan-300"></span>
-                        <span class="text-xs font-semibold text-white/90">O'qish savodxonligi</span>
-                    </div>
-                    <h1 class="text-3xl font-extrabold tracking-tight text-white leading-tight">Dars ishlanmalar banki</h1>
-                    <p class="mt-3 text-blue-100 leading-relaxed max-w-xl text-sm">
-                        1–5-sinf uchun o'qish savodxonligi bo'yicha tayyor dars ishlanmalari, namunaviy matnlar,
-                        PIRLS tipidagi savollar va baholash mezonlari.
-                    </p>
-                    <div class="mt-5 flex flex-wrap gap-2">
-                        <span class="inline-flex items-center gap-1.5 rounded-full bg-white/20 border border-white/30 px-3 py-1 text-xs font-semibold text-white">📚 5 ta sinf</span>
-                        <span class="inline-flex items-center gap-1.5 rounded-full bg-white/20 border border-white/30 px-3 py-1 text-xs font-semibold text-white">📝 PIRLS standartida</span>
-                        <span class="inline-flex items-center gap-1.5 rounded-full bg-white/20 border border-white/30 px-3 py-1 text-xs font-semibold text-white">✅ Baholash mezonlari</span>
-                    </div>
+
+            {{-- Info panel --}}
+            <div class="w-full xl:w-72 shrink-0 rounded-2xl border border-slate-200 bg-white p-5">
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="{{ asset('images/sections/dars-ishlanmalar/21_idea_lightbulb.png') }}" alt=""
+                         class="h-6 w-6 object-contain" loading="lazy">
+                    <h2 class="text-sm font-bold text-slate-800">Nima uchun bu bo'lim muhim?</h2>
                 </div>
-                <div class="hidden md:flex shrink-0 gap-2">
-                    @foreach ([['1', '#10b981'], ['2', '#0ea5e9'], ['3', '#8b5cf6'], ['4', '#f59e0b'], ['5', '#f43f5e']] as [$n, $c])
-                        <div class="h-12 w-12 rounded-xl flex items-center justify-center text-white font-extrabold text-lg shadow-lg border-2 border-white/30"
-                             style="background: {{ $c }};">{{ $n }}</div>
+                <ul class="space-y-3">
+                    @foreach ([
+                        ['icon' => '15_open_book_icon.png', 'text' => "O'qish ko'nikmasini mustahkamlashga yordam beradi."],
+                        ['icon' => '14_checklist.png',      'text' => "Sinf darajasiga mos ravon va metodik dars ishlanmalari."],
+                        ['icon' => '16_collaboration.png',  'text' => "Interfaol metodlar orqali o'quvchilarning faolligini oshiradi."],
+                        ['icon' => '13_magnifying_glass.png', 'text' => "Baholash mezonlari orqali rivojlanish darajasi aniqlanadi."],
+                        ['icon' => '17_certificate.png',    'text' => "PIRLS standartlariga mos savollar va topshiriqlar bilan ta'minlanadi."],
+                    ] as $item)
+                        <li class="flex items-start gap-2.5">
+                            <img src="{{ asset('images/sections/dars-ishlanmalar/'.$item['icon']) }}" alt=""
+                                 class="h-5 w-5 shrink-0 object-contain mt-0.5" loading="lazy">
+                            <span class="text-xs text-slate-600 leading-relaxed">{{ $item['text'] }}</span>
+                        </li>
                     @endforeach
-                </div>
+                </ul>
             </div>
         </div>
 
@@ -59,6 +85,7 @@
                 [
                     'slug'  => '1-sinf', 'num' => '1', 'label' => '1-sinf uchun dars ishlanmalari',
                     'color' => ['bg' => '#10b981', 'light' => '#d1fae5', 'text' => '#065f46'],
+                    'image' => '06_boy_reading.png',
                     'desc'  => "Harf va bo'g'in o'qish, qisqa matnlarni tushunish, rasmli matnlar bilan ishlash. Matn hajmi 30–80 so'z.",
                     'tags'  => ["Harf tanish", "Bo'g'in o'qish", "Rasm-matn"],
                     'meta'  => ['savollar' => '2 daraja', 'matn' => '30–80 so\'z'],
@@ -66,6 +93,7 @@
                 [
                     'slug'  => '2-sinf', 'num' => '2', 'label' => '2-sinf uchun dars ishlanmalari',
                     'color' => ['bg' => '#0ea5e9', 'light' => '#e0f2fe', 'text' => '#0c4a6e'],
+                    'image' => '07_girl_writing.png',
                     'desc'  => "So'z va gap, oddiy matnni tushunish, asosiy axborotni topish, kim-nima-qayerda savollar.",
                     'tags'  => ["So'z tahlili", "Asosiy axborot", "Savol-javob"],
                     'meta'  => ['savollar' => '2–3 daraja', 'matn' => '80–150 so\'z'],
@@ -73,6 +101,7 @@
                 [
                     'slug'  => '3-sinf', 'num' => '3', 'label' => '3-sinf uchun dars ishlanmalari',
                     'color' => ['bg' => '#8b5cf6', 'light' => '#ede9fe', 'text' => '#4c1d95'],
+                    'image' => '08_boy_thinking.png',
                     'desc'  => "Qahramon tahlili, asosiy g'oyani topish, oddiy xulosa chiqarish va matn xaritasi.",
                     'tags'  => ["Qahramon tahlili", "Asosiy g'oya", "Matn xaritasi"],
                     'meta'  => ['savollar' => '3 daraja', 'matn' => '150–250 so\'z'],
@@ -80,6 +109,7 @@
                 [
                     'slug'  => '4-sinf', 'num' => '4', 'label' => '4-sinf uchun dars ishlanmalari',
                     'color' => ['bg' => '#f59e0b', 'light' => '#fef3c7', 'text' => '#78350f'],
+                    'image' => '09_teacher_books.png',
                     'desc'  => "PIRLS talablariga yaqin: yashirin ma'no, talqin, dalil bilan asoslash, 4 darajali savollar.",
                     'tags'  => ["PIRLS savollari", "Talqin", "Dalil bilan asoslash"],
                     'meta'  => ['savollar' => '4 daraja', 'matn' => '250–350 so\'z'],
@@ -87,6 +117,7 @@
                 [
                     'slug'  => '5-sinf', 'num' => '5', 'label' => '5-sinf uchun dars ishlanmalari',
                     'color' => ['bg' => '#f43f5e', 'light' => '#ffe4e6', 'text' => '#881337'],
+                    'image' => '11_boy_laptop.png',
                     'desc'  => "Tanqidiy o'qish, muallif pozitsiyasi, turli matn turlari, yuqori darajali savollar va argumentatsiya.",
                     'tags'  => ["Tanqidiy fikr", "Muallif pozitsiyasi", "Argumentatsiya"],
                     'meta'  => ['savollar' => '4+ daraja', 'matn' => '350–500 so\'z'],
@@ -111,6 +142,8 @@
                                     <span>❓ {{ $g['meta']['savollar'] }}</span>
                                 </div>
                             </div>
+                            <img src="{{ asset('images/sections/dars-ishlanmalar/'.$g['image']) }}" alt=""
+                                 class="h-16 w-16 shrink-0 object-contain" loading="lazy">
                         </div>
                         <p class="text-sm text-slate-600 leading-relaxed mb-4 flex-1">{{ $g['desc'] }}</p>
                         <div class="flex items-center justify-between">

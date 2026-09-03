@@ -67,4 +67,14 @@
             @endforeach
         </div>
     </div>
+
+    {{-- Quote card --}}
+    <div class="mt-4 rounded-2xl border border-slate-200 bg-white p-5 text-center">
+        <img src="{{ asset('images/sections/dars-ishlanmalar/04_plant.png') }}" alt=""
+             class="mx-auto h-14 w-14 object-contain mb-3" loading="lazy">
+        <p class="text-sm font-medium text-slate-700 italic leading-relaxed">
+            &ldquo;Yaxshi dars &mdash; o&rsquo;quvchini matn bilan fikrlashga yetaklaydi.&rdquo;
+        </p>
+        <p class="mt-2 text-xs font-semibold text-slate-400">A. Navoiy</p>
+    </div>
 </aside>
