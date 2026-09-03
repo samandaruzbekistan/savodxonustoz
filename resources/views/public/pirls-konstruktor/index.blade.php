@@ -220,8 +220,8 @@
 
         {{-- ============ CARD 7 — SPOTLIGHT ============ --}}
         <div class="group relative mb-10 overflow-hidden rounded-2xl border border-indigo-200 bg-gradient-to-r from-indigo-50 via-white to-blue-50 shadow-sm transition-shadow hover:shadow-lg">
-            <div class="flex flex-col items-center gap-6 p-6 sm:p-8 md:flex-row">
-                <div class="relative flex h-40 w-full shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white ring-1 ring-inset ring-indigo-100 md:w-64">
+            <div class="grid grid-cols-1 gap-6 p-6 sm:p-8 md:grid-cols-[16rem_1fr] md:items-center">
+                <div class="relative flex h-40 w-full items-center justify-center overflow-hidden rounded-xl bg-white ring-1 ring-inset ring-indigo-100">
                     <img src="{{ asset('images/sections/pirls-konstruktor/14_pdf_va_word.png') }}" alt="PDF va Word yuklab olish"
                          class="h-24 w-auto object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-110">
                     <span class="absolute bottom-2 right-2 rounded-full bg-white/90 px-2 py-1 text-[10px] font-semibold text-slate-500 opacity-0 shadow-sm ring-1 ring-slate-200 transition-opacity duration-200 group-hover:opacity-100">
@@ -229,7 +229,7 @@
                     </span>
                 </div>
 
-                <div class="min-w-0 flex-1">
+                <div class="min-w-0">
                     <div class="mb-2 flex items-center gap-2">
                         <span class="inline-flex items-center gap-1.5 rounded-full bg-indigo-100 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-indigo-700">7-bosqich · Yakuniy</span>
                     </div>
