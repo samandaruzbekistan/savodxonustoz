@@ -6,22 +6,33 @@
     <div class="min-w-0 flex-1">
 
         {{-- Header --}}
-        <div class="mb-6 flex flex-wrap items-start justify-between gap-3">
-            <div>
-                <div class="flex items-center gap-3 mb-2">
-                    <span class="inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold bg-blue-100 text-blue-700">1</span>
-                    <span class="text-xs text-slate-500 uppercase tracking-wide font-medium">PIRLS topshiriqlari konstruktori • 1-bo'lim</span>
+        <div class="relative mb-6 overflow-hidden rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 via-indigo-50 to-sky-50 px-6 py-7 sm:px-8">
+            <div class="pointer-events-none absolute -left-14 -top-16 h-56 w-56 rounded-full bg-blue-300/25 blur-3xl"></div>
+            <div class="pointer-events-none absolute -right-10 -bottom-20 h-64 w-64 rounded-full bg-indigo-300/25 blur-3xl"></div>
+            <img src="{{ asset('images/sections/pirls-konstruktor/20_yulduzlar_dekor.png') }}" alt=""
+                 class="pointer-events-none absolute right-8 top-4 hidden h-12 w-12 opacity-80 sm:block">
+
+            <div class="relative flex flex-wrap items-center justify-between gap-6">
+                <div class="min-w-0 flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold bg-blue-600 text-white shadow-sm">1</span>
+                        <span class="text-xs text-blue-700/80 uppercase tracking-wide font-bold">PIRLS topshiriqlari konstruktori • 1-bo'lim</span>
+                    </div>
+                    <h1 class="text-3xl font-extrabold tracking-tight text-slate-900">Matn yuklash oynasi</h1>
+                    <p class="mt-2 text-slate-600 leading-relaxed max-w-xl">Saytga joylashga tayyor matn</p>
+
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span id="word-count-badge" class="inline-flex items-center gap-1.5 rounded-full bg-white/80 border border-blue-200 px-3 py-1.5 text-xs font-semibold text-blue-700 shadow-sm backdrop-blur">
+                            So'zlar soni: <span id="word-count">68</span>
+                        </span>
+                        <span id="char-count-badge" class="inline-flex items-center gap-1.5 rounded-full bg-white/80 border border-indigo-200 px-3 py-1.5 text-xs font-semibold text-indigo-700 shadow-sm backdrop-blur">
+                            Belgilar soni: <span id="char-count">375</span>
+                        </span>
+                    </div>
                 </div>
-                <h1 class="text-3xl font-extrabold tracking-tight text-slate-900">Matn yuklash oynasi</h1>
-                <p class="mt-2 text-slate-600 leading-relaxed max-w-2xl">Saytga joylashga tayyor matn</p>
-            </div>
-            <div class="flex shrink-0 gap-2">
-                <span id="word-count-badge" class="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200 px-3 py-1.5 text-xs font-semibold text-blue-700">
-                    So'zlar soni: <span id="word-count">68</span>
-                </span>
-                <span id="char-count-badge" class="inline-flex items-center gap-1.5 rounded-full bg-indigo-50 border border-indigo-200 px-3 py-1.5 text-xs font-semibold text-indigo-700">
-                    Belgilar soni: <span id="char-count">375</span>
-                </span>
+
+                <img src="{{ asset('images/sections/pirls-konstruktor/06_matn_yuklash.png') }}" alt="Matn yuklash"
+                     class="hidden h-32 w-auto shrink-0 object-contain drop-shadow-xl sm:block">
             </div>
         </div>
 
@@ -110,7 +121,9 @@
 
                 {{-- Compliance check --}}
                 <div class="rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden">
-                    <div class="bg-slate-800 px-4 py-2.5">
+                    <div class="flex items-center gap-2.5 bg-slate-800 px-4 py-2.5">
+                        <img src="{{ asset('images/sections/pirls-konstruktor/05_tasdiqlash_belgisi.png') }}" alt=""
+                             class="h-6 w-6 shrink-0 object-contain">
                         <h3 class="text-sm font-bold text-white uppercase tracking-wide">Matning topshiriq yaratishga moslik tekshiruvi</h3>
                     </div>
                     <div class="divide-y divide-slate-100">
@@ -137,8 +150,8 @@
             <div class="space-y-5">
                 <div class="rounded-xl border border-emerald-200 bg-emerald-50 p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="grid h-8 w-8 place-items-center rounded-lg bg-emerald-600">
-                            <x-icon name="bulb" class="h-4 w-4 text-white" stroke="1.8" />
+                        <span class="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-lg bg-white ring-1 ring-inset ring-emerald-100">
+                            <img src="{{ asset('images/sections/pirls-konstruktor/03_kitoblar_va_qalamlar.png') }}" alt="" class="h-6 w-6 object-contain">
                         </span>
                         <h3 class="text-sm font-bold text-emerald-900">Matn tanlash bo'yicha maslahatlar</h3>
                     </div>
@@ -160,8 +173,8 @@
 
                 <div class="rounded-xl border border-blue-200 bg-blue-50 p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="grid h-8 w-8 place-items-center rounded-lg bg-blue-600">
-                            <x-icon name="doc" class="h-4 w-4 text-white" stroke="1.8" />
+                        <span class="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-lg bg-white ring-1 ring-inset ring-blue-100">
+                            <img src="{{ asset('images/sections/pirls-konstruktor/07_papka.png') }}" alt="" class="h-6 w-6 object-contain">
                         </span>
                         <h3 class="text-sm font-bold text-blue-900">Matn turlari</h3>
                     </div>
@@ -183,20 +196,21 @@
                     </div>
                     <div class="divide-y divide-slate-100">
                         @foreach ([
-                            'Literal tushunish savollari',
-                            'Xulosa chiqarish savollari',
-                            'Talqin qilish savollari',
-                            'Baholash savollari',
-                            'Javob kaliti yaratish',
-                            "Pdf, Word yuklab olish",
+                            ['slug' => 'literal-tushunish', 'label' => 'Literal tushunish savollari'],
+                            ['slug' => 'xulosa-chiqarish', 'label' => 'Xulosa chiqarish savollari'],
+                            ['slug' => 'talqin-qilish', 'label' => 'Talqin qilish savollari'],
+                            ['slug' => 'baholash-savollari', 'label' => 'Baholash savollari'],
+                            ['slug' => 'javob-kaliti', 'label' => 'Javob kaliti yaratish'],
+                            ['slug' => 'yuklab-olish', 'label' => "Pdf, Word yuklab olish"],
                         ] as $i => $step)
-                            <div class="flex items-center justify-between gap-2 px-4 py-2.5">
+                            <a href="{{ route('pirls-konstruktor.show', $step['slug']) }}"
+                               class="flex items-center justify-between gap-2 px-4 py-2.5 transition-colors hover:bg-blue-50">
                                 <span class="flex items-center gap-2.5">
-                                    <span class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-400 font-bold text-[10px]">{{ $i + 2 }}</span>
-                                    <span class="text-xs text-slate-500">{{ $step }}</span>
+                                    <span class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-700 font-bold text-[10px]">{{ $i + 2 }}</span>
+                                    <span class="text-xs text-slate-600">{{ $step['label'] }}</span>
                                 </span>
-                                <span class="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-400">Tez orada</span>
-                            </div>
+                                <svg class="h-3.5 w-3.5 shrink-0 text-slate-300" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -228,10 +242,10 @@
                 <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
                 Konstruktorga qaytish
             </a>
-            <span class="inline-flex items-center gap-2 rounded-xl bg-slate-100 px-4 py-2.5 text-sm font-semibold text-slate-400">
+            <a href="{{ route('pirls-konstruktor.show', 'literal-tushunish') }}" class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 transition-colors">
                 Keyingi: Literal tushunish savollari
-                <span class="rounded-full bg-slate-200 px-2 py-0.5 text-[10px] font-medium text-slate-500">Tez orada</span>
-            </span>
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
         </div>
     </div>
 </div>

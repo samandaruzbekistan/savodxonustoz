@@ -6,18 +6,29 @@
     <div class="min-w-0 flex-1">
 
         {{-- Header --}}
-        <div class="mb-6 flex flex-wrap items-start justify-between gap-3">
-            <div>
-                <div class="flex items-center gap-3 mb-2">
-                    <span class="inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold bg-blue-100 text-blue-700">5</span>
-                    <span class="text-xs text-slate-500 uppercase tracking-wide font-medium">PIRLS topshiriqlari konstruktori • 5-bo'lim</span>
+        <div class="relative mb-6 overflow-hidden rounded-3xl border border-rose-100 bg-gradient-to-br from-rose-50 via-amber-50 to-sky-50 px-6 py-7 sm:px-8">
+            <div class="pointer-events-none absolute -left-14 -top-16 h-56 w-56 rounded-full bg-rose-300/25 blur-3xl"></div>
+            <div class="pointer-events-none absolute -right-10 -bottom-20 h-64 w-64 rounded-full bg-amber-300/25 blur-3xl"></div>
+
+            <div class="relative flex flex-wrap items-center justify-between gap-6">
+                <div class="min-w-0 flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold bg-rose-600 text-white shadow-sm">5</span>
+                        <span class="text-xs text-rose-700/80 uppercase tracking-wide font-bold">PIRLS topshiriqlari konstruktori • 5-bo'lim</span>
+                    </div>
+                    <h1 class="text-3xl font-extrabold tracking-tight text-slate-900">Baholash savollari</h1>
+                    <p class="mt-2 text-slate-600 leading-relaxed max-w-xl">Saytga joylashga tayyor matn</p>
+
+                    <div class="mt-4">
+                        <span class="inline-flex items-center gap-1.5 rounded-full bg-white/80 border border-rose-200 px-3 py-1.5 text-xs font-semibold text-rose-700 shadow-sm backdrop-blur">
+                            <x-icon name="star" class="h-3.5 w-3.5" /> 4-daraja savollari
+                        </span>
+                    </div>
                 </div>
-                <h1 class="text-3xl font-extrabold tracking-tight text-slate-900">Baholash savollari</h1>
-                <p class="mt-2 text-slate-600 leading-relaxed max-w-2xl">Saytga joylashga tayyor matn</p>
+
+                <img src="{{ asset('images/sections/pirls-konstruktor/12_baholash_checklist.png') }}" alt="Baholash savollari"
+                     class="hidden h-32 w-auto shrink-0 object-contain drop-shadow-xl sm:block">
             </div>
-            <span class="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200 px-3 py-1.5 text-xs font-semibold text-blue-700">
-                <x-icon name="star" class="h-3.5 w-3.5" /> 4-daraja savollari
-            </span>
         </div>
 
         <div class="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-5">

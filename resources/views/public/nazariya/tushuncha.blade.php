@@ -44,7 +44,7 @@
         <div class="mb-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             <div class="grid grid-cols-1 md:grid-cols-[220px_1fr]">
                 <div class="hidden items-center justify-center bg-indigo-50 p-4 md:flex">
-                    <img src="{{ asset('images/nazariya/tushuncha/konikmalar.png') }}" alt="Tarkibiy ko'nikmalar" class="h-full max-h-40 w-full object-contain">
+                    <img src="{{ asset('images/amaliyot-maydoni/22_puzzle_learning.png') }}" alt="Tarkibiy ko'nikmalar" class="h-28 w-28 object-contain">
                 </div>
                 <div class="p-5">
                     <h2 class="mb-4 text-xs font-bold uppercase tracking-wide text-slate-400">O'qish savodxonligining tarkibiy ko'nikmalari</h2>
@@ -72,7 +72,7 @@
         {{-- Metodik ahamiyati + Bu sahifa --}}
         <div class="mb-8 grid grid-cols-1 gap-4 md:grid-cols-2">
             <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                <img src="{{ asset('images/nazariya/tushuncha/metodik.jpg') }}" alt="O'qituvchi darsda o'quvchilar bilan ishlamoqda" class="h-32 w-full object-cover">
+                <img src="{{ asset('images/sections/ravon-rivojlantirish/02_dars_oqituvchi_va_oquvchilar.png') }}" alt="O'qituvchi darsda o'quvchilar bilan ishlamoqda" class="h-32 w-full object-cover">
                 <div class="p-5">
                     <div class="mb-3 flex items-center gap-2.5">
                         <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600">
@@ -161,7 +161,7 @@
                     </div>
                 </div>
                 <div class="hidden overflow-hidden rounded-2xl border border-slate-200 md:block md:w-40">
-                    <img src="{{ asset('images/nazariya/tushuncha/amaliy-misol.jpg') }}" alt="Qushcha" class="h-full w-full object-cover">
+                    <img src="{{ asset('images/sections/sinf-strategiyalari/matn-turlari/15_bird_branch.png') }}" alt="Qushcha" class="h-full w-full object-cover">
                 </div>
             </div>
         </div>
@@ -189,7 +189,7 @@
                     @endforeach
                 </div>
                 <div class="hidden items-center justify-center rounded-xl bg-slate-50 md:flex">
-                    <img src="{{ asset('images/nazariya/tushuncha/savollar.png') }}" alt="Savol-topshiriqlar" class="h-36 w-36 object-contain">
+                    <img src="{{ asset('images/sections/iqtidorli-oquvchilar/19_savol_belgisi.png') }}" alt="Savol-topshiriqlar" class="h-28 w-28 object-contain">
                 </div>
             </div>
         </div>
@@ -207,6 +207,7 @@
                 <p class="text-sm leading-relaxed text-indigo-50">Ushbu sahifani o'rgangan foydalanuvchi o'qish savodxonligi tushunchasini to'g'ri anglaydi, uni oddiy o'qish malakasidan farqlaydi, boshlang'ich sinfda matn bilan ishlashning chuqurroq metodik maqsadini tushunadi hamda o'quvchini fikrlashga undovchi savollar tuzishga tayyorlanadi.</p>
                 <p class="mt-3 text-xs italic text-indigo-300">"O'qish savodxonligi — bilim eshigini ochadigan kalitdir. Uni rivojlantirish — kelajakni yoritish demakdir."</p>
             </div>
+            <img src="{{ asset('images/amaliyot-maydoni/07_goal_target.png') }}" alt="" class="pointer-events-none absolute -right-2 -bottom-2 hidden h-20 w-20 object-contain opacity-95 sm:block">
         </div>
 
         {{-- Nav buttons --}}

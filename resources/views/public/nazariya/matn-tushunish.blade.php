@@ -127,23 +127,26 @@
 
         {{-- Metodik + Amaliy misol --}}
         <div class="mb-8 grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <div class="mb-3 flex items-center gap-2.5">
-                    <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600">
-                        <x-icon name="cap" class="h-4.5 w-4.5" />
-                    </span>
-                    <h3 class="text-sm font-bold text-slate-800">Bo'lajak o'qituvchi uchun metodik ahamiyati</h3>
+            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                <img src="{{ asset('images/nazariya/section_08.png') }}" alt="Bo'lajak o'qituvchi" class="h-32 w-full object-cover">
+                <div class="p-5">
+                    <div class="mb-3 flex items-center gap-2.5">
+                        <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600">
+                            <x-icon name="cap" class="h-4.5 w-4.5" />
+                        </span>
+                        <h3 class="text-sm font-bold text-slate-800">Bo'lajak o'qituvchi uchun metodik ahamiyati</h3>
+                    </div>
+                    <p class="mb-3 text-xs leading-relaxed text-slate-500">Bo'lajak o'qituvchi matnni tushunish jarayonini bosqichma-bosqich tashkil qila olishi kerak. U o'quvchidan faqat matnni qayta hikoya qilishni emas, balki matndan ma'no izlash, savol berish, dalil topish va xulosa chiqarishni talab qilishi lozim.</p>
+                    <p class="mb-2 text-xs font-semibold text-slate-700">Bu sahifa bo'lajak o'qituvchiga quyidagi ko'nikmalarni beradi:</p>
+                    <ul class="space-y-1.5">
+                        @foreach (["matnni o'qishdan oldin tayyorgarlik ko'rish","murakkab so'zlarni tushuntirish","matn mazmuniga yo'naltiruvchi savollar tuzish","o'quvchini xulosa chiqarishga o'rgatish","matn asosida fikr bildirishni tashkil etish"] as $k)
+                            <li class="flex items-start gap-1.5 text-xs text-slate-500">
+                                <x-icon name="check" class="mt-0.5 h-3.5 w-3.5 shrink-0 text-blue-500" stroke="2.5" />
+                                {{ $k }}
+                            </li>
+                        @endforeach
+                    </ul>
                 </div>
-                <p class="mb-3 text-xs leading-relaxed text-slate-500">Bo'lajak o'qituvchi matnni tushunish jarayonini bosqichma-bosqich tashkil qila olishi kerak. U o'quvchidan faqat matnni qayta hikoya qilishni emas, balki matndan ma'no izlash, savol berish, dalil topish va xulosa chiqarishni talab qilishi lozim.</p>
-                <p class="mb-2 text-xs font-semibold text-slate-700">Bu sahifa bo'lajak o'qituvchiga quyidagi ko'nikmalarni beradi:</p>
-                <ul class="space-y-1.5">
-                    @foreach (["matnni o'qishdan oldin tayyorgarlik ko'rish","murakkab so'zlarni tushuntirish","matn mazmuniga yo'naltiruvchi savollar tuzish","o'quvchini xulosa chiqarishga o'rgatish","matn asosida fikr bildirishni tashkil etish"] as $k)
-                        <li class="flex items-start gap-1.5 text-xs text-slate-500">
-                            <x-icon name="check" class="mt-0.5 h-3.5 w-3.5 shrink-0 text-blue-500" stroke="2.5" />
-                            {{ $k }}
-                        </li>
-                    @endforeach
-                </ul>
             </div>
             <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <h3 class="mb-3 text-sm font-bold text-slate-800">Amaliy misollar — Matn sarlavhasi: "Kichik bog'bon"</h3>

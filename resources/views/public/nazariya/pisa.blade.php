@@ -145,6 +145,7 @@
                 <p class="text-sm leading-relaxed text-cyan-50">Foydalanuvchi PISA yondashuvi orqali o'qish savodxonligining hayotiy mazmunini anglaydi. Boshlang'ich sinfda turli matn turlari bilan ishlash zarurligini tushunadi. O'quvchilarni real vaziyatlarda matndan o'rganish usullarini bilib oladi. Matn asosida turli darajadagi savollar tuzishni o'rganadi.</p>
                 <p class="mt-3 text-xs italic text-cyan-300">Eslatma: PISA yondashuvi o'qituvchini o'quvchini hayotga tayyorlashga yo'naltiradi, chunki bilim faqat darsda emas, hayotda foydali bo'lishi kerak!</p>
             </div>
+            <img src="{{ asset('images/nazariya/pisa/natija.png') }}" alt="" class="pointer-events-none absolute -right-3 -bottom-3 hidden h-24 w-24 rounded-2xl object-cover opacity-90 shadow-lg ring-4 ring-white/10 sm:block">
         </div>
 
         {{-- Nav buttons --}}

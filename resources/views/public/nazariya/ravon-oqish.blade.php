@@ -169,11 +169,14 @@
         <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-900 p-6 text-white shadow-sm">
             <div class="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/5"></div>
             <div class="relative z-10">
-                <div class="mb-3 flex items-center gap-2.5">
-                    <span class="grid h-9 w-9 place-items-center rounded-xl bg-white/10 text-emerald-200">
-                        <x-icon name="target" class="h-4.5 w-4.5" />
-                    </span>
-                    <span class="text-xs font-semibold uppercase tracking-wide text-emerald-200">Kutiladigan natija</span>
+                <div class="mb-3 flex items-center justify-between gap-2.5">
+                    <div class="flex items-center gap-2.5">
+                        <span class="grid h-9 w-9 place-items-center rounded-xl bg-white/10 text-emerald-200">
+                            <x-icon name="target" class="h-4.5 w-4.5" />
+                        </span>
+                        <span class="text-xs font-semibold uppercase tracking-wide text-emerald-200">Kutiladigan natija</span>
+                    </div>
+                    <img src="{{ asset('images/nazariya/ravon-oqish/natija.png') }}" alt="" class="hidden h-12 w-12 rounded-xl object-cover shadow-md ring-2 ring-white/10 sm:block">
                 </div>
                 <div class="grid grid-cols-1 gap-2 text-xs sm:grid-cols-2 lg:grid-cols-3">
                     @foreach (["Foydalanuvchi ravon o'qishning mazmunini to'g'ri tushunadi","U ravon o'qishni tez o'qish bilan aralashtirmaydi","Boshlang'ich sinf o'quvchilariga to'g'ri o'qishni rivojlantirish usullarini qo'llay oladi","O'quvchilarni ifodali va mazmunli o'qishga yo'naltira oladi","O'qish savodxonligini oshirishga xizmat qiladigan metodlarni amaliyotda qo'llaydi","O'quvchilarning o'qish tezligi, aniqligi va tushunish darajasi bosqichma-bosqich rivojlanadi"] as $n)
