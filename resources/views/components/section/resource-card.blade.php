@@ -7,6 +7,8 @@
     'href',
     'color' => 'blue',
     'layout' => 'vertical',
+    'folder' => 'sections/barcha-oquvchilarga-yordam',
+    'badge' => "Qo'llanma",
 ])
 
 @php
@@ -68,12 +70,12 @@
         <div class="pointer-events-none absolute -right-8 -top-10 h-28 w-28 rounded-full {{ $c['blob'] }} blur-2xl"></div>
         <div class="pointer-events-none absolute -bottom-10 -left-8 h-32 w-32 rounded-full {{ $c['blob'] }} blur-2xl"></div>
 
-        <img src="{{ asset('images/sections/barcha-oquvchilarga-yordam/'.$image) }}" alt="{{ $title }}" loading="lazy"
+        <img src="{{ asset('images/'.trim($folder, '/').'/'.$image) }}" alt="{{ $title }}" loading="lazy"
              class="absolute inset-0 m-auto h-[76%] w-auto object-contain drop-shadow-lg transition-transform duration-300 ease-out group-hover:scale-[1.05]">
 
         <span class="absolute right-3 top-3 inline-flex items-center gap-1 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide {{ $c['text'] }} shadow-sm backdrop-blur">
             <x-icon name="doc" class="h-3 w-3" stroke="2" />
-            Qo'llanma
+            {{ $badge }}
         </span>
     </div>
 
