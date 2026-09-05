@@ -3,7 +3,7 @@
 @section('title', "O'qish savodxonligi nazariyasi")
 
 @section('content')
-<div class="flex gap-6 -mt-2">
+<div class="flex flex-col gap-6 lg:flex-row lg:-mt-2">
 
     @include('public.nazariya._sidebar')
 

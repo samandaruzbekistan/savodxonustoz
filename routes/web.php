@@ -13,13 +13,33 @@ use App\Http\Controllers\Public\ResourceController;
 use App\Http\Controllers\Public\ScientificArticleController;
 use App\Http\Controllers\Public\TestController;
 use App\Http\Controllers\Public\VideoController;
+use App\Models\Resource;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Static section pages
 Route::get('/bolim/nazariya', fn () => view('public.nazariya.index'))->name('nazariya.index');
-Route::get('/bolim/nazariya/{slug}', fn (string $slug) => view("public.nazariya.{$slug}"))->name('nazariya.show');
+Route::get('/bolim/nazariya/{slug}', function (string $slug) {
+    $data = [];
+
+    if ($slug === 'tushuncha') {
+        $slugs = [
+            'ona-tili-va-oqish-savodxonligi-1-sinf-1-qism-2021-iazimova-kmavlonova',
+            'ona-tili-va-oqish-savodxonligi-1-sinf-2-qism-2021-iazimova-kmavlonova',
+            'oqish-kitobi-1-sinf-2017-tgafforova-eshodmonov',
+        ];
+
+        $data['featuredResources'] = Resource::query()
+            ->published()
+            ->whereIn('slug', $slugs)
+            ->get()
+            ->sortBy(fn (Resource $resource) => array_search($resource->slug, $slugs))
+            ->values();
+    }
+
+    return view("public.nazariya.{$slug}", $data);
+})->name('nazariya.show');
 
 Route::get('/bolim/metodik', fn () => view('public.metodik.index'))->name('metodik.index');
 Route::get('/bolim/metodik/{slug}', fn (string $slug) => view("public.metodik.{$slug}"))->name('metodik.show');

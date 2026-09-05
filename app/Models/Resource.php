@@ -90,7 +90,15 @@ class Resource extends Model
     {
         $path = "resource-covers/{$this->slug}.jpg";
 
-        return Storage::disk('public')->exists($path) ? Storage::disk('public')->url($path) : null;
+        if (! Storage::disk('public')->exists($path)) {
+            return null;
+        }
+
+        $url = Storage::disk('public')->url($path);
+
+        // Root-relative so it always resolves against the current origin,
+        // matching fileUrl() (avoids APP_URL/host mismatches, e.g. in local dev).
+        return parse_url($url, PHP_URL_PATH) ?: $url;
     }
 
     public function fileUrl(): string
